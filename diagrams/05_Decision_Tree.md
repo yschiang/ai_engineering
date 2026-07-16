@@ -1,6 +1,6 @@
 # AI-Native Software Engineering Decision Tree
 
-> Version: v1.2 Candidate  
+> Version: v1.3 Candidate  
 > Status: Ready for Sponsor / Engineering Review  
 > Derived from: `02_Framework.md` v1.4 Baseline + `03_Golden_Engineering_Playbook.md` v1.2 Baseline + `04_Framework_Overview.md` v1.2 Candidate  
 > Purpose: Engineer routing guide; supplement only
@@ -60,7 +60,7 @@ Matrix rules：
 - System Design：P3/P2 required；P1 risk-triggered；P0 normally skip，architecture impact 則升級。
 - Plan 不可跨層：P3/P2 做 delivery decomposition；P1 用 `to-tickets`；P0 才按需用 `writing-plans`。
 - 每個 cell 的 output 是進入下一 stage 的 handoff，不代表一定新增獨立文件。
-- Control Profile 仍決定同一 cell 要做到多嚴格；詳見 §4。
+- Archetype 決定起始 evidence 與 validation focus；Control Profile 決定 rigor 與 evidence depth。兩者都是 overlay，不新增 stage 或第三個 Matrix 軸；詳見 §3–4。
 
 ---
 
