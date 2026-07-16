@@ -1,8 +1,8 @@
 # AI-Native Software Engineering Decision Tree
 
-> Version: v1.0 Candidate  
+> Version: v1.1 Candidate  
 > Status: Ready for Sponsor / Engineering Review  
-> Derived from: `02_Framework.md` v1.4 Baseline + `03_Golden_Engineering_Playbook.md` v1.2 Baseline + `04_Framework_Overview.md` v1.1 Candidate  
+> Derived from: `02_Framework.md` v1.4 Baseline + `03_Golden_Engineering_Playbook.md` v1.2 Baseline + `04_Framework_Overview.md` v1.2 Candidate  
 > Purpose: Engineer routing guide; supplement only
 
 ---
@@ -17,6 +17,14 @@
 4. **Current Stage 是什麼？** 第一個還不能回答的 Golden Stage。
 5. **Next Move 是什麼？** 只執行一個 lead skill/action，留下 minimum artifact，交給相稱的 human gate。
 
+| First unanswered question | Route now | Next action | Detail |
+|---|---|---|---|
+| 現況、problem、scope 或 root cause 不清楚 | **Research** | 選一個 evidence skill；先通過 Understanding Gate | §6 |
+| Boundary、target behavior、trade-off 或 failure mode 未決 | **Design** | Triggered System Design／brainstorming／grill | §5–6 |
+| Approved outcome 尚未成為可執行 slices/steps | **Plan** | P1 用 `to-tickets`；單一 P0 按需 `writing-plans` | §6–7 |
+| P0 與 plan ready | **Implement** | TDD + bounded execution + targeted checks | §6 |
+| Need completion/release evidence | **Validate** | Review + fresh verification；再走 Release/Operate overlay | §6、§9 |
+
 每次 routing 應得到一張簡短結果卡：
 
 ```text
@@ -28,6 +36,7 @@ Current Stage:
 Next Skill / Action:
 Minimum Artifact:
 Human Gate / Owner:
+Release / Operate Handoff:
 ```
 
 Artifact 可以留在既有 ticket、OpenSpec、ADR、PR、test report 或 dashboard；不要求為 Decision Tree 建立新表單。
@@ -41,16 +50,16 @@ flowchart TD
   S["Start: define the intended outcome"] --> L{"Smallest outcome that can be owned?"}
   L -->|"Product, program, or migration initiative"| P3["P3 Product / Program\nDirection → Epics or Waves"]
   L -->|"Cross-feature capability"| P2["P2 Epic\nSystem Design → Feature Map"]
-  L -->|"Bounded releasable outcome"| P1["P1 Feature\nApproved Design → P0 slices"]
-  L -->|"Sprint-ready vertical slice"| P0["P0 PBI / User Story\nAcceptance → Execution Layer"]
+  L -->|"Feature outcome containing one or more slices"| P1["P1 Feature\nApproved Design → P0 slices"]
+  L -->|"Smallest Sprint-ready tracer bullet"| P0["P0 PBI / User Story\nAcceptance → Execution Layer"]
 ```
 
 | If the work is… | Choose | First required move | Do not do |
 |---|---|---|---|
 | Product direction、large platform initiative、modernization/migration | **P3 Product / Program** | Establish Product/Program Brief、architecture direction、Epic/Wave map | Directly plan files or code |
 | End-to-end capability spanning multiple Features | **P2 Epic** | Research impact；System Design；produce Feature Map | Create an Epic-wide implementation plan |
-| Bounded outcome that can be accepted/released/controlled | **P1 Feature** | Research + approved Feature Design；then `to-tickets` | Split by technical layer |
-| Narrow but complete Sprint slice with independent evidence | **P0 PBI / User Story** | Confirm type、acceptance、`Blocked by`、Current Stage | Treat Task as P0 |
+| Feature outcome that may contain one or more Sprint slices；可被整體驗收/release/control | **P1 Feature** | Research + approved Feature Design；then `to-tickets` | Split by technical layer |
+| Smallest narrow-but-complete Sprint tracer bullet with independent evidence | **P0 PBI / User Story** | Confirm type、acceptance、`Blocked by`、Current Stage | Treat Task as P0 |
 | File edit、test step、implementation action、commit | **Execution Layer** | Attach it to one P0 | Promote it into a Work Level |
 
 Hierarchy：
@@ -181,6 +190,15 @@ System Design stays inside **Design**。System Design Review 是 Change Gate 的
 | **Validate** | Need review and completion evidence | Code review + `verification-before-completion`；risk-based `/opsx:verify` | PR / Validation Record + fresh commands | Evidence Gate |
 | **Validate** | Change verified and durable truth must close | `/opsx:sync` → `/opsx:archive` when OpenSpec is used | Updated specs + archived Change | Owner accepts closure |
 
+### Release / Operate Overlay
+
+This is the handoff after Validate；它不新增 Golden Stage。
+
+| After Evidence Gate | Next action | Minimum artifact | Accountable owner |
+|---|---|---|---|
+| No shared/production state change | Close P0/Feature；sync/archive OpenSpec when used | Validation / Closure Record | Work Owner |
+| Will affect shared/external/production state | Enter existing release/change process；E3 authorization、rollout、rollback/recovery、observation | Release Readiness + Observation Record | Authorized Service / Release Owner |
+
 ---
 
 ## 7. Plan Decision Tree
@@ -212,17 +230,44 @@ Planning rules：
 
 | Question | If Yes | If No |
 |---|---|---|
-| 仍在 no-stakes option/scope exploration？ | `/opsx:explore`；保持 E0、no artifact、no code | Continue |
-| 已決定形成 change，且需要 durable behavior agreement、handoff 或 maintained spec？ | Create a scoped OpenSpec Change | Ticket/ADR/PR chain can remain SSOT |
-| Scope 是 coherent P1 Feature？ | P1 proposal/spec/design；`tasks.md` 記錄/引用 P0 ticket set and dependencies | Continue |
-| Scope 是需要 durable agreement 的 P0？ | P0 proposal/spec/design；`tasks.md` 可承載 Execution Layer steps | Reclassify scope；Change 不是固定 Work Level |
-| OpenSpec plan 與 `writing-plans` output 重複？ | Keep one SSOT；補強或引用 | Continue |
+| 仍在 no-stakes option/scope exploration？ | `/opsx:explore`；保持 E0、no artifact、no code | Assess whether durable agreement is needed |
+| 已決定形成 change，且需要 durable behavior agreement、handoff 或 maintained spec？ | Create a scoped OpenSpec Change | Keep ticket/ADR/PR chain as SSOT |
+| Scope 是 coherent P1 Feature？ | P1 proposal/spec/design；`tasks.md` 記錄/引用 P0 ticket set and dependencies | Check whether scope is P0 |
+| Scope 是需要 durable agreement 的 P0？ | P0 proposal/spec/design；`tasks.md` 可承載 Execution Layer steps | Reclassify scope before creating Change |
+| OpenSpec plan 與 `writing-plans` output 重複？ | Keep one SSOT；補強或引用 | Proceed with the single existing plan SSOT |
 
 P3/P2 architecture 存在 Product/Architecture SSOT；OpenSpec 只引用或記錄 bounded P1/P0 delta。
 
 ---
 
-## 9. Fast Routes
+## 9. Gate Check
+
+| Gate | Stop when… | Pass when… |
+|---|---|---|
+| **Understanding Gate** | Current behavior、problem、boundary 或 unknowns 仍靠猜測 | Evidence supports current state、scope、acceptance、next stage |
+| **Change Gate** | Design decision unresolved；P0 slices not independent；plan not executable | Selected design/risk accepted；P0 decomposition and triggered plan are bounded/testable |
+| **Evidence Gate** | Completion claim 只來自 AI summary；material findings/open risks 未處理 | Fresh evidence covers acceptance and affected risks；accountable owner accepts release/closure |
+
+Gates 可以由現有 ticket、design review、PR、pipeline 或 release process 承載；不強制新增會議。
+
+---
+
+## 10. Final Routing Rules
+
+1. **First unknown wins**：從第一個不能可靠回答的 stage 開始。
+2. **One lead action at a time**：不要一次跑全部 skills。
+3. **Evidence before confidence**：AI explanation 不是 completion evidence。
+4. **Task stays below P0**：Task、Plan Step、Commit 都是 Execution Layer。
+5. **No giant plans**：P1 先 `to-tickets`；單一 P0 才按需 `writing-plans`。
+6. **Explore stays ephemeral**：`/opsx:explore` 不建立 Change 或 code。
+7. **Release stays accountable**：Evidence Gate 後，shared/production action 走 E3 與既有 release process。
+8. **Human owns the decision**：direction、trade-off、risk acceptance、release 都由 accountable human 決定。
+
+> **Outcome：Engineer 能從目前狀態直接找到下一個 skill、artifact 與 human gate。**
+
+---
+
+## Appendix A — Fast Routes
 
 ### New Feature
 
@@ -235,7 +280,7 @@ P1 Feature
 → to-tickets → P0 slices + Blocked by
 → each frontier P0: inline or JIT writing-plans
 → TDD / implement / review / fresh verification
-→ Feature evidence rollup
+→ Feature evidence rollup → Release/Operate overlay
 ```
 
 ### Bug
@@ -248,7 +293,7 @@ P0 Bug
 → confirm acceptance + Blocked by
 → inline plan or writing-plans if complex
 → minimal TDD fix
-→ review + fresh verification
+→ review + fresh verification → closure or Release/Operate overlay
 ```
 
 ### Legacy Modernization / Migration
@@ -261,23 +306,12 @@ P3 Modernization / Migration
 → to-tickets
 → expand → migrate batches → contract P0s
 → parity / reconciliation / cutover evidence
+→ E3 release authorization + observation/recovery
 ```
 
 ---
 
-## 10. Gate Check
-
-| Gate | Stop when… | Pass when… |
-|---|---|---|
-| **Understanding Gate** | Current behavior、problem、boundary 或 unknowns 仍靠猜測 | Evidence supports current state、scope、acceptance、next stage |
-| **Change Gate** | Design decision unresolved；P0 slices not independent；plan not executable | Selected design/risk accepted；P0 decomposition and triggered plan are bounded/testable |
-| **Evidence Gate** | Completion claim 只來自 AI summary；material findings/open risks 未處理 | Fresh evidence covers acceptance and affected risks；accountable owner accepts release/closure |
-
-Gates 可以由現有 ticket、design review、PR、pipeline 或 release process 承載；不強制新增會議。
-
----
-
-## 11. Tracker Reference
+## Appendix B — Tracker Reference
 
 | Framework | Azure DevOps | GitLab |
 |---|---|---|
@@ -290,17 +324,3 @@ Gates 可以由現有 ticket、design review、PR、pipeline 或 release process
 | Release / Sprint | Existing release/sprint construct | Milestone / Iteration |
 
 Milestone/Iteration 是 planning dimension，不是 hierarchy。Tracker 只映射 Framework semantics，不重新定義 Work Level。
-
----
-
-## 12. Final Routing Rules
-
-1. **First unknown wins**：從第一個不能可靠回答的 stage 開始。
-2. **One lead action at a time**：不要一次跑全部 skills。
-3. **Evidence before confidence**：AI explanation 不是 completion evidence。
-4. **Task stays below P0**：Task、Plan Step、Commit 都是 Execution Layer。
-5. **No giant plans**：P1 先 `to-tickets`；單一 P0 才按需 `writing-plans`。
-6. **Explore stays ephemeral**：`/opsx:explore` 不建立 Change 或 code。
-7. **Human owns the decision**：direction、trade-off、risk acceptance、release 都由 accountable human 決定。
-
-> **Outcome：Engineer 能從目前狀態直接找到下一個 skill、artifact 與 human gate。**
