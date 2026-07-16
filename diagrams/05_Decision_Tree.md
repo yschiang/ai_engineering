@@ -1,6 +1,6 @@
 # AI-Native Software Engineering Decision Tree
 
-> Version: v1.1 Candidate  
+> Version: v1.2 Candidate  
 > Status: Ready for Sponsor / Engineering Review  
 > Derived from: `02_Framework.md` v1.4 Baseline + `03_Golden_Engineering_Playbook.md` v1.2 Baseline + `04_Framework_Overview.md` v1.2 Candidate  
 > Purpose: Engineer routing guide; supplement only
@@ -40,6 +40,27 @@ Release / Operate Handoff:
 ```
 
 Artifact 可以留在既有 ticket、OpenSpec、ADR、PR、test report 或 dashboard；不要求為 Decision Tree 建立新表單。
+
+---
+
+## Golden Matrix — Pick Work Level, Then Current Stage
+
+使用方式：先選 **P3–P0 column**，再找到 **Current Stage row**；cell 左側是 lead skill/action，箭頭右側是 minimum output。
+
+| Golden Stage | P3 Product / Program | P2 Epic | P1 Feature | P0 PBI / User Story |
+|---|---|---|---|---|
+| **Research** | `grill-me` + `understand-anything` + `/opsx:explore` when fuzzy → Product/As-Is Research Brief、Domain/Workflow Map | `understand-anything` + `codebase-research` + `grill-me` → Epic Research Brief、Impact Map | `codebase-research`；fuzzy 時 `/opsx:explore` → Feature Research Brief、acceptance/risk context | `codebase-research`；Bug 加 `systematic-debugging` → P0 Context、reproduction/root cause、change boundary |
+| **Design** | `system-design` + `brainstorming` + `grill-with-docs` → Product/Target System Design、ADRs、Epic/Wave boundaries | `system-design` + `brainstorming` + `grill-with-docs` → Epic System Design、ADRs、Feature Map | Triggered `system-design`；`brainstorming` / scoped OpenSpec + `grill-with-docs` → Approved Feature Design/Spec | Micro-design；behavior change 用 short `brainstorming`；OpenSpec optional → Selected Approach、must-not-change、test direction |
+| **Plan** | Portfolio/roadmap decomposition → Product Roadmap、Epic/Wave Map、validation plan；**no implementation plan** | Feature decomposition/delivery planning → Feature Backlog、dependencies、integration evidence plan；**no implementation plan** | `to-tickets` → P0 tracer bullets、acceptance、`Blocked by`、execution frontier | Inline plan，或 triggered JIT `writing-plans` → Tasks、exact files/interfaces/tests/commands |
+| **Implement** | Execute via P2/P1/P0 playbooks → Working product/wave increments、decision/evidence ledger | Execute via P1/P0 playbooks → Feature increments、contract/integration tests | Execute frontier P0s；each uses P0 Playbook → P0 increments、tests、ticket state | `/opsx:apply` when used + worktree + TDD + execution skill → Code/config/migration、tests、task state |
+| **Validate** | Product/migration review + verification → Product/Migration Validation、NFR/operation/cutover readiness | E2E review + verification → Epic Validation、contract/NFR/rollout evidence | P0 evidence rollup + code review + verification；risk-based `/opsx:verify` → Feature Validation Record | Code review + `verification-before-completion` → PR/P0 Validation、closure or Release/Operate handoff |
+
+Matrix rules：
+
+- System Design：P3/P2 required；P1 risk-triggered；P0 normally skip，architecture impact 則升級。
+- Plan 不可跨層：P3/P2 做 delivery decomposition；P1 用 `to-tickets`；P0 才按需用 `writing-plans`。
+- 每個 cell 的 output 是進入下一 stage 的 handoff，不代表一定新增獨立文件。
+- Control Profile 仍決定同一 cell 要做到多嚴格；詳見 §4。
 
 ---
 
