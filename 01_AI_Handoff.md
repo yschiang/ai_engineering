@@ -1,6 +1,6 @@
 # AI Handoff — AI-Native Software Engineering Framework
 
-> Version: v1.15  
+> Version: v1.17  
 > Status: Active Working Handoff  
 > Purpose: Single source of working instructions for future AI sessions  
 > Governing document: `00_Project_Charter.md`  
@@ -37,7 +37,8 @@ Framework 必須同時服務兩種閱讀高度：
 ### 3.1 Framework 是什麼
 
 - AI-Native Software Engineering operating model。
-- End-to-end lifecycle framework。
+- Golden Flow + Six Golden Questions 的單一 Engineer mental model。
+- End-to-end engineering responsibility coverage；不建立第二套 formal lifecycle。
 - Risk-based governance model。
 - Reusable engineering capability system。
 - Existing SDLC、Architecture、DevOps、SRE 與 Security practices 的增強層。
@@ -63,23 +64,34 @@ Framework 必須同時服務兩種閱讀高度：
 
 ---
 
-## 4. Confirmed Core Models
+## 4. Confirmed Core Model and Controls
 
-### 4.1 Engineering Lifecycle
+### 4.1 Golden Flow + Six Golden Questions
 
 ```text
-Understand → Define → Design → Build → Verify → Release → Operate
+Research → Design → Plan → Implement → Validate
 ```
 
-用途：描述一項 engineering change 從理解到 production learning 的完整 lifecycle。
+這是 Engineer 唯一需要使用的 workflow。Engineer 用 Six Golden Questions 定位：
 
-### 4.2 AI Work Loop
+1. Current Work Location。
+2. Work Level。
+3. Archetype。
+4. Current Golden Stage。
+5. Control Profile。
+6. Next Move：required capability、Golden default skill、artifact/evidence、gate owner。
+
+`Understand、Define、Design、Build、Verify、Release、Operate` 只作為 Framework completeness／responsibility coverage vocabulary，不構成正式 lifecycle model，也不進入 Engineer-facing supplements。
+
+### 4.2 AI 基本功 in Every Golden Stage
 
 ```text
 Understand → Challenge → Execute → Evidence
 ```
 
-用途：描述任何 lifecycle stage 內，人與 AI 應採用的共同工作閉環。
+用途：描述每個 Golden Stage 內，人與 AI 應採用的共同工作紀律。它不是第二套 lifecycle；Training 應把它教成 AI 基本功。
+
+Skill adoption 採 `required discipline + Golden default + approved equivalent`：新手／只會 vibe coding 的 Engineer 直接使用 Golden default；成熟 Team 只有在 Skill Registry 完成相同 capability、input/output、stop condition、gate 與 evidence mapping 後才替換。
 
 ### 4.3 Change Risk Tier
 
@@ -135,13 +147,9 @@ P0 可為 User Story、Engineering Story / Enabler、Bug 或 time-boxed Spike。
 
 Work Archetype：Greenfield Product、Legacy Modernization/Migration、Standard Delivery。
 
-### 4.8 Practical Capability Chain
+### 4.8 Capability Inventory and Planning Split
 
-```text
-Understand → Explore → Define → Design → Challenge → Plan → Implement → Verify → Release
-```
-
-Golden Playbook 收斂為 `Research → Design → Plan → Implement → Validate`。OpenSpec `/opsx:explore` 是目前 Explore capability 的 E0 reference implementation；它不建立 change artifact/code，若繼續則由 proposal/specs/design/tasks 承接。
+Framework 可使用 Understand、Explore、Define、Design、Challenge、Plan、Implement、Verify、Release 等 capabilities；它們在 Golden Flow 內依需要被調用，不構成第二套 workflow。OpenSpec `/opsx:explore` 是 Explore capability 的 E0 reference implementation；它不建立 change artifact/code，若繼續則由 proposal/specs/design/tasks 承接。
 
 Plan stage 的兩層 decomposition 不得混用：
 
@@ -158,7 +166,7 @@ P1 Feature / Approved Design
 
 ### 4.9 System Design Capability
 
-System Design 位於 Design stage 內，不是新的 lifecycle stage：
+System Design 位於 Golden Design 內，不是新的 Golden Stage：
 
 - P3 Product/Program：Required。
 - P2 Epic：Required。
@@ -187,13 +195,13 @@ AI-Native Engineering 是既有 SDLC／delivery operating model 的 enhancement 
 
 | ID | Artifact | Format | Status / Purpose |
 |---|---|---|---|
-| 00 | `00_Project_Charter.md` | Markdown | v1.4 Baseline；專案目的、scope、principles、success criteria |
-| 01 | `01_AI_Handoff.md` | Markdown | v1.15；future sessions 的工作控制文件 |
-| 02 | `02_Framework.md` | Markdown，25–30 頁等級 | v1.5 Baseline；完整方法、integration 與治理 SSOT |
-| 03 | `03_Golden_Engineering_Playbook.md` | Markdown | v1.3 Baseline；Engineer-facing Golden Reference |
-| 04 | `diagrams/04_Framework_Overview.md` | Diagram / Markdown | v1.3 Candidate；補入 Team-owned workflow 與 portable Golden Stage integration，待 Sponsor review |
-| 05 | `diagrams/05_Decision_Tree.md` | Diagram / Markdown | v1.4 Candidate；由 existing work location／largest unknown 導向 Golden capability、placement 與 gate |
-| 06 | `presentation/06_Training_Presentation.pptx` | PowerPoint，12 頁 | v1.6 Baseline Candidate；新增 existing workflow enhancement slide，保留 8 週 → 6 週 target outcome |
+| 00 | `00_Project_Charter.md` | Markdown | v1.5 Baseline；單一 Engineer mental model 與 adoption positioning |
+| 01 | `01_AI_Handoff.md` | Markdown | v1.17；future sessions 的工作控制文件 |
+| 02 | `02_Framework.md` | Markdown，25–30 頁等級 | v1.6 Baseline；Golden model、responsibility coverage、integration 與治理 SSOT |
+| 03 | `03_Golden_Engineering_Playbook.md` | Markdown | v1.4 Baseline；Golden Flow + Six Questions + Golden default skills |
+| 04 | `diagrams/04_Framework_Overview.md` | Diagram / Markdown | v1.4 Candidate；單一 Engineer mental model overview，待 Sponsor review |
+| 05 | `diagrams/05_Decision_Tree.md` | Diagram / Markdown | v1.5 Candidate；Six Questions 導向 capability、Golden default、placement 與 gate |
+| 06 | `presentation/06_Training_Presentation.pptx` | PowerPoint，9 頁 | v1.8 Baseline Candidate；以單一 P1 Feature storyline 教 Golden Flow、Plan 與 Golden defaults，保留 8 週 → 6 週 target outcome |
 | 07 | `07_Quick_Reference_Guide.*` | One Pager | Pending supplement；日常快速使用 |
 
 Case Library 是既有十個以上 pilots 的持續演進 evidence collection；Team-specific templates 由 Team 管理。其他 bonus items 必須有真實 adoption need，避免文件/checklist 無限制增加。
@@ -206,23 +214,22 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 - Project Charter 已重建為正式 artifact。
 - AI Handoff 已重建為正式 artifact。
-- `00_Project_Charter.md` v1.4 已納入 existing workflow integration、既有 pilot evidence base 與 Team-owned templates adoption strategy。
-- `02_Framework.md` v1.5 Baseline 已完成 SDLC integration correction：Golden Stages 保留為 portable decision states；加入 Gate placement、artifact placement、Agile/Sprint、E3/Change Management、Team template governance 與 pilot evidence model。
-- `03_Golden_Engineering_Playbook.md` v1.3 Baseline 已由 existing work location 起手，並在每個 Golden Stage 補齊 typical activity、artifact location、decision owner 與 risk-triggered additional process。
-- `diagrams/04_Framework_Overview.md` v1.3 Candidate 已加入 existing work location 與 Golden Stage-not-SDLC 說明，保留一頁核心決策。
-- `diagrams/05_Decision_Tree.md` v1.4 Candidate 已將 top router 改為 `existing work location → largest unknown/risk → Work Level/Archetype/Control Profile → next capability/artifact placement/gate`；Golden Stage 不被畫成固定 SDLC。
-- `presentation/06_Training_Presentation.pptx` v1.6 Baseline Candidate 共 12 頁；新增「Golden Stages 嵌入既有 workflow，不建立另一套 SDLC」，呈現 Team-owned example flow、portable Golden Stages、AI Work Loop、既有 pilot evidence 與 unchanged human authority；最後一頁改為 existing-workflow-first 與 Team Adapter。8 週 → 6 週 target comparison 保留。
+- `00_Project_Charter.md` v1.5 已將 Golden Flow + Six Golden Questions 定義為唯一 Engineer mental model。
+- `02_Framework.md` v1.6 Baseline 已將七段內容降為 non-prescriptive responsibility coverage；`Understand → Challenge → Execute → Evidence` 改為每個 Golden Stage 的 AI 基本功。
+- `03_Golden_Engineering_Playbook.md` v1.4 Baseline 已保留 Six Questions 完整定位能力，並加入 `required discipline + Golden default + approved equivalent` skill adoption policy。
+- `diagrams/04_Framework_Overview.md` v1.4 Candidate 與 `diagrams/05_Decision_Tree.md` v1.5 Candidate 只呈現 Golden mental model、Six Questions 與 Golden default routing。
+- `presentation/06_Training_Presentation.pptx` v1.8 Baseline Candidate 共 9 頁；移除重複的 stage matrix／skill policy／risk detail pages，改以單一 P1 Feature Golden Path 說明 Engineer 下一步、Golden default skill 與完成 evidence。8 週 → 6 週 target comparison 保留。
 
 ### Framework 已涵蓋
 
 - Executive Summary、Purpose、Design Principles。
-- Engineering Lifecycle、AI Work Loop 與 E0–E3 AI Execution Mode。
+- Golden Flow + Six Golden Questions；每個 Stage 的 AI 基本功；E0–E3 AI Execution Mode。
 - `System Criticality × L0–L3 Change Risk Tier × AI Execution Mode` Control Profile。
-- Understand、Define、Design、Build、Verify、Release、Operate 七階段。
+- Understand、Define、Design、Build、Verify、Release、Operate responsibility coverage；不是 formal lifecycle model。
 - Role Expectations。
 - Core Use Cases。
 - Artifact Model 與 Repository/I/O Blueprint。
-- P3–P0 Delivery Level、Work Archetype 與 Practical Capability Chain。
+- P3–P0 Delivery Level、Work Archetype 與 Golden capability mapping。
 - System Design capability、trigger、System Design Pack、Change Gate review 與 architecture/OpenSpec SSOT boundary。
 - P1 → P0 delivery slicing、P0 → Execution Layer JIT planning、dependency frontier 與 tracker reference mapping。
 - Existing workflow integration、non-normative common SDLC reference mapping、Gate placement、artifact placement、Agile/Sprint DoR/DoD、E3 existing authorization。
@@ -235,10 +242,10 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 ### Next Required Work
 
-1. Consolidate 既有十個以上 pilot cases，依 Work Level、Archetype、Golden/Lifecycle stage、AI Work Loop、Risk Tier、Execution Mode、artifacts/evidence、outcome、failure learning mapping；選 3–5 canonical cases，其餘進 Case Library。
+1. Consolidate 既有十個以上 pilot cases，依 Work Level、Archetype、Golden Stage、AI 基本功的實際運用、Golden default/equivalent skill、Risk Tier、Execution Mode、artifacts/evidence、outcome、failure learning mapping；選 3–5 canonical cases，其餘進 Case Library。
 2. 請每個 Team 建立輕量 local workflow adapter：existing activities／systems of record → Golden questions／Gates → artifact placement／decision owner；Team 自主管理 templates，不由 Department 集中設計。
-3. Sponsor/Engineering 確認 `04` v1.3、`05` v1.4 與 `06` v1.6 的 integration narrative、routing、pilot evidence wording、8 週 → 6 週 target assumptions與 usability。
-4. 核准後產生 `07_Quick_Reference_Guide` one pager；入口必須是 existing work location 與 largest unknown/risk，不是另一條 phase flow。
+3. Sponsor/Engineering 確認 `04` v1.4、`05` v1.5 與 `06` v1.8 的 single-mental-model narrative、Six Questions routing、P1 Feature Golden Path、Golden skill defaults、8 週 → 6 週 target assumptions 與 usability。
+4. 核准後產生 `07_Quick_Reference_Guide` one pager；只呈現 Golden Flow + Six Questions + triggered controls，不引入七段 formal lifecycle。
 
 ---
 
@@ -288,7 +295,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 |---:|---|---|
 | 1 | `00_Project_Charter.md` | Why、scope、non-goals、success criteria |
 | 2 | `01_AI_Handoff.md` | Working rules、current status、next actions |
-| 3 | `02_Framework.md` | Capability model、Tier、lifecycle、roles、gates、practices |
+| 3 | `02_Framework.md` | Golden model、responsibility coverage、Tier、roles、gates、practices |
 | 4 | `03_Golden_Engineering_Playbook.md` | Delivery Level、Archetype、skill → artifact → gate execution mapping |
 | 5 | `04–07` | 由 Framework + Playbook 衍生的 communication/use supplements |
 | 6 | Working notes / chat | 暫時 context，不得凌駕正式 artifacts |
@@ -406,7 +413,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 `02_Framework.md` v1.2–v1.3 後續加入：
 
 6. P3–P0 Delivery Level 與 Greenfield / Modernization-Migration / Standard Archetype。
-7. `Understand → Explore → Define → Design → Challenge → Plan → Implement → Verify → Release` Practical Capability Chain。
+7. 早期版本加入 Understand／Explore／Define 等 capability inventory；v1.6 已明確改為 Golden Flow 內的可調用能力，不構成第二套 workflow。
 8. 明確由 `03_Golden_Engineering_Playbook.md` 管理 OpenSpec、Superpowers 與 Department skills 的 execution mapping。
 
 `03_Golden_Engineering_Playbook.md` v1.0 strict review verdict 為 **8.0/10，Ready after targeted revision**。Approved Minimal Patch 已在 v1.1 關閉：
@@ -433,7 +440,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 `05_Decision_Tree.md` v1.2 加入 department-use Golden Matrix：
 
-22. 以 Golden Stage 為 rows、P3–P0 為 columns，每格直接呈現 `lead skill/action → minimum output`。
+22. 以 Golden Stage 為 rows、P3–P0 為 columns，每格直接呈現 `Golden default skill/action → minimum output`。
 23. 明確區分 P3/P2 delivery decomposition、P1 `to-tickets` 與 P0 JIT `writing-plans`。
 24. Matrix output 作為下一 stage handoff，可存在既有 ticket/OpenSpec/ADR/PR，不新增 mandatory document。
 
@@ -492,6 +499,23 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 57. Department 已有十個以上 pilots 作為 evidence base；後續工作是 consolidation、3–5 canonical cases 與 Case Library，不再建立新 pilot gate。
 58. Training deck v1.6 共 12 頁；新增 existing-workflow enhancement slide，引用現有 pilot evidence；最後一頁改為 existing-workflow-first／Team Adapter。完成 12-slide CJK render、逐頁 visual inspection、overflow、page marker、template fidelity 與 placeholder QA。
 
+`00` v1.5、`01` v1.16、`02` v1.6、`03` v1.4、`04` v1.4、`05` v1.5 與 `06` v1.7 完成 Engineer mental-model 與 skill-adoption correction：
+
+59. Golden Flow `Research → Design → Plan → Implement → Validate` 成為唯一 Engineer workflow；Six Golden Questions 成為定位與開始工作的唯一入口。
+60. `Understand → Challenge → Execute → Evidence` 改為每個 Golden Stage 都要練的 AI 基本功，不再呈現為另一個 lifecycle／work loop。
+61. Understand、Define、Design、Build、Verify、Release、Operate 只保留為 Framework responsibility coverage vocabulary；不命名為 formal model，不進入 Engineer-facing supplements。
+62. Skill governance 改為 `required discipline + Golden default + approved equivalent`：新手／只會 vibe coding 的 Engineer 直接採 defaults；Team 替換前必須完成 capability、input/output、stop condition、gate 與 evidence 等價 mapping。
+63. Golden Matrix 每格明確使用 Golden default skill/action → minimum output；Decision Tree 以 Six Questions 導向 next move，不再要求 Engineer 同時記住兩套心智模型。
+64. Training deck v1.7 共 12 頁；slide 3 將 AI Work Loop 改為 AI 基本功，slide 4 明示 single workflow + Six Questions，slides 6/8 強化 Golden defaults，slide 12 直接列出六個啟動問題。完成全頁 CJK render、逐頁 visual inspection、overflow、template fidelity 與 empty-placeholder QA。
+
+`01` v1.17 與 `06` v1.8 完成 Feature-first presentation condensation：
+
+65. Training deck 以 P1 Feature 作為唯一 teaching example；Work Level 只決定 depth，Task 仍位於 P0 下方 Execution Layer。
+66. 原 slides 7–9 的 stage matrix、skill policy 與 risk detail，以及原 slide 10 的 walkthrough，合併成單一 Engineer operational takeaway：先把問題弄對、再把交付切小、最後用證據完成。
+67. 合併頁明示 Golden Flow 決定 next step、Golden Default skill 決定 how、risk 只改變 rigor 不改變 route；避免工程師看完仍不知道下一步。
+68. Plan 頁直接呈現 `Approved P1 → to-tickets → P0 vertical slices / Blocked by → triggered writing-plans → implementation tasks`。
+69. Outcome 頁明示總時間 `8 → 6 weeks (-25%)`；final deck 共 9 頁，完成全頁 CJK render、逐頁 visual inspection、overflow、template fidelity、page marker 與 empty-placeholder QA。
+
 後續若變更核心模型，仍應使用相同 review format：Executive Verdict、Score、Must-Fix、Should-Fix、Remove/Merge、Missing Decisions、Minimal Patch Plan。
 
 ---
@@ -516,9 +540,10 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 ### 03 Golden Engineering Playbook
 
-- Engineer 能在 60 秒內依 Work Level、Archetype、Current Stage、Control Profile 找到 next move。
+- Engineer 能在 60 秒內回答 Six Golden Questions，依 Current Work Location、Work Level、Archetype、Current Stage 與 Control Profile 找到 next move。
 - P3 Greenfield、P3 Modernization/Migration、P2 Epic、P1 Feature、P0 PBI/User Story（含 Story/Enabler/Bug/Spike）都有 flow。
 - 每個 stage 明確對應 skill、artifact 與 human gate。
+- 新手可直接採用 Golden default skill path；Team equivalent 有明確 mapping contract。
 - 每個 stage 明確說明 typical existing activity、artifact location、decision owner 與是否需 additional process；local mapping 由 Team 擁有。
 - OpenSpec 與 Superpowers responsibility split 清楚，且不建立雙份 design/plan。
 - System Design 在 P3/P2 與 triggered P1 可被直接選到；P0 不被強制套用。
@@ -526,8 +551,9 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 ### 04 Framework Overview
 
-- 一頁看懂 Lifecycle、Work Loop、Execution Mode、Control Profile、gates 與 outcome。
+- 一頁看懂 Golden Flow、Six Golden Questions、AI 基本功、Control Profile、gates 與 outcome。
 - 明確呈現 P3 → P2 → P1 → P0 → Execution Layer，以及 `to-tickets` / per-P0 JIT `writing-plans` 分工。
+- 不把 responsibility coverage 或 AI 基本功畫成第二套 Engineer workflow。
 - 不依賴長篇文字才能理解基本關係。
 
 ### 05 Decision Tree
@@ -540,7 +566,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 ### 06 Training Presentation
 
-- 10–12 頁 PowerPoint。
+- 8–12 頁 PowerPoint；以最短可教會 Engineer 的 storyline 為準。
 - Storyline 清楚，適合 Department Meeting 或 training。
 - 包含 Why now、existing workflow enhancement、model、how to work、roles、Team adapter/call to action。
 
@@ -562,8 +588,10 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - 未讀 SSOT 就直接產生衍生 artifact。
 - 為了完整性加入大量 generic SDLC content。
 - 建立另一套平行 AI SDLC，或把 common Intake／Refine／Build／Release table 當成所有 Team 必須採用的標準流程。
+- 把 responsibility coverage、capability inventory 或 AI 基本功包裝成第二套 Engineer workflow。
 - 把 Golden Stages 一對一綁定固定 SDLC phases；Team workflow 與 Stage mapping 必須保持彈性。
 - 把所有 practices 設為 mandatory。
+- 把 Golden default skills 降成可忽略的建議清單；未完成 approved-equivalent mapping 前，應直接採用 defaults。
 - 用更多文件解決 ownership 或 judgment 問題。
 - 由 Department 集中設計所有 Team templates、tracker fields、repository instructions 或 technology/product checklists。
 - 忽略既有十個以上 pilots，重新要求 Team 執行 pilot 才能證明 Framework。
@@ -590,7 +618,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 3. P0 lightweight/JIT planning boundary，以及 P1/P0 OpenSpec Change scope rule 是否足夠直覺。
 4. 各 Team 的 local activity／system-of-record mapping 與 Team-owned templates 是否能滿足 Department minimum contract，而不增加 duplicate artifacts。
 5. 既有十個以上 pilot case inventory 的 evidence source、owner 與可公開於 Training 的 3–5 canonical cases。
-6. Sponsor/Engineering 確認 04 v1.3、05 v1.4 與 06 v1.6 的 density、integration narrative、routing correctness、8 週 → 6 週 illustration 與 usability 後轉 Baseline。
+6. Sponsor/Engineering 確認 04 v1.4、05 v1.5 與 06 v1.8 的 single-model clarity、P1 Feature Golden Path、Golden default adoption path、density、routing correctness、8 週 → 6 週 illustration 與 usability 後轉 Baseline。
 
 ---
 
@@ -598,7 +626,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 下一個 working session 應執行：
 
-> **Read `00_Project_Charter.md` v1.4, `01_AI_Handoff.md` v1.15, `02_Framework.md` v1.5 Baseline, `03_Golden_Engineering_Playbook.md` v1.3 Baseline, `diagrams/04_Framework_Overview.md` v1.3 Candidate, `diagrams/05_Decision_Tree.md` v1.4 Candidate, and `presentation/06_Training_Presentation.pptx` v1.6 Baseline Candidate. Consolidate the existing 10+ pilots and select 3–5 canonical cases; define Team-owned local workflow adapters without centralizing templates. After Sponsor/Engineering confirms 04–06, create `07_Quick_Reference_Guide` with `existing work location → largest unknown/risk → next capability/artifact placement/gate` as its top router. Do not create a parallel SDLC or another generic checklist.**
+> **Read `00_Project_Charter.md` v1.5, `01_AI_Handoff.md` v1.17, `02_Framework.md` v1.6 Baseline, `03_Golden_Engineering_Playbook.md` v1.4 Baseline, `diagrams/04_Framework_Overview.md` v1.4 Candidate, `diagrams/05_Decision_Tree.md` v1.5 Candidate, and `presentation/06_Training_Presentation.pptx` v1.8 Baseline Candidate. Validate that Golden Flow + Six Golden Questions is the single Engineer mental model and that new users can follow the P1 Feature Golden Path and Golden default skill path without prior skill knowledge. Consolidate the existing 10+ pilots and select 3–5 canonical cases; define Team-owned local workflow adapters without centralizing templates. After Sponsor/Engineering confirms 04–06, create `07_Quick_Reference_Guide` with Six Questions as its top router. Do not create a parallel SDLC, another formal lifecycle, or another generic checklist.**
 
 ---
 
@@ -608,11 +636,15 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 - [ ] 這是 AI-Native Software Engineering Framework，不是 tool manual。
 - [ ] Charter 定義 direction，Handoff 定義 working rules，Framework 定義 method/governance，Golden Playbook 定義 engineering usage。
-- [ ] Lifecycle、AI Work Loop 與 AI Execution Mode 是三個不同控制維度。
+- [ ] Golden Flow + Six Golden Questions 是唯一 Engineer mental model。
+- [ ] `Understand → Challenge → Execute → Evidence` 是每個 Golden Stage 的 AI 基本功，不是第二套 workflow。
+- [ ] Understand／Define／Design／Build／Verify／Release／Operate 只作 responsibility coverage，不是 formal lifecycle model。
+- [ ] AI Execution Mode 只控制 AI authorization，不是 workflow。
 - [ ] Governance 使用 System Criticality、L0–L3 Change Risk Tier 與 E0–E3 Execution Mode。
 - [ ] Quality 使用 Understanding、Change、Evidence 三個 gates。
 - [ ] AI output 不等於 completion；evidence 與 human accountability 才是 completion basis。
 - [ ] Golden Flow 是 Research → Design → Plan → Implement → Validate；P3→P0 會遞迴套用但深度不同。
+- [ ] Skill adoption 是 `required discipline + Golden default + approved equivalent`；新手直接採 default，替換需先證明等價。
 - [ ] Golden Stages 是 portable engineering decision states，不是 Department 統一 SDLC phases；Team 擁有 local workflow mapping。
 - [ ] Hierarchy 是 P3 Product/Program → P2 Epic → P1 Feature → P0 PBI/User Story → Execution Layer；Task 不是 P0。
 - [ ] `to-tickets` 負責 P1 → P0；`writing-plans` 只在單一 P0 即將執行且風險/複雜度觸發時使用。
@@ -623,8 +655,8 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - [ ] Department 定 minimum contract/quality bar；Team 定 templates、tracker、repository、technology/product/domain practices。
 - [ ] E3 沿用既有 authorized owner、Change Management 與 production control；AI 不得成為 production approver。
 - [ ] 已有十個以上 pilots 是 evidence base；下一步是 consolidation/canonical cases，不是重新要求 pilot。
-- [ ] 03 v1.3 已是 Baseline；04 v1.3 與 05 v1.4 Candidate 已同步 integration correction。
-- [ ] 06 v1.6 Baseline Candidate 已是實際 12 頁 PowerPoint；新增 existing workflow enhancement slide，target outcome 保留 8 週 → 6 週 illustration，並完成 CJK render、逐頁 visual inspection、overflow 與 template fidelity QA。
+- [ ] 03 v1.4 已是 Baseline；04 v1.4 與 05 v1.5 Candidate 已同步 single-model／Golden-default correction。
+- [ ] 06 v1.8 Baseline Candidate 已是實際 9 頁 PowerPoint；以 Golden Flow + Six Questions 啟動、用單一 P1 Feature Golden Path 強化 Golden defaults，target outcome 保留 8 週 → 6 週 illustration，並完成 CJK render、逐頁 visual inspection、overflow 與 template fidelity QA。
 - [ ] 下一步是 pilot consolidation、Team adapter 與 Sponsor/Engineering confirmation；其後建立 `07_Quick_Reference_Guide` one pager。
 
 ---
