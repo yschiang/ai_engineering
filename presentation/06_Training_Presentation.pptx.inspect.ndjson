@@ -1,4 +1,4 @@
-{"kind":"deck","id":"pr/e1oqgp","name":"Deck"}
+{"kind":"deck","id":"pr/86p8f1","name":"Deck"}
 {"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
 {"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
 {"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"DEPARTMENT TRAINING","textShapes":5}
@@ -7,34 +7,35 @@
 {"kind":"shape","id":"sh/k3yl0zql","slide":1,"bbox":[42,412,590,10]}
 {"kind":"textbox","id":"sh/7qp4be9c","slide":1,"text":"Golden Playbook for faster, safer, evidence-based delivery","textPreview":"Golden Playbook for faster, safer, evidence-based delivery","textChars":58,"textLines":1,"bbox":[42,452,970,52]}
 {"kind":"textbox","id":"sh/65g3298r","slide":1,"text":"Research → Design → Plan → Implement → Validate","textPreview":"Research → Design → Plan → Implement → Validate","textChars":47,"textLines":1,"bbox":[42,604,930,32]}
-{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"text":"v1.9 Baseline Candidate","textPreview":"v1.9 Baseline Candidate","textChars":23,"textLines":1,"bbox":[980,652,256,24]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"text":"v1.10 Baseline Candidate","textPreview":"v1.10 Baseline Candidate","textChars":24,"textLines":1,"bbox":[980,652,256,24]}
 {"kind":"notes","id":"nt/y90nupkv","slide":1,"text":""}
-{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"只有 Vibe Coding 不夠：工作越大，AI workflow 必須更深","textShapes":16}
-{"kind":"textbox","id":"sh/mxgjm5s7","slide":2,"text":"只有 Vibe Coding 不夠：工作越大，AI workflow 必須更深","textPreview":"只有 Vibe Coding 不夠：工作越大，AI workflow 必須更深","textChars":39,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textShapes":6}
+{"kind":"textbox","id":"sh/mxgjm5s7","slide":2,"text":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textPreview":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textChars":29,"textLines":1,"bbox":[42,58,1160,64]}
 {"kind":"shape","id":"sh/qlsry1sf","slide":2,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/ozy1ofad","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1185,674,52,20]}
-{"kind":"shape","id":"sh/b29kza94","slide":2,"bbox":[42,478,365,136]}
-{"kind":"shape","id":"sh/a10jqpsj","slide":2,"bbox":[42,478,365,30]}
-{"kind":"textbox","id":"sh/x4r21kru","slide":2,"text":"SMALL CHANGE","textPreview":"SMALL CHANGE","textChars":12,"textLines":1,"bbox":[52,484,345,18]}
-{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"text":"Talk → Change → Test","textPreview":"Talk → Change → Test","textChars":20,"textLines":1,"bbox":[66,521,317,30]}
-{"kind":"textbox","id":"sh/r65knqtk","slide":2,"text":"one bounded session\nreversible · easy to verify","textPreview":"one bounded session | reversible · easy to verify","textChars":47,"textLines":2,"bbox":[66,556,317,52]}
-{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"text":"PROBLEM 1","textPreview":"PROBLEM 1","textChars":9,"textLines":1,"bbox":[42,190,235,22]}
-{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"text":"小改字與跨 Repo Feature，\n不能只用同一個 prompt / session。","textPreview":"小改字與跨 Repo Feature， | 不能只用同一個 prompt / session。","textChars":45,"textLines":2,"bbox":[42,216,245,72]}
-{"kind":"shape","id":"sh/mtwrmxg7","slide":2,"bbox":[449,478,365,136]}
-{"kind":"shape","id":"sh/nu58f2hs","slide":2,"bbox":[449,478,365,30]}
-{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"text":"P1 FEATURE","textPreview":"P1 FEATURE","textChars":10,"textLines":1,"bbox":[459,484,345,18]}
-{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"text":"Research → Design → P0","textPreview":"Research → Design → P0","textChars":22,"textLines":1,"bbox":[473,521,317,30]}
-{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"text":"to-tickets slices delivery\nJIT plan per executing P0","textPreview":"to-tickets slices delivery | JIT plan per executing P0","textChars":52,"textLines":2,"bbox":[473,556,317,52]}
-{"kind":"textbox","id":"sh/cnupgny5","slide":2,"text":"PROBLEM 2","textPreview":"PROBLEM 2","textChars":9,"textLines":1,"bbox":[42,319,245,22]}
-{"kind":"textbox","id":"sh/do3q9szq","slide":2,"text":"AI 寫 code 越快，寫錯、patch\n與技術債也累積越快。","textPreview":"AI 寫 code 越快，寫錯、patch | 與技術債也累積越快。","textChars":32,"textLines":2,"bbox":[42,345,245,72]}
-{"kind":"shape","id":"sh/t8byxkn2","slide":2,"bbox":[856,478,365,136]}
-{"kind":"shape","id":"sh/s72xofmh","slide":2,"bbox":[856,478,365,30]}
-{"kind":"textbox","id":"sh/76twva5c","slide":2,"text":"P2 / P3","textPreview":"P2 / P3","textChars":7,"textLines":1,"bbox":[866,484,345,18]}
-{"kind":"textbox","id":"sh/65kfmpor","slide":2,"text":"Multiple sessions","textPreview":"Multiple sessions","textChars":17,"textLines":1,"bbox":[880,521,317,30]}
-{"kind":"textbox","id":"sh/hcvy14ne","slide":2,"text":"cross-repo research\nSystem Design · staged plans","textPreview":"cross-repo research | System Design · staged plans","textChars":48,"textLines":2,"bbox":[880,556,317,52]}
-{"kind":"textbox","id":"sh/p0vy54na","slide":2,"text":"Work 越大：Research / Design / Plan / Validate 越深。Source concept：Dex Horthy, No Vibes Allowed。","textPreview":"Work 越大：Research / Design / Plan / Validate 越深。Source concept：Dex Horthy, No Vibes Allowed。","textChars":91,"textLines":1,"bbox":[42,625,1110,28]}
+{"kind":"shape","id":"sh/b29kza94","slide":2,"bbox":[42,145,570,470]}
+{"kind":"shape","id":"sh/a10jqpsj","slide":2,"bbox":[42,145,570,30]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"text":"PROBLEM 1","textPreview":"PROBLEM 1","textChars":9,"textLines":1,"bbox":[52,151,550,18]}
+{"kind":"shape","id":"sh/w3i1sfa9","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/r65knqtk","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/ove9o7yd","slide":2,"bbox":[0,0,1,1]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"text":"不同大小的工作，需要不同深度的 AI development workflow。","textPreview":"不同大小的工作，需要不同深度的 AI development workflow。","textChars":40,"textLines":1,"bbox":[62,190,530,54]}
+{"kind":"shape","id":"sh/mtwrmxg7","slide":2,"bbox":[654,145,570,470]}
+{"kind":"shape","id":"sh/nu58f2hs","slide":2,"bbox":[654,145,570,30]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"text":"PROBLEM 2","textPreview":"PROBLEM 2","textChars":9,"textLines":1,"bbox":[664,151,550,18]}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/ahwrqhgj","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/cnupgny5","slide":2,"bbox":[0,0,1,1]}
+{"kind":"textbox","id":"sh/do3q9szq","slide":2,"text":"Coding 變得又快又便宜；前面想錯，bad code 與技術債也會更快放大。","textPreview":"Coding 變得又快又便宜；前面想錯，bad code 與技術債也會更快放大。","textChars":40,"textLines":1,"bbox":[674,190,530,54]}
+{"kind":"shape","id":"sh/t8byxkn2","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/s72xofmh","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/76twva5c","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/65kfmpor","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/hcvy14ne","slide":2,"bbox":[0,0,1,1]}
+{"kind":"shape","id":"sh/p0vy54na","slide":2,"bbox":[0,0,1,1]}
 {"kind":"image","id":"im/ypgjypkf","slide":2,"name":"","bbox":[0,0,1,1]}
-{"kind":"image","id":"im/lsr29k36","slide":2,"name":"","alt":"Hardest problem solvable increases with more context engineering, research, planning, and bounded implementation sessions.","bbox":[300.11,155,917.78,295]}
+{"kind":"image","id":"im/lsr29k36","slide":2,"name":"","alt":"The hardest engineering problem AI can solve increases with deeper research, planning, context engineering, and bounded implementation sessions.","bbox":[62,250,530,340]}
+{"kind":"image","id":"im/kri10f2l","slide":2,"name":"","alt":"Bad research and bad plans propagate into much larger volumes of bad code when coding becomes cheap and fast.","bbox":[674,250,530,340]}
 {"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
 {"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textShapes":22}
 {"kind":"textbox","id":"sh/by1svqlc","slide":3,"text":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textPreview":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textChars":41,"textLines":1,"bbox":[42,58,1160,64]}

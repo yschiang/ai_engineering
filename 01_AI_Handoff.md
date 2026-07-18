@@ -1,6 +1,6 @@
 # AI Handoff — AI-Native Software Engineering Framework
 
-> Version: v1.18  
+> Version: v1.19  
 > Status: Active Working Handoff  
 > Purpose: Single source of working instructions for future AI sessions  
 > Governing document: `00_Project_Charter.md`  
@@ -196,12 +196,12 @@ AI-Native Engineering 是既有 SDLC／delivery operating model 的 enhancement 
 | ID | Artifact | Format | Status / Purpose |
 |---|---|---|---|
 | 00 | `00_Project_Charter.md` | Markdown | v1.5 Baseline；單一 Engineer mental model 與 adoption positioning |
-| 01 | `01_AI_Handoff.md` | Markdown | v1.18；future sessions 的工作控制文件 |
+| 01 | `01_AI_Handoff.md` | Markdown | v1.19；future sessions 的工作控制文件 |
 | 02 | `02_Framework.md` | Markdown，25–30 頁等級 | v1.6 Baseline；Golden model、responsibility coverage、integration 與治理 SSOT |
 | 03 | `03_Golden_Engineering_Playbook.md` | Markdown | v1.4 Baseline；Golden Flow + Six Questions + Golden default skills |
 | 04 | `diagrams/04_Framework_Overview.md` | Diagram / Markdown | v1.4 Candidate；單一 Engineer mental model overview，待 Sponsor review |
 | 05 | `diagrams/05_Decision_Tree.md` | Diagram / Markdown | v1.5 Candidate；Six Questions 導向 capability、Golden default、placement 與 gate |
-| 06 | `presentation/06_Training_Presentation.pptx` | PowerPoint，9 頁 | v1.9 Baseline Candidate；以兩個 vibe-coding 問題開場，建立 durable Golden Flow，再以 P1 Feature 示範並呈現 8 週 → 6 週 target outcome |
+| 06 | `presentation/06_Training_Presentation.pptx` | PowerPoint，9 頁 | v1.10 Baseline Candidate；P2 以兩張直接圖像只講兩個工程問題，建立 durable Golden Flow，再以 P1 Feature 示範並呈現 8 週 → 6 週 target outcome |
 | 07 | `07_Quick_Reference_Guide.*` | One Pager | Pending supplement；日常快速使用 |
 
 Case Library 是既有十個以上 pilots 的持續演進 evidence collection；Team-specific templates 由 Team 管理。其他 bonus items 必須有真實 adoption need，避免文件/checklist 無限制增加。
@@ -218,7 +218,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - `02_Framework.md` v1.6 Baseline 已將七段內容降為 non-prescriptive responsibility coverage；`Understand → Challenge → Execute → Evidence` 改為每個 Golden Stage 的 AI 基本功。
 - `03_Golden_Engineering_Playbook.md` v1.4 Baseline 已保留 Six Questions 完整定位能力，並加入 `required discipline + Golden default + approved equivalent` skill adoption policy。
 - `diagrams/04_Framework_Overview.md` v1.4 Candidate 與 `diagrams/05_Decision_Tree.md` v1.5 Candidate 只呈現 Golden mental model、Six Questions 與 Golden default routing。
-- `presentation/06_Training_Presentation.pptx` v1.9 Baseline Candidate 共 9 頁；P2 具體說明 work size 需要不同 workflow depth，以及低 coding cost 會加速 bad-code／patch debt；P3 說明本次建立的是可持久、可跨 P3–P0 使用並結合 10+ pilots Golden defaults 的 AI Development Workflow。P8 將 8 週 → 6 週 target allocation 定為 Research 0.75、Design 1.5、Plan 0.25、Implement 1.5、Validate 2.0 週。
+- `presentation/06_Training_Presentation.pptx` v1.10 Baseline Candidate 共 9 頁；P2 只保留兩個工程問題與兩張使用者提供的圖：不同大小的工作需要不同 workflow depth，以及低 coding cost 會放大前段錯誤、bad code 與技術債；已移除該頁 Small／P1／P2-P3 taxonomy。P3 說明本次建立的是可持久、可跨 P3–P0 使用並結合 10+ pilots Golden defaults 的 AI Development Workflow。P8 將 8 週 → 6 週 target allocation 定為 Research 0.75、Design 1.5、Plan 0.25、Implement 1.5、Validate 2.0 週。
 
 ### Framework 已涵蓋
 
@@ -244,7 +244,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 1. Consolidate 既有十個以上 pilot cases，依 Work Level、Archetype、Golden Stage、AI 基本功的實際運用、Golden default/equivalent skill、Risk Tier、Execution Mode、artifacts/evidence、outcome、failure learning mapping；選 3–5 canonical cases，其餘進 Case Library。
 2. 請每個 Team 建立輕量 local workflow adapter：existing activities／systems of record → Golden questions／Gates → artifact placement／decision owner；Team 自主管理 templates，不由 Department 集中設計。
-3. Sponsor/Engineering 確認 `04` v1.4、`05` v1.5 與 `06` v1.9 的 concrete problem opening、durable workflow purpose、single-mental-model narrative、Six Questions routing、P1 Feature Golden Path、Golden skill defaults、8 週 → 6 週 target assumptions 與 usability。
+3. Sponsor/Engineering 確認 `04` v1.4、`05` v1.5 與 `06` v1.10 的 two-image problem opening、durable workflow purpose、single-mental-model narrative、Six Questions routing、P1 Feature Golden Path、Golden skill defaults、8 週 → 6 週 target assumptions 與 usability。
 4. 核准後產生 `07_Quick_Reference_Guide` one pager；只呈現 Golden Flow + Six Questions + triggered controls，不引入七段 formal lifecycle。
 
 ---
@@ -523,6 +523,12 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 72. P8 的 8 週 → 6 週 illustrative target allocation 定為 Research `0.75 → 0.75`、Design `0.5 → 1.5`、Plan `0.25 → 0.25`、Implement `5.5 → 1.5`、Validate `1.0 → 2.0` 週；Design 與 Implement 各 1.5 週，Implementation 約下降 73%，並以更完整 FR／NFR／failure modes 與 TDD／staging／readiness 降低 patch/rework。
 73. Training deck v1.9 維持 9 頁；P2 使用使用者提供、源自 Dex Horthy《No Vibes Allowed》的 problem-size/context-engineering 圖示概念，P8 保持 raster chart。完成全頁 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker、slide count 與 empty-placeholder QA。
 
+`01` v1.19 與 `06` v1.10 完成 problem-only opening simplification：
+
+74. P2 改為左右兩個大型問題區塊，直接使用 problem-size/context-engineering 與 bad-research/bad-plan amplification 兩張圖；不再在此頁先教 solution taxonomy。
+75. P2 移除 Small Change／P1 Feature／P2-P3 底部分類與方法 footer，只保留兩句工程師可直接理解的問題：不同大小的工作需要不同 workflow depth；coding 變快變便宜會更快放大前段錯誤、bad code 與技術債。
+76. Training deck v1.10 維持 9 頁；P1 僅更新版本標記、P2 完成上述重構，其餘 approved narrative 不變。完成全頁 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker、slide count 與 empty-placeholder QA。
+
 後續若變更核心模型，仍應使用相同 review format：Executive Verdict、Score、Must-Fix、Should-Fix、Remove/Merge、Missing Decisions、Minimal Patch Plan。
 
 ---
@@ -625,7 +631,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 3. P0 lightweight/JIT planning boundary，以及 P1/P0 OpenSpec Change scope rule 是否足夠直覺。
 4. 各 Team 的 local activity／system-of-record mapping 與 Team-owned templates 是否能滿足 Department minimum contract，而不增加 duplicate artifacts。
 5. 既有十個以上 pilot case inventory 的 evidence source、owner 與可公開於 Training 的 3–5 canonical cases。
-6. Sponsor/Engineering 確認 04 v1.4、05 v1.5 與 06 v1.9 的 problem clarity、workflow purpose、single-model clarity、P1 Feature Golden Path、Golden default adoption path、density、routing correctness，以及 Design／Implement 各 1.5 週的 8 週 → 6 週 illustration 與 usability 後轉 Baseline。
+6. Sponsor/Engineering 確認 04 v1.4、05 v1.5 與 06 v1.10 的 problem clarity、workflow purpose、single-model clarity、P1 Feature Golden Path、Golden default adoption path、density、routing correctness，以及 Design／Implement 各 1.5 週的 8 週 → 6 週 illustration 與 usability 後轉 Baseline。
 
 ---
 
@@ -633,7 +639,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 下一個 working session 應執行：
 
-> **Read `00_Project_Charter.md` v1.5, `01_AI_Handoff.md` v1.18, `02_Framework.md` v1.6 Baseline, `03_Golden_Engineering_Playbook.md` v1.4 Baseline, `diagrams/04_Framework_Overview.md` v1.4 Candidate, `diagrams/05_Decision_Tree.md` v1.5 Candidate, and `presentation/06_Training_Presentation.pptx` v1.9 Baseline Candidate. Validate that P2 makes the two vibe-coding problems concrete, P3 makes the durable AI Development Workflow purpose clear, Golden Flow + Six Golden Questions remains the single Engineer mental model, and new users can follow the P1 Feature Golden Path and Golden default skill path without prior skill knowledge. Validate the 8→6 week target against pilot actuals instead of treating the illustrative allocation as an industry benchmark. Consolidate the existing 10+ pilots and select 3–5 canonical cases; define Team-owned local workflow adapters without centralizing templates. After Sponsor/Engineering confirms 04–06, create `07_Quick_Reference_Guide` with Six Questions as its top router. Do not create a parallel SDLC, another formal lifecycle, or another generic checklist.**
+> **Read `00_Project_Charter.md` v1.5, `01_AI_Handoff.md` v1.19, `02_Framework.md` v1.6 Baseline, `03_Golden_Engineering_Playbook.md` v1.4 Baseline, `diagrams/04_Framework_Overview.md` v1.4 Candidate, `diagrams/05_Decision_Tree.md` v1.5 Candidate, and `presentation/06_Training_Presentation.pptx` v1.10 Baseline Candidate. Validate that P2 makes the two vibe-coding problems concrete without prematurely teaching work-level taxonomy, P3 makes the durable AI Development Workflow purpose clear, Golden Flow + Six Golden Questions remains the single Engineer mental model, and new users can follow the P1 Feature Golden Path and Golden default skill path without prior skill knowledge. Validate the 8→6 week target against pilot actuals instead of treating the illustrative allocation as an industry benchmark. Consolidate the existing 10+ pilots and select 3–5 canonical cases; define Team-owned local workflow adapters without centralizing templates. After Sponsor/Engineering confirms 04–06, create `07_Quick_Reference_Guide` with Six Questions as its top router. Do not create a parallel SDLC, another formal lifecycle, or another generic checklist.**
 
 ---
 
@@ -663,7 +669,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - [ ] E3 沿用既有 authorized owner、Change Management 與 production control；AI 不得成為 production approver。
 - [ ] 已有十個以上 pilots 是 evidence base；下一步是 consolidation/canonical cases，不是重新要求 pilot。
 - [ ] 03 v1.4 已是 Baseline；04 v1.4 與 05 v1.5 Candidate 已同步 single-model／Golden-default correction。
-- [ ] 06 v1.9 Baseline Candidate 已是實際 9 頁 PowerPoint；P2 以兩個具體 vibe-coding 問題開場，P3 定義 durable AI Development Workflow，後續以 Golden Flow + Six Questions 啟動並用單一 P1 Feature Golden Path 強化 Golden defaults；target outcome 為 Design／Implement 各 1.5 週、總時間 8 週 → 6 週的 illustration，並完成 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker 與 empty-placeholder QA。
+- [ ] 06 v1.10 Baseline Candidate 已是實際 9 頁 PowerPoint；P2 以兩張圖只講兩個具體 vibe-coding 工程問題且不先放 work-level taxonomy，P3 定義 durable AI Development Workflow，後續以 Golden Flow + Six Questions 啟動並用單一 P1 Feature Golden Path 強化 Golden defaults；target outcome 為 Design／Implement 各 1.5 週、總時間 8 週 → 6 週的 illustration，並完成 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker 與 empty-placeholder QA。
 - [ ] 下一步是 pilot consolidation、Team adapter 與 Sponsor/Engineering confirmation；其後建立 `07_Quick_Reference_Guide` one pager。
 
 ---
