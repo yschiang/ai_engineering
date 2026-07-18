@@ -116,34 +116,4 @@ Artifact Guide 是文件選擇器，不是另一條閱讀順序。
 不是 Framework 或 execution SSOT
 ```
 
-## Source of Truth
-
-| Question | Source of Truth |
-|---|---|
-| Project intent、scope、success | `00_Project_Charter.md` |
-| Working status、confirmed decisions、next maintenance action | `01_AI_Handoff.md` |
-| Method、risk、governance、roles、gates、DoD | `02_Framework.md` |
-| Engineer execution、skills、artifacts、stage guidance | `03_Golden_Engineering_Playbook.md` |
-| Detailed routing | `guides/05_Decision_Tree.md` |
-| Skill provenance and environment mapping | `reference/Golden_Skill_Registry.md` |
-
-`04–06` 是由 core documents 衍生的 understanding、routing 與 training views，不建立新的方法或規則。Decision Tree 的開頭同時擔任日常 quick reference；不另外維護一份重複的 `07` content SSOT。
-
-## Repository Layout
-
-```text
-/
-├── README.md
-├── 00_Project_Charter.md
-├── 01_AI_Handoff.md
-├── 02_Framework.md
-├── 03_Golden_Engineering_Playbook.md
-├── guides/
-│   ├── 04_Framework_Overview.md
-│   └── 05_Decision_Tree.md
-├── training/
-│   ├── 06_Training_Presentation.pptx
-│   └── assets and rendered review artifacts
-└── reference/
-    └── Golden_Skill_Registry.md
-```
+若文件內容衝突，以 Artifact Guide 標示的對應 SSOT 為準。`04–06` 是由 core documents 衍生的 understanding、routing 與 training views，不建立新的方法或規則。Decision Tree 的開頭同時擔任日常 quick reference；不另外維護一份重複的 `07` content SSOT。
