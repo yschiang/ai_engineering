@@ -1,6 +1,6 @@
 # Project Charter — AI-Native Software Engineering Framework
 
-> Version: v1.4 Baseline  
+> Version: v1.5 Baseline  
 > Status: Active  
 > Project Sponsor: Department Head  
 > Primary Audience: Division Head, CIO, Engineering Management, Architects, Engineering Teams  
@@ -27,7 +27,7 @@ AI coding 正在快速降低程式實作門檻，但真正限制 enterprise soft
 
 本專案不是推廣單一 AI 工具，而是重新定義 AI 時代的軟體工程工作方式。
 
-最終目標是讓 AI 參與從 system understanding、problem definition、design、implementation、verification 到 release 與 operation 的完整 lifecycle，同時維持 production safety、architecture integrity 與 human accountability。
+最終目標是讓 Engineer 以單一 Golden Playbook 使用 AI，從 system understanding、problem definition、design、implementation 到 validation，並與既有 release／operation responsibility 接軌，同時維持 production safety、architecture integrity 與 human accountability。
 
 ---
 
@@ -35,7 +35,7 @@ AI coding 正在快速降低程式實作門檻，但真正限制 enterprise soft
 
 團隊已開始使用各類 AI coding tools，但缺乏共同框架會產生以下問題：
 
-1. 使用方式集中在 code generation，沒有覆蓋完整 engineering lifecycle。
+1. 使用方式集中在 code generation，沒有覆蓋理解、設計、驗證、release readiness 與 production learning 等完整工程責任。
 2. Engineer 在 system understanding 與 requirement clarification 不足時直接修改 code。
 3. AI 能快速產生大量 change，但 human review、testing 與 operational readiness 無法同步擴張。
 4. 不同 team 各自發明 workflow，成功經驗無法複製，失敗模式重複發生。
@@ -93,21 +93,21 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 
 ## 6. Objectives
 
-### O1. 建立共同語言
+### O1. 建立單一 Engineer Mental Model 與共同語言
 
-定義 AI-Native Engineering 的 lifecycle、work loop、risk tier、quality gates、roles 與 Definition of Done。
+以 `Research → Design → Plan → Implement → Validate` 作為唯一 Engineer-facing Golden Flow，並用 Six Golden Questions 定位 current work location、work level、archetype、current stage、control profile 與 next move。Risk tier、quality gates、roles 與 Definition of Done 提供相稱控制，不形成第二套 workflow。
 
 ### O2. 建立可執行方法
 
-讓各種 engineering work 能依一致模式進行：
-
-`Understand → Challenge → Execute → Evidence`
-
-並提供 Engineer 可直接使用的五階段 Golden Flow：
+讓各種 engineering work 都以同一 Golden Flow 進行：
 
 `Research → Design → Plan → Implement → Validate`
 
-每個 Delivery Level 與 Work Archetype 都明確定義 lead skill、minimum artifact 與 human gate。
+在每個 Golden Stage，都練習同一組 AI 基本功：
+
+`Understand → Challenge → Execute → Evidence`
+
+每個 Delivery Level 與 Work Archetype 都明確定義 required capability、Golden default skill、minimum artifact 與 human gate。新手與尚未建立方法的 Team 直接採用 Golden default；成熟 Team 可 mapping 到 equivalent skill，但不得降低 capability、required input/output、stop condition、gate 或 evidence contract。
 
 ### O3. 建立風險與執行分級治理
 
@@ -132,8 +132,9 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 ### 7.1 In Scope
 
 - AI-Native Software Engineering 的核心原則。
-- End-to-end Engineering Lifecycle。
-- AI Work Loop 與 reusable working patterns。
+- Golden Flow、Six Golden Questions 與 Team workflow integration。
+- `Understand → Challenge → Execute → Evidence` AI 基本功與 reusable working patterns。
+- 從 problem understanding 到 release／operation learning 的 engineering responsibility coverage；此 coverage 不構成另一套正式 lifecycle model。
 - L0–L3 Change Risk Tier、System Criticality 與 E0–E3 AI Execution Mode。
 - Requirement、design、implementation、review、testing、release、operation 的 AI collaboration practices。
 - Engineer、Senior Engineer、Tech Lead、Architect、Manager、Department Head 的責任。
@@ -180,7 +181,7 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 
 本專案基於以下假設：
 
-1. AI 最有價值的用途不只是寫 code，而是參與完整 engineering lifecycle。
+1. AI 最有價值的用途不只是寫 code，而是增強理解、設計、執行、驗證與 production learning 的完整工程責任。
 2. AI 會放大既有工程方法；好的方法被放大，模糊需求與不良設計也會被放大。
 3. Human review capacity 不會隨 AI output 線性增加，因此 change 必須保持 bounded and reviewable。
 4. High-risk systems 需要更強 evidence，而不是禁止使用 AI。
@@ -254,14 +255,14 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 
 - Framework 具備 executive clarity 與 engineering depth。
 - 八份 artifacts 使用同一 capability model、Delivery Level、Tier、terminology 與 governance logic。
-- Golden Playbook 能讓 Engineer 在 60 秒內找到 current stage、lead skill、minimum artifact 與 gate。
+- Golden Playbook 能讓 Engineer 用 Six Golden Questions 在 60 秒內找到 current stage、required capability、minimum artifact 與 gate。
 - Decision Tree 與 Quick Reference 能在日常工作中直接使用。
 - Training Presentation 能在約 10–12 頁內完成管理與工程溝通。
 
 ### 13.2 Engineering Adoption
 
 - Team 能使用 Framework 完成真實 engineering tasks。
-- Engineer 能從理解、挑戰、執行到 evidence 完成閉環。
+- Engineer 能在每個 Golden Stage 使用理解、挑戰、執行、留證據的 AI 基本功完成閉環。
 - Control Profile 能有效區分 system criticality、change risk 與 AI action authorization。
 - Mandatory practice 維持最小必要，不形成文件負擔。
 - Engineer 能在既有 backlog、Sprint、design review、PR、test、release 與 operation workflow 中使用 Framework，不需要離開現有 SDLC 跑另一套流程。
@@ -298,7 +299,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 | 內容退化成工具教學 | 堅持 tool-agnostic、capability-based positioning |
 | AI 加速 output 但 quality 下降 | Evidence Gate、human accountability、balanced metrics |
 | 不同 artifacts 內容漂移 | `02_Framework.md` 作為內容 SSOT；版本化同步更新 |
-| 只由少數 power users 掌握 | Training、quick reference、team missions、reusable assets |
+| 只由少數 power users 掌握，其他人停留在 vibe coding | Golden default skill path、Training、quick reference、team missions、reusable assets；未完成 equivalent mapping 前直接採 defaults |
 | Management 只看使用率 | 以 delivery、quality、reliability 與 knowledge flow 衡量 |
 | Framework 被誤用為平行 SDLC | 將 capabilities、artifacts 與 gates 明確 mapping 到既有 intake、backlog、design、PR、test、release、change 與 operation activities |
 | 中央模板過多，Team 難以採用 | Department 只定義 minimum contract；Team 自主管理 tracker fields、templates、repository instructions 與 local DoD |
@@ -324,8 +325,8 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 | Milestone | Deliverable | Completion Condition |
 |---|---|---|
 | M0 | Charter + Handoff | Direction、scope、working rules 確認 |
-| M1 | Framework | 核心 model、Tier、lifecycle、roles、gates、DoD 完整 |
-| M2 | Golden Engineering Playbook | P3–P0 與三種 archetype 的 skill → artifact → gate flow 可直接使用 |
+| M1 | Framework | Golden model、responsibility coverage、Tier、roles、gates、DoD 完整 |
+| M2 | Golden Engineering Playbook | Golden Flow + Six Questions，以及 P3–P0／archetype 的 capability → artifact → gate routing 可直接使用 |
 | M3 | Overview + Decision Tree | 能一頁理解、能快速做 work/risk/workflow decision |
 | M4 | Training Presentation | 可供部門 training 使用的 PowerPoint |
 | M5 | Quick Reference | 可供日常工作使用的 one pager |

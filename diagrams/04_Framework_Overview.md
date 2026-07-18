@@ -1,22 +1,22 @@
 # AI-Native Software Engineering Framework — One-Page Overview
 
-> Version: v1.3 Candidate  
+> Version: v1.4 Candidate  
 > Status: Ready for Sponsor Review  
-> Derived from: `02_Framework.md` v1.5 Baseline + `03_Golden_Engineering_Playbook.md` v1.3 Baseline  
+> Derived from: `02_Framework.md` v1.6 Baseline + `03_Golden_Engineering_Playbook.md` v1.4 Baseline  
 > Purpose: Engineer and management visual entry point; supplement only
 
 ---
 
 ## The Operating Model
 
-**在 Team 既有 workflow 裡，一項工作只做四件事：正確分類、處理當前最大的 Golden question、留下 minimum evidence、完成相稱的 human gate decision。**
+**在 Team 既有 workflow 裡，用 Six Golden Questions 定位，再沿著唯一的 Golden Flow 處理下一個工程問題。**
 
 Golden Stages 是 portable engineering decision states，不是所有 Team 必須採用的固定 SDLC phases。Team 擁有 local activities、artifact placement 與 templates；Department 擁有 minimum contract 與 quality bar。
 
 ```mermaid
 flowchart TB
   W["Team-owned Existing Workflow / System of Record\nTicket · Design · PR · Test · Release · Incident"]
-  C["Classify Work\nP3–P0 · Archetype · Control Profile"]
+  C["Six Golden Questions\nLocation · Level · Archetype · Stage · Control · Next Move"]
   subgraph F["Golden Flow"]
     direction LR
     R["1 Research\nUnderstand · Explore · Define"] --> D["2 Design\nSystem Design* · Feature Design · Challenge"] --> P["3 Plan\nP1→P0 slices · P0→tasks JIT"] --> I["4 Implement\nTDD · bounded change"] --> V["5 Validate\nReview · fresh evidence"]
@@ -29,8 +29,7 @@ flowchart TB
 
 `*` System Design：P3/P2 required；P1 risk-triggered；P0 normally skip。
 
-- **Engineering Lifecycle**：Understand → Define → Design → Build → Verify → Release → Operate。
-- **AI Work Loop in every stage**：Understand → Challenge → Execute → Evidence。
+- **AI 基本功 in every Golden Stage**：先 Understand、Challenge，再 Execute 並留下 Evidence；它不是第二套 lifecycle。
 
 ---
 
@@ -53,13 +52,13 @@ P0 types：**User Story · Engineering Story/Enabler · Bug · Spike**。每張 
 
 ## 2. Golden Stage Contract
 
-| Stage | Lead Capability / Action | Minimum Artifact | Human Gate |
+| Stage | Required Capability / Golden Defaults | Minimum Artifact | Human Gate |
 |---|---|---|---|
-| **Research** | `understand-anything` · `codebase-research` · `grill-me` · `/opsx:explore` | Research / Understanding Brief | **Understanding Gate**：current state、problem、scope、unknowns 清楚 |
-| **Design** | Triggered `system-design` · `superpowers:brainstorming` · `/opsx:propose` · `grill-with-docs` | System Design Pack when triggered + Feature Design / OpenSpec proposal/specs/design | **Change Gate**：design、risk、decomposition 可接受 |
-| **Plan** | `to-tickets`：P1 → P0；triggered `writing-plans`：單一 P0 → tasks | P0 backlog + blockers；JIT executable plan when needed | **Change Gate**：slices 獨立可驗證、plan bounded |
-| **Implement** | `/opsx:apply` + worktree + TDD + execution skill | Code/config/migration + tests + task ledger | Plan compliance + targeted verification |
-| **Validate** | Code review · `/opsx:verify` when applicable · `verification-before-completion` | Validation Record / PR evidence | **Evidence Gate**：claims 有 fresh evidence |
+| **Research** | Evidence-backed understanding；defaults：`understand-anything` · `codebase-research` · `grill-me` · `/opsx:explore` | Research / Understanding Brief | **Understanding Gate**：current state、problem、scope、unknowns 清楚 |
+| **Design** | Select/challenge design；defaults：triggered `system-design` · `brainstorming` · `/opsx:propose` · `grill-with-docs` | System Design Pack when triggered + Feature Design / OpenSpec proposal/specs/design | **Change Gate**：design、risk、decomposition 可接受 |
+| **Plan** | Delivery/JIT decomposition；defaults：`to-tickets` P1 → P0；triggered `writing-plans` P0 → tasks | P0 backlog + blockers；JIT executable plan when needed | **Change Gate**：slices 獨立可驗證、plan bounded |
+| **Implement** | Test-first bounded execution；defaults：`/opsx:apply` + worktree + TDD + execution skill | Code/config/migration + tests + task ledger | Plan compliance + targeted verification |
+| **Validate** | Review + fresh verification；defaults：code review · `/opsx:verify` · `verification-before-completion` | Validation Record / PR evidence | **Evidence Gate**：claims 有 fresh evidence |
 
 ---
 
@@ -91,11 +90,14 @@ SSOT rule：P3/P2 architecture 存在 Product/Architecture artifacts；OpenSpec 
 
 ## Engineer Start in 60 Seconds
 
-1. 找到工作目前所在的 existing activity／system of record。
-2. 找到第一個還不能回答或風險最大的 Golden question。
-3. 選 P3/P2/P1/P0、P0 type、Archetype、Control Profile。
-4. 只執行該 stage 的下一個 capability/action，將結果寫回既有 artifact。
-5. 由 accountable human 完成相稱 gate decision，再進下一步。
+1. **Current Work Location**：工作目前在哪個 existing activity／system of record？
+2. **Work Level**：P3、P2、P1 或 P0？
+3. **Archetype**：Greenfield、Modernization/Migration 或 Standard Delivery？
+4. **Current Golden Stage**：最大的未知或風險屬於 Research、Design、Plan、Implement、Validate 哪一類？
+5. **Control Profile**：需要多嚴謹、AI 能做到哪裡？
+6. **Next Move**：採用哪個 Golden default skill、留下什麼 evidence、由誰完成 gate decision？
+
+新手與尚未建立 local practice 的 Team 直接採用 Golden defaults；成熟 Team 只有在完成 equivalent capability、input/output、stop condition、gate 與 evidence mapping 後才替換。
 
 Tool/tracker routing details：see `05_Decision_Tree`。
 

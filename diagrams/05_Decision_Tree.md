@@ -1,23 +1,26 @@
 # AI-Native Software Engineering Decision Tree
 
-> Version: v1.4 Candidate  
+> Version: v1.5 Candidate  
 > Status: Ready for Sponsor / Engineering Review  
-> Derived from: `02_Framework.md` v1.5 Baseline + `03_Golden_Engineering_Playbook.md` v1.3 Baseline + `04_Framework_Overview.md` v1.3 Candidate  
+> Derived from: `02_Framework.md` v1.6 Baseline + `03_Golden_Engineering_Playbook.md` v1.4 Baseline + `04_Framework_Overview.md` v1.4 Candidate  
 > Purpose: Engineer routing guide; supplement only
 
 ---
 
 ## Start Here — 60-Second Router
 
-對一項工作，依序回答：
+用 **Six Golden Questions** 定位一項工作：
 
 1. **Where are you now?** 工作目前存在於哪個 Team activity 與 system of record？
-2. **Largest unknown or risk 是什麼？** 找到第一個還不能可靠回答的 Golden Stage。
-3. **Work Level / Archetype 是什麼？** P3–P0；Greenfield、Modernization/Migration 或 Standard Delivery。
-4. **Control Profile 是什麼？** System Criticality × Change Risk Tier × AI Execution Mode。
-5. **Next Move 是什麼？** 只執行一個 lead capability/action，把 minimum information/evidence 寫回 existing workflow。
+2. **Work Level 是什麼？** P3 Product/Program、P2 Epic、P1 Feature 或 P0 PBI/User Story？
+3. **Archetype 是什麼？** Greenfield、Modernization/Migration 或 Standard Delivery？
+4. **Current Golden Stage 是什麼？** 最大的未知或風險屬於 Research、Design、Plan、Implement、Validate 哪一類？
+5. **Control Profile 是什麼？** System Criticality × Change Risk Tier × AI Execution Mode。
+6. **Next Move 是什麼？** 採用 required capability 的 Golden default skill，把 minimum information/evidence 寫回 existing workflow，再完成相稱 gate decision。
 
 Golden Stages 是 portable engineering decision states，不是 Team 必須採用的固定 SDLC phases。一個 Refinement 可以同時承載 Research、Design、Plan；一個 PR 可以同時承載 Implement、Validate；Team 自主決定 local activity mapping。
+
+每個 Stage 都使用同一組 **AI 基本功**：先 Understand、Challenge，再 Execute 並留下 Evidence。它不是第二套 lifecycle。
 
 | First unanswered question | Route now | Next action | Detail |
 |---|---|---|---|
@@ -36,7 +39,8 @@ Archetype:
 Change Risk / AI Execution Mode:
 System Design: Required / Triggered / Normally Skip
 Current Stage:
-Next Skill / Action:
+Required Capability:
+Golden Default Skill / Approved Equivalent:
 Minimum Artifact:
 Human Gate / Owner:
 Release / Operate Handoff:
@@ -48,7 +52,7 @@ Artifact 可以留在既有 ticket、OpenSpec、ADR、PR、test report、release
 
 ## Golden Matrix — Pick Work Level, Then Current Stage
 
-使用方式：先確認 existing work location，再選 **P3–P0 column** 與目前最大未知所屬的 **Golden Stage row**；cell 左側是 lead skill/action，箭頭右側是 minimum output。
+使用方式：先用 Six Golden Questions 定位，再選 **P3–P0 column** 與目前最大未知所屬的 **Golden Stage row**；cell 左側是 required capability 的 Golden default skill/action，箭頭右側是 minimum output。
 
 | Golden Stage | P3 Product / Program | P2 Epic | P1 Feature | P0 PBI / User Story |
 |---|---|---|---|---|
@@ -64,6 +68,7 @@ Matrix rules：
 - Plan 不可跨層：P3/P2 做 delivery decomposition；P1 用 `to-tickets`；P0 才按需用 `writing-plans`。
 - 每個 cell 的 output 是進入下一 stage 的 handoff，不代表一定新增獨立文件。
 - Archetype 決定起始 evidence 與 validation focus；Control Profile 決定 rigor 與 evidence depth。兩者都是 overlay，不新增 stage 或第三個 Matrix 軸；詳見 §3–4。
+- 新手／只會 vibe coding 的 Engineer 直接採 Golden defaults；Team 只有完成 equivalent capability、input/output、stop condition、gate 與 evidence mapping 後才替換 skill implementation。
 
 ---
 
@@ -195,7 +200,7 @@ System Design stays inside **Design**。System Design Review 是 Change Gate 的
 
 找出第一個無法可靠回答的問題；從那一列開始。不要一次啟動所有 skills。
 
-| Current Stage | First unanswered question | Choose the lead skill/action | Minimum artifact | Human checkpoint |
+| Current Stage | First unanswered question | Golden default skill/action | Minimum artifact | Human checkpoint |
 |---|---|---|---|---|
 | **Research** | Domain/system 全貌不清楚 | `understand-anything` | Knowledge/System Map + unknowns | Understanding Gate |
 | **Research** | Existing code 真實 behavior、entry point、flow 不清楚 | `codebase-research` | Code Map + evidence links + change boundary | Understanding Gate |
@@ -290,7 +295,7 @@ Gates 是 decision responsibility，不是文件或會議。L0/L1 可由同一 E
 ## 10. Final Routing Rules
 
 1. **First unknown wins**：從第一個不能可靠回答的 stage 開始。
-2. **One lead action at a time**：不要一次跑全部 skills。
+2. **One Golden action at a time**：依 router 執行下一個 Golden default／approved equivalent，不要一次跑全部 skills。
 3. **Evidence before confidence**：AI explanation 不是 completion evidence。
 4. **Task stays below P0**：Task、Plan Step、Commit 都是 Execution Layer。
 5. **No giant plans**：P1 先 `to-tickets`；單一 P0 才按需 `writing-plans`。
