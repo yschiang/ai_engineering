@@ -1,8 +1,8 @@
 # AI-Native Software Engineering Framework — One-Page Overview
 
-> Version: v1.4 Candidate  
+> Version: v1.5 Candidate
 > Status: Ready for Sponsor Review  
-> Derived from: `02_Framework.md` v1.6 Baseline + `03_Golden_Engineering_Playbook.md` v1.4 Baseline  
+> Derived from: `02_Framework.md` v1.7 Baseline + `03_Golden_Engineering_Playbook.md` v1.5 Baseline
 > Purpose: Engineer and management visual entry point; supplement only
 
 ---

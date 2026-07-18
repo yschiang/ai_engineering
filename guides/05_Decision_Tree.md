@@ -1,9 +1,9 @@
 # AI-Native Software Engineering Decision Tree
 
-> Version: v1.5 Candidate  
+> Version: v1.6 Candidate
 > Status: Ready for Sponsor / Engineering Review  
-> Derived from: `02_Framework.md` v1.6 Baseline + `03_Golden_Engineering_Playbook.md` v1.4 Baseline + `04_Framework_Overview.md` v1.4 Candidate  
-> Purpose: Engineer routing guide; supplement only
+> Derived from: `02_Framework.md` v1.7 Baseline + `03_Golden_Engineering_Playbook.md` v1.5 Baseline + `04_Framework_Overview.md` v1.5 Candidate
+> Purpose: Detailed Engineer routing reference; opening router also serves as the daily quick reference
 
 ---
 

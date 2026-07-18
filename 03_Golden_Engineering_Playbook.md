@@ -1,9 +1,9 @@
 # Department Golden Engineering Playbook
 
-> Version: v1.4 Baseline  
+> Version: v1.5 Baseline
 > Status: Baseline  
 > Purpose: Engineer-facing execution guide for AI-Native Software Engineering  
-> Governing Framework: `02_Framework.md` v1.6  
+> Governing Framework: `02_Framework.md` v1.7
 > Audience: Engineer, Senior Engineer, Tech Lead, Architect, Engineering Manager
 
 ---
@@ -321,6 +321,8 @@ Department skill policy：
 3. **Equivalent mapping allowed**：成熟 Team 可依 approved tool、技術棧與 workflow 使用 equivalent skill，但須在 Skill Registry 證明相同 required input、output、stop condition、gate 與 evidence quality。
 
 因此 `Golden default` 不是唯一工具，但也不是可忽略的隨意建議；未完成 equivalent mapping 時，預設採用 Department Golden skill。
+
+Golden default 的 source、environment、installation、invocation、verification status 與 fallback 由 [`reference/Golden_Skill_Registry.md`](reference/Golden_Skill_Registry.md) 管理。Playbook 擁有 capability 與 execution contract；Registry 擁有 implementation provenance，不在兩處重複維護安裝資訊。
 
 `system-design` 目前是 logical capability bundle，不假設已有同名安裝 skill。沒有 dedicated implementation 時，依序組合 `understand-anything` / `codebase-research`、`/opsx:explore`、`superpowers:brainstorming`、`grill-with-docs`，並由 accountable Architect/Tech Lead 完成 review。
 
@@ -1156,16 +1158,17 @@ P0 完成的 minimum Definition of Done：
 
 ## Appendix C — Supplement Derivation Rules
 
-後續 supplements 必須直接由本 Playbook 產生：
+後續 supplements 與 adoption navigation 必須直接由本 Playbook 產生：
 
-- `04_Framework_Overview`：呈現 Golden Flow + Six Golden Questions 的單一 Engineer mental model。
-- `05_Decision_Tree`：依 Six Golden Questions 導向 required capability、Golden default skill、artifact/gate。
-- `06_Training_Presentation.pptx`：用真實 scenarios 教會 Engineer 如何開始。
-- `07_Quick_Reference_Guide`：一頁完成 classification、flow、skill trigger、artifact、gate 查詢。
+- `README.md`：依角色導向正確 artifact 與 SSOT；Engineer 先讀 `04` 與本 Playbook，routing ambiguity 才查 `05`。
+- `guides/04_Framework_Overview.md`：呈現 Golden Flow + Six Golden Questions 的單一 Engineer mental model。
+- `guides/05_Decision_Tree.md`：開頭提供 compact router，再依 Six Golden Questions 導向 required capability、Golden default skill、artifact/gate。
+- `training/06_Training_Presentation.pptx`：用真實 scenarios 教會 Engineer 如何開始。
+- `reference/Golden_Skill_Registry.md`：管理 skill source、environment、installation、invocation、status 與 fallback。
 
 Supplements 不新增新方法；若 supplements 暴露缺口，先修正 Framework 或 Golden Playbook，再重新衍生。
 
-`04_Framework_Overview`、Decision Tree、Training Presentation 與 Quick Reference 必須共同呈現：
+Framework Overview、Decision Tree 與 Training Presentation 必須共同呈現：
 
 - `P3 → P2 → P1 → P0 PBI/User Story → Execution Layer`，且 Task 不列為 Work Level。
 - Plan stage 的 `P1 → P0 to-tickets` 與 `P0 → tasks JIT writing-plans` 分工。
@@ -1180,10 +1183,13 @@ Supplements 不新增新方法；若 supplements 暴露缺口，先修正 Framew
 - 新手直接採 Golden defaults；Team equivalent 必須完成 capability、input/output、stop condition、gate 與 evidence mapping。
 - 既有十個以上 pilot cases 是 evidence base；選 3–5 canonical cases，其餘進 Case Library。
 
+Decision Tree 的 opening router 同時擔任日常 quick reference；不另行維護重複的 `07` content SSOT。若需要 PDF／PNG handout，應由相同 source 產生。
+
 ## Appendix D — Change Log
 
 | Version | Change |
 |---|---|
+| v1.5 | Adoption navigation correction：新增 Root README role paths 與 Golden Skill Registry；Engineer 先使用 Overview + 本 Playbook，routing ambiguity 才查 Decision Tree。Decision Tree opening router 同時擔任 quick reference，不再建立獨立 `07` content SSOT。 |
 | v1.4 | Engineer mental-model correction：Golden Flow + Six Golden Questions 成為唯一 Engineer workflow；AI Work Loop 改為每個 Stage 的 AI 基本功。移除七段 formal lifecycle mapping，Skill policy 改為 required discipline + Golden default + approved equivalent mapping，避免只會 vibe coding 的 Engineer 在沒有方法下自行選擇。 |
 | v1.3 | SDLC integration correction：Golden Stages 保留為穩定的 portable engineering decision states，不綁定單一 Team SDLC。加入 existing work location router、每個 Stage 的 typical touchpoints／artifact location／decision owner／process trigger、artifact placement、Team-owned workflow/templates、Agile/Sprint DoR/DoD、E3 existing authorization 與既有 pilot consolidation。 |
 | v1.2 | Semantic correction：P0 改為 PBI/User Story vertical slice；Task 移至 Execution Layer；OpenSpec Change 改為 P1/P0 scope-dependent container；加入 `to-tickets` P1 → P0、per-P0 JIT `writing-plans`、blocker frontier、wide-refactor pattern 與 Azure DevOps/GitLab reference mapping。Golden Flow、三個 Human Gates 與 System Design trigger 不變。 |

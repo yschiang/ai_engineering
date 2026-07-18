@@ -1,6 +1,6 @@
 # Project Charter — AI-Native Software Engineering Framework
 
-> Version: v1.5 Baseline  
+> Version: v1.6 Baseline
 > Status: Active  
 > Project Sponsor: Department Head  
 > Primary Audience: Division Head, CIO, Engineering Management, Architects, Engineering Teams  
@@ -115,7 +115,7 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 
 ### O4. 建立可重用資產與在地化能力
 
-將成功做法沉澱為 Framework、Golden Engineering Playbook、overview、decision tree、training deck、quick reference、tests、rules、runbooks 與 case evidence。Department 定義 minimum artifact contract 與 quality bar；各 Team 擁有符合自身產品、技術棧與 workflow 的 templates。
+將成功做法沉澱為 Framework、Golden Engineering Playbook、overview、decision tree、training deck、skill registry、tests、rules、runbooks 與 case evidence。Department 定義 minimum artifact contract 與 quality bar；各 Team 擁有符合自身產品、技術棧與 workflow 的 templates。
 
 ### O5. 建立管理衡量方式
 
@@ -206,7 +206,7 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 
 ## 11. Expected Deliverables
 
-`00–07` 共八個 artifacts。`00–03` 是 core operating assets；`04–07` 是由 core 衍生、幫助理解、判斷、training 與日常使用的 supplements。
+`00–06` 共七個 numbered artifacts。`00–03` 是 core operating assets；`04–06` 是由 core 衍生、幫助理解、判斷與 training 的 supplements。Root README 提供角色導覽；Skill Registry 管理 Golden skill provenance 與 environment mapping。
 
 | ID | Artifact | Format | Purpose |
 |---|---|---|---|
@@ -215,9 +215,10 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 | 02 | AI-Native Software Engineering Framework | Markdown，約 25–30 頁 | 完整方法論母文件 |
 | 03 | Department Golden Engineering Playbook | Markdown | 依 Delivery Level / Archetype / Stage 導向 skills、artifacts、gates 的工程師 Golden Reference |
 | 04 | Framework Overview | Diagram / Markdown | 一頁呈現 Framework 與 Golden Flow |
-| 05 | Decision Tree | Diagram / Markdown | 判斷 Work Level、Archetype、Tier、stage、skills 與 controls |
+| 05 | Decision Tree | Diagram / Markdown | 開頭提供 compact router，並詳細判斷 Work Level、Archetype、Tier、stage、skills 與 controls |
 | 06 | Training Presentation | PowerPoint，約 10–12 頁 | 用真實 scenarios 進行部門溝通與教育訓練 |
-| 07 | Quick Reference Guide | One Pager | 工程師與 Manager 日常快速使用 |
+
+Decision Tree 的開頭同時擔任日常 quick reference；不另行維護重複的 `07` content SSOT。若未來需要 PDF／PNG handout，應由 `05` 的 compact router 衍生，而不是建立第二套規則。
 
 Case Library 是由既有 pilot 持續演進的 reference collection，不是新的 mandatory core artifact。Prompt matrix 或其他 bonus assets 應依真實 adoption need 決定；team-specific templates 由各 Team 維護，不由中央 Framework 大量建立。
 
@@ -227,22 +228,18 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 
 ```text
 /
+├── README.md
 ├── 00_Project_Charter.md
 ├── 01_AI_Handoff.md
 ├── 02_Framework.md
 ├── 03_Golden_Engineering_Playbook.md
-├── diagrams/
+├── guides/
 │   ├── 04_Framework_Overview.*
 │   └── 05_Decision_Tree.*
-├── presentation/
+├── training/
 │   └── 06_Training_Presentation.pptx
-├── templates/
-│   └── 07_Quick_Reference_Guide.*
-├── assets/
-├── input/
-├── output/
-├── reference/
-└── archive/
+└── reference/
+    └── Golden_Skill_Registry.md
 ```
 
 詳細 I/O rules 由 `02_Framework.md` 管理。
@@ -254,10 +251,11 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 ### 13.1 Artifact Quality
 
 - Framework 具備 executive clarity 與 engineering depth。
-- 八份 artifacts 使用同一 capability model、Delivery Level、Tier、terminology 與 governance logic。
+- 七份 numbered artifacts 使用同一 capability model、Delivery Level、Tier、terminology 與 governance logic。
 - Golden Playbook 能讓 Engineer 用 Six Golden Questions 在 60 秒內找到 current stage、required capability、minimum artifact 與 gate。
-- Decision Tree 與 Quick Reference 能在日常工作中直接使用。
+- Decision Tree 的 compact router 與 detailed routing 能在日常工作中直接使用。
 - Training Presentation 能在約 10–12 頁內完成管理與工程溝通。
+- Root README 能依角色將讀者導向正確 SSOT；Skill Registry 能追溯 Golden default source、environment、invocation 與 fallback。
 
 ### 13.2 Engineering Adoption
 
@@ -286,7 +284,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 - 不以特定 AI 工具能力作為 framework dependency。
 - 每個 activity 的 universal mandatory controls 原則上不超過三項，其餘依 Tier 與 risk 觸發。
 - `02_Framework.md` 是方法與治理 SSOT；`03_Golden_Engineering_Playbook.md` 是流程、skill mapping 與工程使用 SSOT。
-- `04–07` supplements 必須由 `02` 與 `03` 衍生，不得自行增加新方法。
+- `04–06` supplements 必須由 `02` 與 `03` 衍生，不得自行增加新方法。
 
 ---
 
@@ -299,7 +297,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 | 內容退化成工具教學 | 堅持 tool-agnostic、capability-based positioning |
 | AI 加速 output 但 quality 下降 | Evidence Gate、human accountability、balanced metrics |
 | 不同 artifacts 內容漂移 | `02_Framework.md` 作為內容 SSOT；版本化同步更新 |
-| 只由少數 power users 掌握，其他人停留在 vibe coding | Golden default skill path、Training、quick reference、team missions、reusable assets；未完成 equivalent mapping 前直接採 defaults |
+| 只由少數 power users 掌握，其他人停留在 vibe coding | Root README 角色路徑、Golden default skill path、Training、Decision Tree compact router、Skill Registry 與 reusable assets；未完成 equivalent mapping 前直接採 defaults |
 | Management 只看使用率 | 以 delivery、quality、reliability 與 knowledge flow 衡量 |
 | Framework 被誤用為平行 SDLC | 將 capabilities、artifacts 與 gates 明確 mapping 到既有 intake、backlog、design、PR、test、release、change 與 operation activities |
 | 中央模板過多，Team 難以採用 | Department 只定義 minimum contract；Team 自主管理 tracker fields、templates、repository instructions 與 local DoD |
@@ -329,7 +327,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 | M2 | Golden Engineering Playbook | Golden Flow + Six Questions，以及 P3–P0／archetype 的 capability → artifact → gate routing 可直接使用 |
 | M3 | Overview + Decision Tree | 能一頁理解、能快速做 work/risk/workflow decision |
 | M4 | Training Presentation | 可供部門 training 使用的 PowerPoint |
-| M5 | Quick Reference | 可供日常工作使用的 one pager |
+| M5 | Adoption Navigation + Skill Registry | Root README 可依角色導覽；Decision Tree 開頭可快速 routing；skills source、environment、invocation 與 fallback 可追溯 |
 | M6 | Existing Pilot Consolidation and Revision | 盤點十個以上既有 cases，選出 3–5 個 canonical cases，其餘進入持續演進的 Case Library |
 
 ---
@@ -338,7 +336,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 
 專案完成需滿足：
 
-1. `00–07` artifacts 全部完成並可被使用。
+1. `00–06` numbered artifacts、Root README 與 Golden Skill Registry 全部完成並可被使用。
 2. 各 artifact 之 capability model、Tier、quality gates 與 terminology 一致。
 3. Framework 經 Engineering、Architecture 與 Management perspectives review。
 4. 十個以上既有 pilot cases 已依 Work Level、Archetype、stage、risk、execution mode、artifacts/evidence、outcome 與 lessons learned 完成 mapping；選出 3–5 個 canonical cases 用於 Framework/Training。
