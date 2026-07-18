@@ -198,7 +198,7 @@ AI-Native Engineering 是既有 SDLC／delivery operating model 的 enhancement 
 | 00 | `00_Project_Charter.md` | Markdown | v1.6 Baseline；單一 Engineer mental model 與 adoption positioning |
 | 01 | `01_AI_Handoff.md` | Markdown | v1.19；future sessions 的工作控制文件 |
 | 02 | `02_Framework.md` | Markdown，25–30 頁等級 | v1.7 Baseline；Golden model、responsibility coverage、integration 與治理 SSOT |
-| 03 | `03_Golden_Engineering_Playbook.md` | Markdown | v1.5 Baseline；Golden Flow + Six Questions + Golden default skills |
+| 03 | `03_Golden_Engineering_Playbook.md` | Markdown | v1.5 Baseline；Golden Flow + Six Questions + Golden defaults |
 | 04 | `guides/04_Framework_Overview.md` | Diagram / Markdown | v1.5 Candidate；單一 Engineer mental model overview，待 Sponsor review |
 | 05 | `guides/05_Decision_Tree.md` | Diagram / Markdown | v1.6 Candidate；開頭 compact router + detailed routing reference |
 | 06 | `training/06_Training_Presentation.pptx` | PowerPoint，9 頁 | v1.10 Baseline Candidate；P2 以兩張直接圖像只講兩個工程問題，建立 durable Golden Flow，再以 P1 Feature 示範並呈現 8 週 → 6 週 target outcome |
@@ -412,7 +412,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 9. 將 System Design 提升為 Design stage 內的明確 capability，不新增 lifecycle stage。
 10. 定義 P3/P2 required、P1 risk-triggered、P0 normally skip。
-11. 建立 `system-design` logical capability bundle、System Design Pack 與 System Design Review。
+11. 明確定義 System Design engineering activity、System Design Pack 與 System Design Review；System Design 不是 skill，也沒有固定 tool dependency。
 12. 明確 System Design Review 屬於 Change Gate，並分開 P3/P2 Architecture SSOT 與 P1 OpenSpec `design.md`。
 
 `02_Framework.md` v1.4 與 `03_Golden_Engineering_Playbook.md` v1.2 完成 hierarchy semantic correction：
@@ -432,14 +432,14 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 `05_Decision_Tree.md` v1.2 加入 department-use Golden Matrix：
 
-22. 以 Golden Stage 為 rows、P3–P0 為 columns，每格直接呈現 `Golden default skill/action → minimum output`。
+22. 以 Golden Stage 為 rows、P3–P0 為 columns，每格直接呈現 `required activity／supporting skill → minimum output`。
 23. 明確區分 P3/P2 delivery decomposition、P1 `to-tickets` 與 P0 JIT `writing-plans`。
 24. Matrix output 作為下一 stage handoff，可存在既有 ticket/OpenSpec/ADR/PR，不新增 mandatory document。
 
 `06_Training_Presentation.pptx` v1.0 Candidate 將 04/05 轉為 Department training storyline：
 
 25. 10 頁依序回答 Why、Operating Model、Work Level、Golden Matrix、planning split、capability responsibility、controls/gates、common routes、roles 與 adoption mission。
-26. Golden Matrix 是 training 中央操作面：先選 P3–P0 column，再找 Current Stage row，cell 直接給 `skill/action → output`。
+26. Golden Matrix 是 training 中央操作面：先選 P3–P0 column，再找 Current Stage row，cell 直接給 `activity／supporting skill → output`。
 27. New Feature、Bug、Modernization routes 展示相同 Golden Flow 如何依 context 使用不同 rigor 與 evidence。
 28. PowerPoint 已完成 CJK font rendering、逐頁 visual inspection 與 overflow validation；沒有新增 lifecycle stage 或 universal gate。
 
@@ -497,7 +497,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 60. `Understand → Challenge → Execute → Evidence` 改為每個 Golden Stage 都要練的 AI 基本功，不再呈現為另一個 lifecycle／work loop。
 61. Understand、Define、Design、Build、Verify、Release、Operate 只保留為 Framework responsibility coverage vocabulary；不命名為 formal model，不進入 Engineer-facing supplements。
 62. Skill governance 改為 `required discipline + Golden default + approved equivalent`：新手／只會 vibe coding 的 Engineer 直接採 defaults；Team 替換前必須完成 capability、input/output、stop condition、gate 與 evidence 等價 mapping。
-63. Golden Matrix 每格明確使用 Golden default skill/action → minimum output；Decision Tree 以 Six Questions 導向 next move，不再要求 Engineer 同時記住兩套心智模型。
+63. Golden Matrix 每格明確使用 required activity／supporting skill → minimum output；Decision Tree 以 Six Questions 導向 next move，不再要求 Engineer 同時記住兩套心智模型。
 64. Training deck v1.7 共 12 頁；slide 3 將 AI Work Loop 改為 AI 基本功，slide 4 明示 single workflow + Six Questions，slides 6/8 強化 Golden defaults，slide 12 直接列出六個啟動問題。完成全頁 CJK render、逐頁 visual inspection、overflow、template fidelity 與 empty-placeholder QA。
 
 `01` v1.17 與 `06` v1.8 完成 Feature-first presentation condensation：
@@ -564,7 +564,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 ### 05 Decision Tree
 
 - 能從 change context 判定 Tier。
-- 能在 60 秒內由 existing work location、largest unknown/risk、Work Level、P0 type、Archetype、System Design trigger 與 Control Profile 導向 next skill、artifact placement 與 gate。
+- 能在 60 秒內由 existing work location、largest unknown/risk、Work Level、P0 type、Archetype、System Design trigger 與 Control Profile 導向 next activity／supporting skill、artifact placement 與 gate。
 - 保留 P1 → P0 `to-tickets`、per-P0 JIT `writing-plans`、Task as Execution Layer 與 OpenSpec P1/P0 scope rule。
 - 能導向必要 understanding、design、verification 與 release controls。
 - 不將每條路徑導向相同流程。

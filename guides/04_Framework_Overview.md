@@ -55,7 +55,7 @@ P0 types：**User Story · Engineering Story/Enabler · Bug · Spike**。每張 
 | Stage | Required Capability / Golden Defaults | Minimum Artifact | Human Gate |
 |---|---|---|---|
 | **Research** | Evidence-backed understanding；defaults：`understand-anything` · `codebase-research` · `grill-me` · `/opsx:explore` | Research / Understanding Brief | **Understanding Gate**：current state、problem、scope、unknowns 清楚 |
-| **Design** | Select/challenge design；defaults：triggered `system-design` · `brainstorming` · `/opsx:propose` · `grill-with-docs` | System Design Pack when triggered + Feature Design / OpenSpec proposal/specs/design | **Change Gate**：design、risk、decomposition 可接受 |
+| **Design** | Perform/select/challenge design；System Design when triggered；AI skills optional · `/opsx:propose` for durable agreement | System Design Pack when triggered + Feature Design / OpenSpec proposal/specs/design | **Change Gate**：design、risk、decomposition 可接受 |
 | **Plan** | Delivery/JIT decomposition；defaults：`to-tickets` P1 → P0；triggered `writing-plans` P0 → tasks | P0 backlog + blockers；JIT executable plan when needed | **Change Gate**：slices 獨立可驗證、plan bounded |
 | **Implement** | Test-first bounded execution；defaults：`/opsx:apply` + worktree + TDD + execution skill | Code/config/migration + tests + task ledger | Plan compliance + targeted verification |
 | **Validate** | Review + fresh verification；defaults：code review · `/opsx:verify` · `verification-before-completion` | Validation Record / PR evidence | **Evidence Gate**：claims 有 fresh evidence |

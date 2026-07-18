@@ -633,7 +633,7 @@ AI 在 Define stage 最有價值的工作不是重寫需求，而是：
 
 ### 8.3 System Design Scope and Trigger
 
-System Design 是 Golden Design 內的明確 capability，用來決定 system boundary、component responsibilities、contracts、runtime/data flow、NFR、failure/recovery 與 operational model。它不是新的 Golden Stage，也不等同於 implementation-level Feature Design。
+System Design 是 Golden Design 內的正式工程活動，用來決定 system boundary、component responsibilities、contracts、runtime/data flow、NFR、failure/recovery 與 operational model。它不是 skill、不依賴特定 AI tool，也不是新的 Golden Stage；implementation-level Feature Design 則處理較 bounded 的 change。
 
 | Delivery Level | System Design Requirement |
 |---|---|
@@ -654,6 +654,8 @@ Research Evidence
 ```
 
 Minimum System Design Pack 依 scope/risk 裁剪，包含：System Context、ownership/component boundaries、key runtime/data flows、contracts、NFR、failure/recovery/observability、deployment/operation considerations、ADRs 與 decomposition。
+
+System Design Pack 是內容契約，不是指定檔名或 template；可由既有 System Design Document (SDD)、RFC、architecture document、ADRs，或 bounded P1 OpenSpec `design.md` 承載。
 
 System Design Review 是 **Change Gate 在 P3、P2 與 triggered P1 的 implementation**，不是第四個 Universal Quality Gate。既有 architecture/design artifact 可直接承載，不要求建立重複文件。
 
@@ -1458,7 +1460,7 @@ Department 可以提供 examples 與 reference patterns；它們不是 mandatory
 
 ### 24.1 Golden Skill Adoption Contract
 
-Capability-based 不等於讓每位 Engineer 在沒有方法下自由試錯。Department 為每個 Golden Stage 定義可直接採用的 **Golden default skills/path**，作為新手、只會 vibe coding 與尚未建立 local practice 的 Team baseline。
+Capability-based 不等於讓每位 Engineer 在沒有方法下自由試錯。Department 為每個 Golden Stage 定義可直接採用的 **Golden default activities／skills／path**，作為新手、只會 vibe coding 與尚未建立 local practice 的 Team baseline。
 
 | Policy Level | Rule |
 |---|---|
@@ -1507,8 +1509,8 @@ Framework change 應符合：
 
 | Version | Change |
 |---|---|
-| v1.7 | Adoption navigation correction：新增 Root README 角色路徑與 Golden Skill Registry；Engineer 以 Golden Playbook 對應章節為必要 execution SSOT，Overview 為 optional visual summary，routing ambiguity 才查 Decision Tree。`04–05` 移至 `guides/`、`06` 移至 `training/`；Decision Tree 開頭同時擔任 quick reference，不再規劃獨立 `07` content SSOT。 |
-| v1.6 | Engineer mental-model correction：Golden Flow + Six Golden Questions 成為唯一 Engineer-facing model；`Understand → Challenge → Execute → Evidence` 改定位為每個 Golden Stage 的 AI 基本功。七段內容改為 non-prescriptive responsibility coverage，不再作為 formal lifecycle；每個 Stage 提供 Golden default skills，新手直接採用，成熟 Team 才以等價 capability mapping 替換。 |
+| v1.7 | Adoption navigation correction：新增 Root README 角色路徑與 Golden Skill Registry；Engineer 以 Golden Playbook 對應章節為必要 execution SSOT，Overview 為 optional visual summary，routing ambiguity 才查 Decision Tree。`04–05` 移至 `guides/`、`06` 移至 `training/`；Decision Tree 開頭同時擔任 quick reference，不再規劃獨立 `07` content SSOT。System Design 明確定位為不依賴特定 skill/tool 的一般工程活動。 |
+| v1.6 | Engineer mental-model correction：Golden Flow + Six Golden Questions 成為唯一 Engineer-facing model；`Understand → Challenge → Execute → Evidence` 改定位為每個 Golden Stage 的 AI 基本功。七段內容改為 non-prescriptive responsibility coverage，不再作為 formal lifecycle；每個 Stage 提供 Golden defaults，新手直接採用，成熟 Team 才以等價 capability mapping 替換。 |
 | v1.5 | SDLC integration correction：明確定義 Framework 是 existing SDLC 的 enhancement layer；Golden Stages 是可攜式 engineering decision states、不是固定 SDLC phases。加入 Gate placement、artifact placement、Agile/Sprint、E3/Change Management、Team-owned templates 與既有十個以上 pilot evidence consolidation。三個 Gates 與 risk-based System Design trigger 不變。 |
 | v1.4 | Semantic correction：P0 改為 PBI/User Story vertical slice；Task 移至 Execution Layer；OpenSpec Change 改為 scope-dependent artifact container；加入 P1 → P0 `to-tickets` 與 P0 → tasks JIT `writing-plans` 分工及 tracker reference mapping。Golden Flow、三個 Human Gates 與 System Design trigger 不變。 |
 
