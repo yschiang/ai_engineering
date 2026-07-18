@@ -270,6 +270,7 @@ proposal (why) → specs (what) → design (how) → tasks (steps) → implement
 | Activity / Skill | Use When | Primary Output | Gate |
 |---|---|---|---|
 | **System Design** | P3/P2；或 P1 涉及跨 boundary/contract/data、重大 NFR、novel architecture、L2–L3 | System Design Pack、ADRs、Epic/Feature decomposition | System Design Review under Change Gate |
+| **`improve-codebase-architecture`** | 已有 as-is evidence，且明確要評估 architecture improvement／refactor opportunities | Architecture friction candidates、before/after、recommendation strength、top recommendation | Human selects candidate；再交給 System Design 或 Feature/Detailed Design，不直接 implementation |
 | **`superpowers:brainstorming`** | 新 functionality、behavior change、architecture option、需求仍需釐清 | Approved design/spec、options/trade-offs | Design owner approves direction |
 | **`grill-with-docs`** | Design/spec 已形成，需要 adversarial review | Findings + minimal corrections | Material risks/ambiguities closed |
 | **`to-tickets`** | P1 Feature / Design 已 approved，需要切成 Sprint-ready delivery slices | P0 tracer-bullet tickets、acceptance、`Blocked by`、execution frontier | 每張 P0 narrow but complete、可獨立驗證；Spike 有 evidence/decision outcome |
@@ -749,6 +750,7 @@ Incident review 完成時，至少沉澱：
 ### 9.4 Engineering Story / Enabler and Refactor Variant
 
 - 先確認 behavior-preserving 或 behavior-changing。
+- 若目標是評估 architecture improvement opportunities，先用 `codebase-research` 建立 as-is evidence；進入 Design 後才可按需使用 `improve-codebase-architecture`。它產生候選與 recommendation，不直接授權 code change。
 - Behavior-preserving：existing/characterization tests 先建立 baseline。
 - 小型 behavior-preserving refactor 可是一張 P0 Engineering Story / Enabler；仍需可驗證 outcome。
 - Wide refactor：切成 `expand → migrate batches → contract` 的 P0 sequence，每張標示 `Blocked by`；不要用一張大 task 橫跨全程。
@@ -779,6 +781,7 @@ Incident review 完成時，至少沉澱：
 | `/opsx:propose` or `new/continue/ff` | Research inputs | Primary durable agreement | Durable task/ticket references |  | Alignment reference |
 | grill-with-docs | Review research | Primary design challenge | Review plan when high risk |  | Review evidence/doc consistency |
 | System Design | Evidence inputs | Primary for P3/P2 and triggered P1 | Architecture/decomposition handoff | Conformance reference | Architecture conformance evidence |
+| improve-codebase-architecture |  | Optional for explicit architecture improvement/refactor assessment；Human-selected candidate hands off to formal design |  |  |  |
 | brainstorming | Scope/problem exploration | Primary | Handoff to `to-tickets` |  |  |
 | `to-tickets` |  | Approved design input | Primary for P1 → P0 | Delivery contract | P0 acceptance rollup |
 | writing-plans |  |  | Triggered per P0, JIT | Execution contract | Plan compliance check |
@@ -803,6 +806,7 @@ Incident review 完成時，至少沉澱：
 | 已清楚要做什麼，需要 durable why/what/how/steps agreement | `/opsx:propose`；複雜工作用 `new/continue` |
 | 已有文件但不確定是否完整/一致 | `grill-with-docs` |
 | P3/P2；或 P1 涉及跨 boundary/contract/data、重大 NFR、novel architecture、L2+ | 進行 System Design，完成 System Design Review |
+| 已有 current-state evidence，且明確要找 architecture improvement／refactor opportunities | Optional `improve-codebase-architecture`；Human 選定 candidate 後再進 System Design 或 Feature/Detailed Design |
 | 要新增或改變 behavior | `brainstorming`，design approved 後才能 plan/implement |
 | P1 Feature / Approved Design 要切成 Sprint-ready vertical slices | `to-tickets`；每張 P0 標示 `Blocked by` |
 | 單一 P0 即將執行，且 multi-step、high-risk 或 complex | `writing-plans`；簡單單一步驟 P0 可 inline |

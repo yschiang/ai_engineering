@@ -208,6 +208,7 @@ System Design stays inside **Design**。System Design Review 是 Change Gate 的
 | **Research** | 有 problem，但 option/scope/是否形成 change 未定 | `/opsx:explore` | Conversation findings only；E0/no durable artifact | Stop，或交給 proposal/Research Brief |
 | **Research** | Bug/incident root cause 未證明 | `systematic-debugging` | Reproduction、hypotheses、falsification、root cause | Understanding Gate |
 | **Design** | P3/P2 或 triggered P1 的 system boundary/interaction 未定 | 進行 System Design；AI aids optional | System Design Pack + ADRs | System Design Review under Change Gate |
+| **Design** | 已有 as-is evidence，且明確要找 architecture improvement／refactor opportunities | Optional `improve-codebase-architecture` | Candidate report + Human-selected direction | 交給 System Design 或 Feature/Detailed Design；不直接 implementation |
 | **Design** | Target behavior/options/trade-offs 未定 | `superpowers:brainstorming` | Approved Feature/Detailed Design | Change Gate |
 | **Design** | Design/spec 已有，但可能有 contradiction/gap | `grill-with-docs` | Findings + closed decisions | Change Gate |
 | **Design** | 需要 durable P1/P0 agreement | `/opsx:propose` or `/opsx:new` + `/opsx:continue` | Scoped proposal/specs/design/tasks | Change Gate |
