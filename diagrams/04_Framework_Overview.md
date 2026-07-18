@@ -1,23 +1,27 @@
 # AI-Native Software Engineering Framework — One-Page Overview
 
-> Version: v1.2 Candidate  
+> Version: v1.3 Candidate  
 > Status: Ready for Sponsor Review  
-> Derived from: `02_Framework.md` v1.4 Baseline + `03_Golden_Engineering_Playbook.md` v1.2 Baseline  
+> Derived from: `02_Framework.md` v1.5 Baseline + `03_Golden_Engineering_Playbook.md` v1.3 Baseline  
 > Purpose: Engineer and management visual entry point; supplement only
 
 ---
 
 ## The Operating Model
 
-**一項工作只做四件事：正確分類、執行當前 stage、留下 minimum artifact、通過相稱的 human gate。**
+**在 Team 既有 workflow 裡，一項工作只做四件事：正確分類、處理當前最大的 Golden question、留下 minimum evidence、完成相稱的 human gate decision。**
+
+Golden Stages 是 portable engineering decision states，不是所有 Team 必須採用的固定 SDLC phases。Team 擁有 local activities、artifact placement 與 templates；Department 擁有 minimum contract 與 quality bar。
 
 ```mermaid
 flowchart TB
+  W["Team-owned Existing Workflow / System of Record\nTicket · Design · PR · Test · Release · Incident"]
   C["Classify Work\nP3–P0 · Archetype · Control Profile"]
   subgraph F["Golden Flow"]
     direction LR
     R["1 Research\nUnderstand · Explore · Define"] --> D["2 Design\nSystem Design* · Feature Design · Challenge"] --> P["3 Plan\nP1→P0 slices · P0→tasks JIT"] --> I["4 Implement\nTDD · bounded change"] --> V["5 Validate\nReview · fresh evidence"]
   end
+  W -. "apply where needed" .-> C
   C --> R
   V --> O["Release & Operate\nObserve · Recover · Learn"]
   O -. "Learning loop" .-> R
@@ -87,11 +91,11 @@ SSOT rule：P3/P2 architecture 存在 Product/Architecture artifacts；OpenSpec 
 
 ## Engineer Start in 60 Seconds
 
-1. 選 P3/P2/P1/P0、P0 type、Archetype、Control Profile。
-2. 找到第一個還不能回答的 stage question。
-3. 只執行該 stage 的下一個 capability/action。
-4. 將結果留在既有 ticket、OpenSpec、ADR、PR、test report 或 dashboard。
-5. 由 accountable human 通過相稱 gate，再進下一步。
+1. 找到工作目前所在的 existing activity／system of record。
+2. 找到第一個還不能回答或風險最大的 Golden question。
+3. 選 P3/P2/P1/P0、P0 type、Archetype、Control Profile。
+4. 只執行該 stage 的下一個 capability/action，將結果寫回既有 artifact。
+5. 由 accountable human 完成相稱 gate decision，再進下一步。
 
 Tool/tracker routing details：see `05_Decision_Tree`。
 

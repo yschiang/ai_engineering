@@ -1,0 +1,390 @@
+{"kind":"deck","id":"pr/j429vc","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"DEPARTMENT TRAINING","textShapes":5}
+{"kind":"textbox","id":"sh/i1w3yp8f","slide":1,"text":"DEPARTMENT TRAINING","textPreview":"DEPARTMENT TRAINING","textChars":19,"textLines":1,"bbox":[42,38,560,30]}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"text":"AI-Native\nSoftware Engineering","textPreview":"AI-Native | Software Engineering","textChars":30,"textLines":2,"bbox":[42,188,970,190]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"bbox":[42,412,590,10]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"text":"Golden Playbook for faster, safer, evidence-based delivery","textPreview":"Golden Playbook for faster, safer, evidence-based delivery","textChars":58,"textLines":1,"bbox":[42,452,970,52]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"text":"Research → Design → Plan → Implement → Validate","textPreview":"Research → Design → Plan → Implement → Validate","textChars":47,"textLines":1,"bbox":[42,604,930,32]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"text":"v1.6 Baseline Candidate","textPreview":"v1.6 Baseline Candidate","textChars":23,"textLines":1,"bbox":[980,652,256,24]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":""}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"AI 加速產出，但不會自動帶來正確性","textShapes":13}
+{"kind":"textbox","id":"sh/mxgjm5s7","slide":2,"text":"AI 加速產出，但不會自動帶來正確性","textPreview":"AI 加速產出，但不會自動帶來正確性","textChars":18,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/ba9cn6l4","slide":2,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"text":"沒有共同 operating model，速度只會更快放大三種工程風險。","textPreview":"沒有共同 operating model，速度只會更快放大三種工程風險。","textChars":36,"textLines":1,"bbox":[42,151,950,34]}
+{"kind":"shape","id":"sh/a10jqpsj","slide":2,"bbox":[42,222,365,315]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,244,70,36]}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"text":"理解錯問題","textPreview":"理解錯問題","textChars":5,"textLines":1,"bbox":[66,303,315,42]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"text":"缺少 system、domain、code evidence，直接產生 solution。","textPreview":"缺少 system、domain、code evidence，直接產生 solution。","textChars":45,"textLines":1,"bbox":[66,372,315,105]}
+{"kind":"shape","id":"sh/q5wjelsz","slide":2,"bbox":[449,222,365,315]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[473,244,70,36]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"text":"設計與 scope 漂移","textPreview":"設計與 scope 漂移","textChars":12,"textLines":1,"bbox":[473,303,315,42]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"text":"AI 生成大量內容，但 owner、boundary 與 trade-off 未決。","textPreview":"AI 生成大量內容，但 owner、boundary 與 trade-off 未決。","textChars":42,"textLines":1,"bbox":[473,372,315,105]}
+{"kind":"shape","id":"sh/nu58f2hs","slide":2,"bbox":[856,222,365,315]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[880,244,70,36]}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"text":"完成宣稱沒有證據","textPreview":"完成宣稱沒有證據","textChars":8,"textLines":1,"bbox":[880,303,315,42]}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"text":"摘要看起來合理，卻缺少 fresh tests、review 與 recovery evidence。","textPreview":"摘要看起來合理，卻缺少 fresh tests、review 與 recovery evidence。","textChars":51,"textLines":1,"bbox":[880,372,315,105]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"text":"需要的不是更多 prompts，而是一套讓人與 AI 都知道下一步、產出與責任的工程方法。","textPreview":"需要的不是更多 prompts，而是一套讓人與 AI 都知道下一步、產出與責任的工程方法。","textChars":45,"textLines":1,"bbox":[42,584,1130,48]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"Golden Stages 嵌入既有 workflow，不建立另一套 SDLC","textShapes":22}
+{"kind":"textbox","id":"sh/by1svqlc","slide":3,"text":"Golden Stages 嵌入既有 workflow，不建立另一套 SDLC","textPreview":"Golden Stages 嵌入既有 workflow，不建立另一套 SDLC","textChars":39,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/1cj6twza","slide":3,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"shape","id":"sh/298ryl4v","slide":3,"bbox":[42,155,1196,72]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"text":"EXISTING FLOW","textPreview":"EXISTING FLOW","textChars":13,"textLines":1,"bbox":[66,174,155,30]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"text":"Intake → Refine → Design → Build → PR → Test → Release → Operate  ·  Team-owned","textPreview":"Intake → Refine → Design → Build → PR → Test → Release → Operate  ·  Team-owned","textChars":79,"textLines":1,"bbox":[235,174,950,30]}
+{"kind":"shape","id":"sh/v2psbu1g","slide":3,"bbox":[230,350,42,0]}
+{"kind":"shape","id":"sh/u1gr2pkb","slide":3,"bbox":[470,350,42,0]}
+{"kind":"shape","id":"sh/ho7adkjm","slide":3,"bbox":[710,350,42,0]}
+{"kind":"shape","id":"sh/gny94z21","slide":3,"bbox":[950,350,42,0]}
+{"kind":"shape","id":"sh/m1c3mlsn","slide":3,"bbox":[42,277,198,154]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[60,294,40,30]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"text":"Research","textPreview":"Research","textChars":8,"textLines":1,"bbox":[60,333,162,32]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"text":"Problem · current state · unknowns","textPreview":"Problem · current state · unknowns","textChars":34,"textLines":1,"bbox":[60,378,162,40]}
+{"kind":"shape","id":"sh/a5c3ql8z","slide":3,"bbox":[282,277,198,154]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[300,294,40,30]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"text":"Design","textPreview":"Design","textChars":6,"textLines":1,"bbox":[300,333,162,32]}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"text":"FR · NFR · boundary · trade-offs","textPreview":"FR · NFR · boundary · trade-offs","textChars":32,"textLines":1,"bbox":[300,378,162,40]}
+{"kind":"shape","id":"sh/i9w3u58v","slide":3,"bbox":[522,277,198,154]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[540,294,40,30]}
+{"kind":"textbox","id":"sh/f29gbyx0","slide":3,"text":"Plan","textPreview":"Plan","textChars":4,"textLines":1,"bbox":[540,333,162,32]}
+{"kind":"textbox","id":"sh/03ix43e5","slide":3,"text":"P1→P0 · dependencies · JIT","textPreview":"P1→P0 · dependencies · JIT","textChars":26,"textLines":1,"bbox":[540,378,162,40]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"bbox":[762,277,198,154]}
+{"kind":"textbox","id":"sh/6d0fytg3","slide":3,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[780,294,40,30]}
+{"kind":"textbox","id":"sh/re9g7yxo","slide":3,"text":"Implement","textPreview":"Implement","textChars":9,"textLines":1,"bbox":[780,333,162,32]}
+{"kind":"textbox","id":"sh/sfix03y9","slide":3,"text":"TDD · bounded · reviewable","textPreview":"TDD · bounded · reviewable","textChars":26,"textLines":1,"bbox":[780,378,162,40]}
+{"kind":"shape","id":"sh/tgry9ofu","slide":3,"bbox":[1002,277,198,154]}
+{"kind":"textbox","id":"sh/a9kfadwn","slide":3,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1020,294,40,30]}
+{"kind":"textbox","id":"sh/batgjixs","slide":3,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[1020,333,162,32]}
+{"kind":"textbox","id":"sh/l4fi9cza","slide":3,"text":"fresh evidence · risk coverage","textPreview":"fresh evidence · risk coverage","textChars":30,"textLines":1,"bbox":[1020,378,162,40]}
+{"kind":"shape","id":"sh/6dcnqdsf","slide":3,"bbox":[1101,448,0,58]}
+{"kind":"shape","id":"sh/z2d07mh4","slide":3,"bbox":[762,508,438,74]}
+{"kind":"textbox","id":"sh/y14jehgj","slide":3,"text":"AI WORK LOOP","textPreview":"AI WORK LOOP","textChars":12,"textLines":1,"bbox":[786,525,188,28]}
+{"kind":"textbox","id":"sh/x0vi5czy","slide":3,"text":"Understand · Challenge · Execute · Evidence","textPreview":"Understand · Challenge · Execute · Evidence","textChars":43,"textLines":1,"bbox":[982,527,194,26]}
+{"kind":"textbox","id":"sh/czmhc7id","slide":3,"text":"10+ pilots are the evidence base · legacy modernization: days to understand · ~600 tests · ~10k LOC · human authority unchanged","textPreview":"10+ pilots are the evidence base · legacy modernization: days to understand · ~600 tests · ~10k LOC · human authority unchanged","textChars":127,"textLines":1,"bbox":[42,610,850,25]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":""}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"一項工作只做四件事：分類、執行、留證、過 Gate","textShapes":22}
+{"kind":"textbox","id":"sh/e9sj2tsv","slide":4,"text":"一項工作只做四件事：分類、執行、留證、過 Gate","textPreview":"一項工作只做四件事：分類、執行、留證、過 Gate","textChars":25,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/sb2hg369","slide":4,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"shape","id":"sh/rm1k7yt4","slide":4,"bbox":[42,155,1196,72]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"text":"CLASSIFY","textPreview":"CLASSIFY","textChars":8,"textLines":1,"bbox":[66,174,155,30]}
+{"kind":"textbox","id":"sh/doj29oba","slide":4,"text":"P3–P0  ·  Archetype  ·  Control Profile","textPreview":"P3–P0  ·  Archetype  ·  Control Profile","textChars":39,"textLines":1,"bbox":[235,174,950,30]}
+{"kind":"shape","id":"sh/utgfm94v","slide":4,"bbox":[230,350,42,0]}
+{"kind":"shape","id":"sh/vu9gve5g","slide":4,"bbox":[470,350,42,0]}
+{"kind":"shape","id":"sh/wvixojm1","slide":4,"bbox":[710,350,42,0]}
+{"kind":"shape","id":"sh/hwryx4n6","slide":4,"bbox":[950,350,42,0]}
+{"kind":"shape","id":"sh/5cva1cfq","slide":4,"bbox":[42,277,198,154]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[60,294,40,30]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"text":"Research","textPreview":"Research","textChars":8,"textLines":1,"bbox":[60,333,162,32]}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"text":"Understand · Explore · Define","textPreview":"Understand · Explore · Define","textChars":29,"textLines":1,"bbox":[60,378,162,40]}
+{"kind":"shape","id":"sh/x8vaxsfe","slide":4,"bbox":[282,277,198,154]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[300,294,40,30]}
+{"kind":"textbox","id":"sh/v6tsv2xo","slide":4,"text":"Design","textPreview":"Design","textChars":6,"textLines":1,"bbox":[300,333,162,32]}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"text":"System Design* · Feature Design","textPreview":"System Design* · Feature Design","textChars":31,"textLines":1,"bbox":[300,378,162,40]}
+{"kind":"shape","id":"sh/h4fa9wfy","slide":4,"bbox":[522,277,198,154]}
+{"kind":"textbox","id":"sh/p0batw72","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[540,294,40,30]}
+{"kind":"textbox","id":"sh/oz29krqh","slide":4,"text":"Plan","textPreview":"Plan","textChars":4,"textLines":1,"bbox":[540,333,162,32]}
+{"kind":"textbox","id":"sh/3ytsrmpw","slide":4,"text":"P1→P0 · P0→tasks JIT","textPreview":"P1→P0 · P0→tasks JIT","textChars":20,"textLines":1,"bbox":[540,378,162,40]}
+{"kind":"shape","id":"sh/2xkrih8b","slide":4,"bbox":[762,277,198,154]}
+{"kind":"textbox","id":"sh/1wbapc7q","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[780,294,40,30]}
+{"kind":"textbox","id":"sh/gv29g7q5","slide":4,"text":"Implement","textPreview":"Implement","textChars":9,"textLines":1,"bbox":[780,333,162,32]}
+{"kind":"textbox","id":"sh/fu9sn2p0","slide":4,"text":"TDD · bounded change","textPreview":"TDD · bounded change","textChars":20,"textLines":1,"bbox":[780,378,162,40]}
+{"kind":"shape","id":"sh/et0reh8f","slide":4,"bbox":[1002,277,198,154]}
+{"kind":"textbox","id":"sh/tsrqlc7u","slide":4,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1020,294,40,30]}
+{"kind":"textbox","id":"sh/sri9s7q9","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[1020,333,162,32]}
+{"kind":"textbox","id":"sh/ilwf69kv","slide":4,"text":"Review · fresh evidence","textPreview":"Review · fresh evidence","textChars":23,"textLines":1,"bbox":[1020,378,162,40]}
+{"kind":"shape","id":"sh/zylo7u5g","slide":4,"bbox":[1101,448,0,58]}
+{"kind":"shape","id":"sh/knex8j21","slide":4,"bbox":[762,508,438,74]}
+{"kind":"textbox","id":"sh/5ony1oj6","slide":4,"text":"Release & Operate","textPreview":"Release & Operate","textChars":17,"textLines":1,"bbox":[786,525,188,28]}
+{"kind":"textbox","id":"sh/axcf29kj","slide":4,"text":"Observe · Recover · Learn","textPreview":"Observe · Recover · Learn","textChars":25,"textLines":1,"bbox":[982,527,194,26]}
+{"kind":"textbox","id":"sh/vy5gbe14","slide":4,"text":"* System Design：P3/P2 required · P1 risk-triggered · P0 normally skip","textPreview":"* System Design：P3/P2 required · P1 risk-triggered · P0 normally skip","textChars":69,"textLines":1,"bbox":[42,610,850,25]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"先選 Work Level；同一 Golden Flow 會遞迴套用","textShapes":25}
+{"kind":"textbox","id":"sh/qd0bahob","slide":5,"text":"先選 Work Level；同一 Golden Flow 會遞迴套用","textPreview":"先選 Work Level；同一 Golden Flow 會遞迴套用","textChars":34,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/v2dkrils","slide":5,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"shape","id":"sh/0vi9cfet","slide":5,"bbox":[173,247,0,45]}
+{"kind":"shape","id":"sh/lwrqlkfe","slide":5,"bbox":[173,349,0,45]}
+{"kind":"shape","id":"sh/yt0ra5wn","slide":5,"bbox":[173,451,0,45]}
+{"kind":"shape","id":"sh/032tgr6d","slide":5,"bbox":[42,163,482,76]}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"text":"P3","textPreview":"P3","textChars":2,"textLines":1,"bbox":[62,180,58,32]}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"text":"Product / Program","textPreview":"Product / Program","textChars":17,"textLines":1,"bbox":[132,178,180,28]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"text":"方向、architecture、Epic / Wave map","textPreview":"方向、architecture、Epic / Wave map","textChars":31,"textLines":1,"bbox":[132,207,340,22]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"bbox":[66,265,458,76]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"text":"P2","textPreview":"P2","textChars":2,"textLines":1,"bbox":[86,282,58,32]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"text":"Epic","textPreview":"Epic","textChars":4,"textLines":1,"bbox":[156,280,180,28]}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"text":"跨 Feature capability、System Design、Feature map","textPreview":"跨 Feature capability、System Design、Feature map","textChars":46,"textLines":1,"bbox":[156,309,316,22]}
+{"kind":"shape","id":"sh/58vehgvy","slide":5,"bbox":[90,367,434,76]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"text":"P1","textPreview":"P1","textChars":2,"textLines":1,"bbox":[110,384,58,32]}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"text":"Feature","textPreview":"Feature","textChars":7,"textLines":1,"bbox":[180,382,180,28]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"text":"Bounded outcome、approved design、P0 slices","textPreview":"Bounded outcome、approved design、P0 slices","textChars":41,"textLines":1,"bbox":[180,411,292,22]}
+{"kind":"shape","id":"sh/tcfel0vu","slide":5,"bbox":[114,469,410,76]}
+{"kind":"textbox","id":"sh/hgrmpwj2","slide":5,"text":"P0","textPreview":"P0","textChars":2,"textLines":1,"bbox":[134,486,58,32]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"text":"PBI / User Story","textPreview":"PBI / User Story","textChars":16,"textLines":1,"bbox":[204,484,180,28]}
+{"kind":"textbox","id":"sh/fe94nm1w","slide":5,"text":"Sprint-ready tracer bullet、independent evidence","textPreview":"Sprint-ready tracer bullet、independent evidence","textChars":47,"textLines":1,"bbox":[204,513,268,22]}
+{"kind":"shape","id":"sh/ud0ne10b","slide":5,"bbox":[92,574,432,55]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"text":"Execution Layer  ·  Task / Plan Step / Commit","textPreview":"Execution Layer  ·  Task / Plan Step / Commit","textChars":45,"textLines":1,"bbox":[110,591,395,22]}
+{"kind":"textbox","id":"sh/4ji5kbid","slide":5,"text":"判斷規則","textPreview":"判斷規則","textChars":4,"textLines":1,"bbox":[657,167,200,34]}
+{"kind":"shape","id":"sh/3i94r61s","slide":5,"bbox":[657,220,540,60]}
+{"kind":"textbox","id":"sh/2h0ni107","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[677,236,34,24]}
+{"kind":"textbox","id":"sh/5o7mhcju","slide":5,"text":"P0 必須 narrow but complete、demoable、可獨立驗證。","textPreview":"P0 必須 narrow but complete、demoable、可獨立驗證。","textChars":41,"textLines":1,"bbox":[721,232,450,34]}
+{"kind":"shape","id":"sh/kny587i9","slide":5,"bbox":[657,303,540,60]}
+{"kind":"textbox","id":"sh/atcjidg7","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[677,319,34,24]}
+{"kind":"textbox","id":"sh/vu5kbihc","slide":5,"text":"Task 是 P0 下方的 implementation decomposition，不是 Work Level。","textPreview":"Task 是 P0 下方的 implementation decomposition，不是 Work Level。","textChars":57,"textLines":1,"bbox":[721,315,450,34]}
+{"kind":"shape","id":"sh/wve1knyx","slide":5,"bbox":[657,386,540,60]}
+{"kind":"textbox","id":"sh/xwn2dszi","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[677,402,34,24]}
+{"kind":"textbox","id":"sh/ihw3mxg3","slide":5,"text":"P0 type：User Story · Enabler · Bug · Spike。","textPreview":"P0 type：User Story · Enabler · Bug · Spike。","textChars":43,"textLines":1,"bbox":[721,398,450,34]}
+{"kind":"shape","id":"sh/ji5kf2ho","slide":5,"bbox":[657,469,540,60]}
+{"kind":"textbox","id":"sh/kjelony9","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[677,485,34,24]}
+{"kind":"textbox","id":"sh/5kn2hszu","slide":5,"text":"OpenSpec Change 是 P1/P0 scope-dependent artifact container。","textPreview":"OpenSpec Change 是 P1/P0 scope-dependent artifact container。","textChars":59,"textLines":1,"bbox":[721,481,450,34]}
+{"kind":"textbox","id":"sh/e1sjatgz","slide":5,"text":"Depth changes；Golden Stage 不變。","textPreview":"Depth changes；Golden Stage 不變。","textChars":30,"textLines":1,"bbox":[657,574,540,42]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"Golden Matrix：選 Level 欄，再找 Current Stage 列","textShapes":34}
+{"kind":"textbox","id":"sh/lkrqp4ra","slide":6,"text":"Golden Matrix：選 Level 欄，再找 Current Stage 列","textPreview":"Golden Matrix：選 Level 欄，再找 Current Stage 列","textChars":42,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/9cjyhgj6","slide":6,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"text":"每格：lead action → minimum output · no blocker = execution frontier","textPreview":"每格：lead action → minimum output · no blocker = execution frontier","textChars":65,"textLines":1,"bbox":[42,145,820,28]}
+{"kind":"shape","id":"sh/98rqt4r6","slide":6,"bbox":[42,188,120,44]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"text":"Stage","textPreview":"Stage","textChars":5,"textLines":1,"bbox":[52,199,100,22]}
+{"kind":"shape","id":"sh/7m98ru9g","slide":6,"bbox":[162,188,269,44]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"text":"P3 Product / Program","textPreview":"P3 Product / Program","textChars":20,"textLines":1,"bbox":[172,199,249,22]}
+{"kind":"shape","id":"sh/pc76hkr2","slide":6,"bbox":[431,188,269,44]}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"text":"P2 Epic","textPreview":"P2 Epic","textChars":7,"textLines":1,"bbox":[441,199,249,22]}
+{"kind":"shape","id":"sh/w32twb6l","slide":6,"bbox":[700,188,269,44]}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"text":"P1 Feature","textPreview":"P1 Feature","textChars":10,"textLines":1,"bbox":[710,199,249,22]}
+{"kind":"shape","id":"sh/u1kbu1ov","slide":6,"bbox":[969,188,269,44]}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"text":"P0 PBI / Story","textPreview":"P0 PBI / Story","textChars":14,"textLines":1,"bbox":[979,199,249,22]}
+{"kind":"shape","id":"sh/47mt0b6x","slide":6,"bbox":[42,232,120,78]}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"text":"Research","textPreview":"Research","textChars":8,"textLines":1,"bbox":[54,258,96,26]}
+{"kind":"shape","id":"sh/i54bylor","slide":6,"bbox":[162,232,269,78]}
+{"kind":"textbox","id":"sh/twfux0ne","slide":6,"text":"understand + grill\n→ Product / As-Is Brief","textPreview":"understand + grill | → Product / As-Is Brief","textChars":42,"textLines":2,"bbox":[172,245,249,52]}
+{"kind":"shape","id":"sh/svmt4v6t","slide":6,"bbox":[431,232,269,78]}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"text":"research + grill\n→ Epic Brief","textPreview":"research + grill | → Epic Brief","textChars":29,"textLines":2,"bbox":[441,245,249,52]}
+{"kind":"shape","id":"sh/dcnm98zm","slide":6,"bbox":[700,232,269,78]}
+{"kind":"textbox","id":"sh/qpwnet0b","slide":6,"text":"codebase research\n→ Feature Research Brief","textPreview":"codebase research | → Feature Research Brief","textChars":42,"textLines":2,"bbox":[710,245,249,52]}
+{"kind":"shape","id":"sh/bq547yhw","slide":6,"bbox":[969,232,269,78]}
+{"kind":"textbox","id":"sh/0fy5k3id","slide":6,"text":"research / debug\n→ context / root cause","textPreview":"research / debug | → context / root cause","textChars":39,"textLines":2,"bbox":[979,245,249,52]}
+{"kind":"shape","id":"sh/lg76d8zy","slide":6,"bbox":[42,310,120,78]}
+{"kind":"textbox","id":"sh/ydgnit07","slide":6,"text":"Design","textPreview":"Design","textChars":6,"textLines":1,"bbox":[54,336,96,26]}
+{"kind":"shape","id":"sh/zep4byhs","slide":6,"bbox":[162,310,269,78]}
+{"kind":"textbox","id":"sh/gju58ji9","slide":6,"text":"system-design\n→ Product Design","textPreview":"system-design | → Product Design","textChars":30,"textLines":2,"bbox":[172,323,249,52]}
+{"kind":"shape","id":"sh/1k3mhozu","slide":6,"bbox":[431,310,269,78]}
+{"kind":"textbox","id":"sh/jet8nm1c","slide":6,"text":"system-design\n→ Epic Design + ADRs","textPreview":"system-design | → Epic Design + ADRs","textChars":34,"textLines":2,"bbox":[441,323,249,52]}
+{"kind":"shape","id":"sh/idk7ehkr","slide":6,"bbox":[700,310,269,78]}
+{"kind":"textbox","id":"sh/50bqpcj2","slide":6,"text":"brainstorming + SD*\n→ Feature Design","textPreview":"brainstorming + SD* | → Feature Design","textChars":36,"textLines":2,"bbox":[710,323,249,52]}
+{"kind":"shape","id":"sh/4f2pgr2h","slide":6,"bbox":[969,310,269,78]}
+{"kind":"textbox","id":"sh/va98j210","slide":6,"text":"micro-design\n→ approach + test intent","textPreview":"micro-design | → approach + test intent","textChars":37,"textLines":2,"bbox":[979,323,249,52]}
+{"kind":"shape","id":"sh/u907axkf","slide":6,"bbox":[42,388,120,78]}
+{"kind":"textbox","id":"sh/hcrqlcj6","slide":6,"text":"Plan","textPreview":"Plan","textChars":4,"textLines":1,"bbox":[54,414,96,26]}
+{"kind":"shape","id":"sh/wbipc72l","slide":6,"bbox":[162,388,269,78]}
+{"kind":"textbox","id":"sh/7698f214","slide":6,"text":"roadmap decomposition\n→ Epics / Waves","textPreview":"roadmap decomposition | → Epics / Waves","textChars":37,"textLines":2,"bbox":[172,401,249,52]}
+{"kind":"shape","id":"sh/m5076xkj","slide":6,"bbox":[431,388,269,78]}
+{"kind":"textbox","id":"sh/2dkbalg3","slide":6,"text":"feature decomposition\n→ backlog + deps","textPreview":"feature decomposition | → backlog + deps","textChars":38,"textLines":2,"bbox":[441,401,249,52]}
+{"kind":"shape","id":"sh/netcjqxo","slide":6,"bbox":[700,388,269,78]}
+{"kind":"textbox","id":"sh/of2tcvy9","slide":6,"text":"to-tickets\n→ P0 slices + blockers","textPreview":"to-tickets | → P0 slices + blockers","textChars":33,"textLines":2,"bbox":[710,401,249,52]}
+{"kind":"shape","id":"sh/pgbul0fu","slide":6,"bbox":[969,388,269,78]}
+{"kind":"textbox","id":"sh/ep0b6lg7","slide":6,"text":"inline / JIT plan\n→ tasks + files/tests","textPreview":"inline / JIT plan | → tasks + files/tests","textChars":39,"textLines":2,"bbox":[979,401,249,52]}
+{"kind":"shape","id":"sh/fq9cfqxc","slide":6,"bbox":[42,466,120,78]}
+{"kind":"textbox","id":"sh/0r2t8vyx","slide":6,"text":"Implement","textPreview":"Implement","textChars":9,"textLines":1,"bbox":[54,492,96,26]}
+{"kind":"shape","id":"sh/1sbuh0fi","slide":6,"bbox":[162,466,269,78]}
+{"kind":"textbox","id":"sh/ql0b21gv","slide":6,"text":"run P2/P1/P0 flows\n→ working increments","textPreview":"run P2/P1/P0 flows | → working increments","textChars":39,"textLines":2,"bbox":[172,479,249,52]}
+{"kind":"shape","id":"sh/rm9sb6xg","slide":6,"bbox":[431,466,269,78]}
+{"kind":"textbox","id":"sh/9gfeh4zy","slide":6,"text":"run P1/P0 flows\n→ feature increments","textPreview":"run P1/P0 flows | → feature increments","textChars":36,"textLines":2,"bbox":[441,479,249,52]}
+{"kind":"shape","id":"sh/8f6x8jid","slide":6,"bbox":[700,466,269,78]}
+{"kind":"textbox","id":"sh/7exwfehs","slide":6,"text":"run frontier P0s\n→ increments + tests","textPreview":"run frontier P0s | → increments + tests","textChars":37,"textLines":2,"bbox":[710,479,249,52]}
+{"kind":"shape","id":"sh/mdof6907","slide":6,"bbox":[969,466,269,78]}
+{"kind":"textbox","id":"sh/lcfed4z2","slide":6,"text":"TDD execution\n→ code + tests","textPreview":"TDD execution | → code + tests","textChars":28,"textLines":2,"bbox":[979,479,249,52]}
+{"kind":"shape","id":"sh/kb6d4zih","slide":6,"bbox":[42,544,120,78]}
+{"kind":"textbox","id":"sh/zaxwbuhw","slide":6,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[54,570,96,26]}
+{"kind":"shape","id":"sh/y94v2p0b","slide":6,"bbox":[162,544,269,78]}
+{"kind":"textbox","id":"sh/x8ve9kzq","slide":6,"text":"outcome + NFR\n→ Program evidence","textPreview":"outcome + NFR | → Program evidence","textChars":32,"textLines":2,"bbox":[172,557,249,52]}
+{"kind":"shape","id":"sh/c7md0zi5","slide":6,"bbox":[431,544,269,78]}
+{"kind":"textbox","id":"sh/o3a5cjud","slide":6,"text":"E2E + contract/NFR\n→ Epic evidence","textPreview":"E2E + contract/NFR | → Epic evidence","textChars":34,"textLines":2,"bbox":[441,557,249,52]}
+{"kind":"shape","id":"sh/p4j6loby","slide":6,"bbox":[700,544,269,78]}
+{"kind":"textbox","id":"sh/21snatc7","slide":6,"text":"P0 evidence rollup\n→ Feature evidence","textPreview":"P0 evidence rollup | → Feature evidence","textChars":37,"textLines":2,"bbox":[710,557,249,52]}
+{"kind":"shape","id":"sh/n21ojets","slide":6,"bbox":[969,544,269,78]}
+{"kind":"textbox","id":"sh/0zq58ju1","slide":6,"text":"review + verify\n→ PR / P0 evidence","textPreview":"review + verify | → PR / P0 evidence","textChars":34,"textLines":2,"bbox":[979,557,249,52]}
+{"kind":"textbox","id":"sh/10z6hobm","slide":6,"text":"* SD：P3/P2 required · P1 risk-triggered · P0 normally skip\nDefault route：Archetype / Control Profile 調整 rigor 與 evidence。Output 留在既有 artifacts，不新增文件。","textPreview":"* SD：P3/P2 required · P1 risk-triggered · P0 normally skip | Default route：Archetype / Control Profile 調整 rigor 與 evidence。Output 留在既有 ar...","textChars":149,"textLines":2,"bbox":[42,624,1110,54]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":""}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"Plan 必須分兩層：先切 delivery，再做 JIT implementation","textShapes":13}
+{"kind":"textbox","id":"sh/batcbq94","slide":7,"text":"Plan 必須分兩層：先切 delivery，再做 JIT implementation","textPreview":"Plan 必須分兩層：先切 delivery，再做 JIT implementation","textChars":44,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/4nmdsjux","slide":7,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"shape","id":"sh/2l4vqtc7","slide":7,"bbox":[262,269,24,0]}
+{"kind":"shape","id":"sh/3mdczydc","slide":7,"bbox":[490,269,24,0]}
+{"kind":"shape","id":"sh/cb6dw3u9","slide":7,"bbox":[790,269,24,0]}
+{"kind":"shape","id":"sh/dcfe58vu","slide":7,"bbox":[1018,269,24,0]}
+{"kind":"shape","id":"sh/eh0ba1sr","slide":7,"bbox":[42,210,212,118]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"text":"Approved P1\nFeature Design","textPreview":"Approved P1 | Feature Design","textChars":26,"textLines":2,"bbox":[56,245,184,52]}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"bbox":[294,210,188,118]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"text":"to-tickets","textPreview":"to-tickets","textChars":10,"textLines":1,"bbox":[308,245,160,52]}
+{"kind":"shape","id":"sh/xcz2l03q","slide":7,"bbox":[522,210,260,118]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"text":"P0 tracer bullets\n+ Blocked by","textPreview":"P0 tracer bullets | + Blocked by","textChars":30,"textLines":2,"bbox":[536,245,232,52]}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"bbox":[822,210,188,118]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"text":"writing-plans*","textPreview":"writing-plans*","textChars":14,"textLines":1,"bbox":[836,245,160,52]}
+{"kind":"shape","id":"sh/p8fih03e","slide":7,"bbox":[1050,210,188,118]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"text":"Execution Tasks\nfiles · tests · commands","textPreview":"Execution Tasks | files · tests · commands","textChars":40,"textLines":2,"bbox":[1064,245,160,52]}
+{"kind":"shape","id":"sh/f2d0b6lc","slide":7,"bbox":[42,385,495,30]}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"text":"DELIVERY DECOMPOSITION","textPreview":"DELIVERY DECOMPOSITION","textChars":22,"textLines":1,"bbox":[52,391,475,18]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"text":"P1 → P0：每張 ticket 是 narrow but complete tracer bullet。沒有 blocker 的項目形成 execution frontier。","textPreview":"P1 → P0：每張 ticket 是 narrow but complete tracer bullet。沒有 blocker 的項目形成 execution frontier。","textChars":90,"textLines":1,"bbox":[42,430,495,100]}
+{"kind":"shape","id":"sh/jedkn654","slide":7,"bbox":[661,385,577,30]}
+{"kind":"textbox","id":"sh/4fm1wb6p","slide":7,"text":"IMPLEMENTATION PLANNING","textPreview":"IMPLEMENTATION PLANNING","textChars":23,"textLines":1,"bbox":[671,391,557,18]}
+{"kind":"textbox","id":"sh/50v2pgna","slide":7,"text":"單一 P0 即將執行且 multi-step / risky / complex 時才產生 exact implementation plan。簡單 P0 可 inline。","textPreview":"單一 P0 即將執行且 multi-step / risky / complex 時才產生 exact implementation plan。簡單 P0 可 inline。","textChars":87,"textLines":1,"bbox":[661,430,577,100]}
+{"kind":"shape","id":"sh/q143ylov","slide":7,"bbox":[42,566,1196,54]}
+{"kind":"textbox","id":"sh/r2dkrq5g","slide":7,"text":"禁止：先替整個 Epic / Feature 建立巨大 implementation plan。Wide refactor 使用 expand → migrate batches → contract。","textPreview":"禁止：先替整個 Epic / Feature 建立巨大 implementation plan。Wide refactor 使用 expand → migrate batches → contract。","textChars":101,"textLines":1,"bbox":[62,583,1155,24]}
+{"kind":"textbox","id":"sh/s3ml0v61","slide":7,"text":"* OpenSpec tasks.md 已達 executable plan 標準時直接使用；不建立雙份 plan。","textPreview":"* OpenSpec tasks.md 已達 executable plan 標準時直接使用；不建立雙份 plan。","textChars":58,"textLines":1,"bbox":[42,644,950,20]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":""}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"每個 capability 只負責一件事，避免工具互相重疊","textShapes":19}
+{"kind":"textbox","id":"sh/elkf2pg7","slide":8,"text":"每個 capability 只負責一件事，避免工具互相重疊","textPreview":"每個 capability 只負責一件事，避免工具互相重疊","textChars":29,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/4vap8j69","slide":8,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"text":"Framework 是 capability-based；下列工具只是 reference implementation。","textPreview":"Framework 是 capability-based；下列工具只是 reference implementation。","textChars":61,"textLines":1,"bbox":[42,147,910,28]}
+{"kind":"shape","id":"sh/6h0fypgb","slide":8,"bbox":[42,198,1196,70]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"text":"Research skills","textPreview":"Research skills","textChars":15,"textLines":1,"bbox":[62,217,200,30]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"text":"Understand Anything · codebase-research\ngrill-me · systematic-debugging","textPreview":"Understand Anything · codebase-research | grill-me · systematic-debugging","textChars":71,"textLines":2,"bbox":[275,205,535,56]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"text":"建立可信的 domain / system / code evidence","textPreview":"建立可信的 domain / system / code evidence","textChars":37,"textLines":1,"bbox":[835,205,375,56]}
+{"kind":"shape","id":"sh/id0fu50z","slide":8,"bbox":[42,284,1196,70]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"text":"OpenSpec","textPreview":"OpenSpec","textChars":8,"textLines":1,"bbox":[62,303,200,30]}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"text":"Explore E0 optional: /opsx:explore\nDurable: /opsx:propose or /opsx:new + /opsx:continue","textPreview":"Explore E0 optional: /opsx:explore | Durable: /opsx:propose or /opsx:new + /opsx:continue","textChars":87,"textLines":2,"bbox":[275,291,535,56]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"text":"Execute: /opsx:apply → /opsx:verify\nClose: /opsx:sync → /opsx:archive","textPreview":"Execute: /opsx:apply → /opsx:verify | Close: /opsx:sync → /opsx:archive","textChars":69,"textLines":2,"bbox":[835,291,375,56]}
+{"kind":"shape","id":"sh/n6pwfmd8","slide":8,"bbox":[42,370,1196,70]}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"text":"to-tickets","textPreview":"to-tickets","textChars":10,"textLines":1,"bbox":[62,389,200,30]}
+{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"text":"Approved P1 Feature → P0 tracer bullets + blockers","textPreview":"Approved P1 Feature → P0 tracer bullets + blockers","textChars":50,"textLines":1,"bbox":[275,377,535,56]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"text":"擁有 delivery decomposition 與 execution frontier","textPreview":"擁有 delivery decomposition 與 execution frontier","textChars":46,"textLines":1,"bbox":[835,377,375,56]}
+{"kind":"shape","id":"sh/zipwbmdc","slide":8,"bbox":[42,456,1196,70]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"text":"Superpowers","textPreview":"Superpowers","textChars":11,"textLines":1,"bbox":[62,475,200,30]}
+{"kind":"textbox","id":"sh/lgbepgvm","slide":8,"text":"brainstorming · writing-plans · TDD\nexecution · review · verification","textPreview":"brainstorming · writing-plans · TDD | execution · review · verification","textChars":69,"textLines":2,"bbox":[275,463,535,56]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"text":"擁有 design 與單一 P0 execution discipline","textPreview":"擁有 design 與單一 P0 execution discipline","textChars":37,"textLines":1,"bbox":[835,463,375,56]}
+{"kind":"shape","id":"sh/svydgb65","slide":8,"bbox":[42,542,1196,70]}
+{"kind":"textbox","id":"sh/7u5w765k","slide":8,"text":"Human Owner","textPreview":"Human Owner","textChars":11,"textLines":1,"bbox":[62,561,200,30]}
+{"kind":"textbox","id":"sh/6twve1oz","slide":8,"text":"Direction · trade-off · authorization\nrisk acceptance · release","textPreview":"Direction · trade-off · authorization | risk acceptance · release","textChars":63,"textLines":2,"bbox":[275,549,535,56]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"text":"對 outcome 與 production decision accountable","textPreview":"對 outcome 與 production decision accountable","textChars":43,"textLines":1,"bbox":[835,549,375,56]}
+{"kind":"textbox","id":"sh/kredcr6t","slide":8,"text":"SSOT：P3/P2 architecture 留在 Product/Architecture artifacts；OpenSpec 只承載 bounded P1/P0 delta。","textPreview":"SSOT：P3/P2 architecture 留在 Product/Architecture artifacts；OpenSpec 只承載 bounded P1/P0 delta。","textChars":91,"textLines":1,"bbox":[42,638,1150,26]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":""}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"風險決定 rigor；三個 Gate 決定是否能往前","textShapes":22}
+{"kind":"textbox","id":"sh/eponml43","slide":9,"text":"風險決定 rigor；三個 Gate 決定是否能往前","textPreview":"風險決定 rigor；三個 Gate 決定是否能往前","textChars":26,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/j6l4ritg","slide":9,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"text":"CONTROL PROFILE","textPreview":"CONTROL PROFILE","textChars":15,"textLines":1,"bbox":[42,157,300,26]}
+{"kind":"textbox","id":"sh/mdonql4z","slide":9,"text":"System Criticality  ×  Change Risk Tier  ×  AI Execution Mode","textPreview":"System Criticality  ×  Change Risk Tier  ×  AI Execution Mode","textChars":61,"textLines":1,"bbox":[42,190,560,72]}
+{"kind":"shape","id":"sh/9gzml0nq","slide":9,"bbox":[42,292,540,67]}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"text":"Criticality","textPreview":"Criticality","textChars":11,"textLines":1,"bbox":[62,312,120,28]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"text":"系統重要度與 blast radius","textPreview":"系統重要度與 blast radius","textChars":19,"textLines":1,"bbox":[190,313,365,28]}
+{"kind":"shape","id":"sh/ah8nu54b","slide":9,"bbox":[42,378,540,67]}
+{"kind":"textbox","id":"sh/oza1gfyh","slide":9,"text":"L0–L3","textPreview":"L0–L3","textChars":5,"textLines":1,"bbox":[62,398,120,28]}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"text":"material risk、reversibility、recovery cost","textPreview":"material risk、reversibility、recovery cost","textChars":41,"textLines":1,"bbox":[190,399,365,28]}
+{"kind":"shape","id":"sh/2xsjepgb","slide":9,"bbox":[42,464,540,67]}
+{"kind":"textbox","id":"sh/3y107axw","slide":9,"text":"E0–E3","textPreview":"E0–E3","textChars":5,"textLines":1,"bbox":[62,484,120,28]}
+{"kind":"textbox","id":"sh/cnu1kzyd","slide":9,"text":"Observe → Propose → Change → Act","textPreview":"Observe → Propose → Change → Act","textChars":32,"textLines":1,"bbox":[190,485,365,28]}
+{"kind":"shape","id":"sh/do3id4fy","slide":9,"bbox":[42,572,540,55]}
+{"kind":"textbox","id":"sh/qlcjipgn","slide":9,"text":"Tier 控制 engineering rigor；Execution Mode 控制 authorization。","textPreview":"Tier 控制 engineering rigor；Execution Mode 控制 authorization。","textChars":58,"textLines":1,"bbox":[62,589,500,23]}
+{"kind":"textbox","id":"sh/bml0buxs","slide":9,"text":"THREE HUMAN GATES","textPreview":"THREE HUMAN GATES","textChars":17,"textLines":1,"bbox":[661,157,330,26]}
+{"kind":"shape","id":"sh/0ru1ozyp","slide":9,"bbox":[661,205,537,105]}
+{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[682,225,42,40]}
+{"kind":"textbox","id":"sh/98ji147e","slide":9,"text":"Understanding Gate","textPreview":"Understanding Gate","textChars":18,"textLines":1,"bbox":[740,223,410,31]}
+{"kind":"textbox","id":"sh/87a18zqt","slide":9,"text":"current state、problem、scope、unknowns 有 evidence","textPreview":"current state、problem、scope、unknowns 有 evidence","textChars":47,"textLines":1,"bbox":[740,262,425,33]}
+{"kind":"shape","id":"sh/76h0zup8","slide":9,"bbox":[661,337,537,105]}
+{"kind":"textbox","id":"sh/ml8j6p8n","slide":9,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[682,357,42,40]}
+{"kind":"textbox","id":"sh/hcji5o7a","slide":9,"text":"Change Gate","textPreview":"Change Gate","textChars":11,"textLines":1,"bbox":[740,355,410,31]}
+{"kind":"textbox","id":"sh/wba1cjqp","slide":9,"text":"design、risk、P0 decomposition、triggered plan 可接受","textPreview":"design、risk、P0 decomposition、triggered plan 可接受","textChars":47,"textLines":1,"bbox":[740,394,425,33]}
+{"kind":"shape","id":"sh/va103ep4","slide":9,"bbox":[661,469,537,105]}
+{"kind":"textbox","id":"sh/u9sja98z","slide":9,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[682,489,42,40]}
+{"kind":"textbox","id":"sh/xgzitk76","slide":9,"text":"Evidence Gate","textPreview":"Evidence Gate","textChars":13,"textLines":1,"bbox":[740,487,410,31]}
+{"kind":"textbox","id":"sh/cf6h0fql","slide":9,"text":"acceptance 與 affected risks 有 fresh verification","textPreview":"acceptance 與 affected risks 有 fresh verification","textChars":48,"textLines":1,"bbox":[740,526,425,33]}
+{"kind":"textbox","id":"sh/2l4faloj","slide":9,"text":"System Design Review 是 Change Gate 的 risk-based implementation，不是第四個 Gate。","textPreview":"System Design Review 是 Change Gate 的 risk-based implementation，不是第四個 Gate。","textChars":74,"textLines":1,"bbox":[661,611,545,34]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":""}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"三條常見路徑共用 Golden Flow，但不使用同一套重量","textShapes":18}
+{"kind":"textbox","id":"sh/q9sn69kb","slide":10,"text":"三條常見路徑共用 Golden Flow，但不使用同一套重量","textPreview":"三條常見路徑共用 Golden Flow，但不使用同一套重量","textChars":30,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/0nixkjyt","slide":10,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"shape","id":"sh/zelojyl8","slide":10,"bbox":[42,170,365,410]}
+{"kind":"shape","id":"sh/ydcnatkn","slide":10,"bbox":[42,170,365,30]}
+{"kind":"textbox","id":"sh/l036l83y","slide":10,"text":"NEW FEATURE","textPreview":"NEW FEATURE","textChars":11,"textLines":1,"bbox":[52,176,345,18]}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"text":"P1 Feature","textPreview":"P1 Feature","textChars":10,"textLines":1,"bbox":[66,226,315,32]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"text":"codebase-research / explore\n→ brainstorming + design\n→ to-tickets\n→ frontier P0 + JIT plan\n→ TDD + verification","textPreview":"codebase-research / explore | → brainstorming + design | → to-tickets | → frontier P0 + JIT plan | → TDD + verification","textChars":111,"textLines":5,"bbox":[66,285,315,190]}
+{"kind":"shape","id":"sh/nq9wfyxk","slide":10,"bbox":[66,500,317,0]}
+{"kind":"textbox","id":"sh/s7yt4b21","slide":10,"text":"DONE WHEN","textPreview":"DONE WHEN","textChars":9,"textLines":1,"bbox":[66,521,100,22]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"text":"Feature acceptance + P0 evidence rollup","textPreview":"Feature acceptance + P0 evidence rollup","textChars":39,"textLines":1,"bbox":[66,548,315,46]}
+{"kind":"shape","id":"sh/q5gb21kb","slide":10,"bbox":[449,170,365,410]}
+{"kind":"shape","id":"sh/r6pcv6lw","slide":10,"bbox":[449,170,365,30]}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"text":"BUG","textPreview":"BUG","textChars":3,"textLines":1,"bbox":[459,176,345,18]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"text":"P0 Bug","textPreview":"P0 Bug","textChars":6,"textLines":1,"bbox":[473,226,315,32]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"text":"reproduce\n→ systematic-debugging\n→ proven root cause\n→ regression test + minimal fix\n→ fresh verification","textPreview":"reproduce | → systematic-debugging | → proven root cause | → regression test + minimal fix | → fresh verification","textChars":105,"textLines":5,"bbox":[473,285,315,190]}
+{"kind":"shape","id":"sh/8nq58zyt","slide":10,"bbox":[473,500,317,0]}
+{"kind":"textbox","id":"sh/ozitcv29","slide":10,"text":"DONE WHEN","textPreview":"DONE WHEN","textChars":9,"textLines":1,"bbox":[473,521,100,22]}
+{"kind":"textbox","id":"sh/p0ru503u","slide":10,"text":"Reproduction closed + regression evidence","textPreview":"Reproduction closed + regression evidence","textChars":41,"textLines":1,"bbox":[473,548,315,46]}
+{"kind":"shape","id":"sh/xwnupgvy","slide":10,"bbox":[856,170,365,410]}
+{"kind":"shape","id":"sh/wvetgbud","slide":10,"bbox":[856,170,365,30]}
+{"kind":"textbox","id":"sh/bu5cnqd8","slide":10,"text":"MODERNIZATION","textPreview":"MODERNIZATION","textChars":13,"textLines":1,"bbox":[866,176,345,18]}
+{"kind":"textbox","id":"sh/atwbelcn","slide":10,"text":"P3 Program","textPreview":"P3 Program","textChars":10,"textLines":1,"bbox":[880,226,315,32]}
+{"kind":"textbox","id":"sh/lk7ut0va","slide":10,"text":"as-is + characterization\n→ target System Design\n→ Waves → Epics → Features\n→ expand / migrate / contract\n→ parity + cutover evidence","textPreview":"as-is + characterization | → target System Design | → Waves → Epics → Features | → expand / migrate / contract | → parity + cutover evidence","textChars":132,"textLines":5,"bbox":[880,285,315,190]}
+{"kind":"shape","id":"sh/xsfm90v6","slide":10,"bbox":[880,500,317,0]}
+{"kind":"textbox","id":"sh/jypcrqd4","slide":10,"text":"DONE WHEN","textPreview":"DONE WHEN","textChars":9,"textLines":1,"bbox":[880,521,100,22]}
+{"kind":"textbox","id":"sh/yxgbilcj","slide":10,"text":"Operational readiness + recovery evidence","textPreview":"Operational readiness + recovery evidence","textChars":41,"textLines":1,"bbox":[880,548,315,46]}
+{"kind":"textbox","id":"sh/1o3ahwvq","slide":10,"text":"First unknown wins。Evidence Gate 後，shared / production change → existing release process（E3 · observe · recover）。","textPreview":"First unknown wins。Evidence Gate 後，shared / production change → existing release process（E3 · observe · recover）。","textChars":113,"textLines":1,"bbox":[42,596,1196,60]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":""}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"8 週 → 6 週：把時間從 coding 移向 design 與 evidence","textShapes":16}
+{"kind":"textbox","id":"sh/a90z21on","slide":11,"text":"8 週 → 6 週：把時間從 coding 移向 design 與 evidence","textPreview":"8 週 → 6 週：把時間從 coding 移向 design 與 evidence","textChars":42,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/c3adkne9","slide":11,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"shape","id":"sh/n69grmpw","slide":11,"bbox":[42,478,365,136]}
+{"kind":"shape","id":"sh/250zy18b","slide":11,"bbox":[42,478,365,30]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"text":"DESIGN QUALITY","textPreview":"DESIGN QUALITY","textChars":14,"textLines":1,"bbox":[52,484,345,18]}
+{"kind":"textbox","id":"sh/o7ih0r6h","slide":11,"text":"0.5 → 1.0 wk","textPreview":"0.5 → 1.0 wk","textChars":12,"textLines":1,"bbox":[66,521,317,30]}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"text":"design time ×2\nFR / NFR / failure modes","textPreview":"design time ×2 | FR / NFR / failure modes","textChars":39,"textLines":2,"bbox":[66,556,317,52]}
+{"kind":"textbox","id":"sh/ofqtgnyt","slide":11,"text":"AS-IS · 8 WEEKS","textPreview":"AS-IS · 8 WEEKS","textChars":15,"textLines":1,"bbox":[42,190,235,22]}
+{"kind":"textbox","id":"sh/9gza9sze","slide":11,"text":"4 × 2-week sprints\nsingle-repo research\nunclear FR/NFR · thin tests","textPreview":"4 × 2-week sprints | single-repo research | unclear FR/NFR · thin tests","textChars":67,"textLines":3,"bbox":[42,216,245,72]}
+{"kind":"shape","id":"sh/mdobedg3","slide":11,"bbox":[449,478,365,136]}
+{"kind":"shape","id":"sh/nehs7iho","slide":11,"bbox":[449,478,365,30]}
+{"kind":"textbox","id":"sh/0b6tc3yx","slide":11,"text":"IMPLEMENTATION TIME","textPreview":"IMPLEMENTATION TIME","textChars":19,"textLines":1,"bbox":[459,484,345,18]}
+{"kind":"textbox","id":"sh/1cfa58zi","slide":11,"text":"5.5 → 2.0 wk","textPreview":"5.5 → 2.0 wk","textChars":12,"textLines":1,"bbox":[473,521,317,30]}
+{"kind":"textbox","id":"sh/epobatgr","slide":11,"text":"implementation time ↓64%\nless patch-driven delivery","textPreview":"implementation time ↓64% | less patch-driven delivery","textChars":51,"textLines":2,"bbox":[473,556,317,52]}
+{"kind":"textbox","id":"sh/cn6t83y1","slide":11,"text":"AI ENGINEERING · 6 WEEKS","textPreview":"AI ENGINEERING · 6 WEEKS","textChars":24,"textLines":1,"bbox":[42,319,245,22]}
+{"kind":"textbox","id":"sh/dofa18z6","slide":11,"text":"≈ 3 × 2-week sprints\nsystem-wide research\nexplicit design · TDD evidence","textPreview":"≈ 3 × 2-week sprints | system-wide research | explicit design · TDD evidence","textChars":72,"textLines":3,"bbox":[42,345,245,72]}
+{"kind":"shape","id":"sh/tsnip0ny","slide":11,"bbox":[856,478,365,136]}
+{"kind":"shape","id":"sh/87ehgv6d","slide":11,"bbox":[856,478,365,30]}
+{"kind":"textbox","id":"sh/7650nq5s","slide":11,"text":"PATCHES / REWORK","textPreview":"PATCHES / REWORK","textChars":16,"textLines":1,"bbox":[866,484,345,18]}
+{"kind":"textbox","id":"sh/65wzelo7","slide":11,"text":"↓ Fewer loops","textPreview":"↓ Fewer loops","textChars":13,"textLines":1,"bbox":[880,521,317,30]}
+{"kind":"textbox","id":"sh/l43ilgn2","slide":11,"text":"validation 1.0 → 2.0 wk\nTDD · staging · readiness","textPreview":"validation 1.0 → 2.0 wk | TDD · staging · readiness","textChars":49,"textLines":2,"bbox":[880,556,317,52]}
+{"kind":"textbox","id":"sh/p07ixkn6","slide":11,"text":"Illustrative calendar allocation：2-week sprint；stages may overlap；pilot 後以 actual baseline 校準。","textPreview":"Illustrative calendar allocation：2-week sprint；stages may overlap；pilot 後以 actual baseline 校準。","textChars":94,"textLines":1,"bbox":[42,625,1110,28]}
+{"kind":"image","id":"im/o32h0zy5","slide":11,"name":"","bbox":[300.11,155,917.78,295]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":""}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"START USING IT","textShapes":24}
+{"kind":"textbox","id":"sh/edk3ed4j","slide":12,"text":"START USING IT","textPreview":"START USING IT","textChars":14,"textLines":1,"bbox":[42,26,520,24]}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"text":"從下一張真實 work item 開始，而不是先建立新 ceremony","textPreview":"從下一張真實 work item 開始，而不是先建立新 ceremony","textChars":36,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/al0b65w7","slide":12,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"text":"ENGINEER · 60-SECOND START","textPreview":"ENGINEER · 60-SECOND START","textChars":26,"textLines":1,"bbox":[42,158,440,28]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[42,212,42,34]}
+{"kind":"textbox","id":"sh/sb2lcnmd","slide":12,"text":"找到 existing activity / system of record","textPreview":"找到 existing activity / system of record","textChars":39,"textLines":1,"bbox":[96,214,470,34]}
+{"kind":"shape","id":"sh/jq1sn21g","slide":12,"bbox":[96,253,470,0]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[42,279,42,34]}
+{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"text":"判定 Work Level、Archetype 與 Control Profile","textPreview":"判定 Work Level、Archetype 與 Control Profile","textChars":41,"textLines":1,"bbox":[96,281,470,34]}
+{"kind":"shape","id":"sh/wnatcn2p","slide":12,"bbox":[96,320,470,0]}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[42,346,42,34]}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"text":"找第一個還不能回答的 Golden Stage","textPreview":"找第一個還不能回答的 Golden Stage","textChars":23,"textLines":1,"bbox":[96,348,470,34]}
+{"kind":"shape","id":"sh/1k3uxwje","slide":12,"bbox":[96,387,470,0]}
+{"kind":"textbox","id":"sh/9sj65kn2","slide":12,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[42,413,42,34]}
+{"kind":"textbox","id":"sh/mps7a5or","slide":12,"text":"執行一個 lead skill；evidence 寫回既有位置","textPreview":"執行一個 lead skill；evidence 寫回既有位置","textChars":31,"textLines":1,"bbox":[96,415,470,34]}
+{"kind":"shape","id":"sh/z6x8ryhw","slide":12,"bbox":[96,454,470,0]}
+{"kind":"textbox","id":"sh/0nap8f6l","slide":12,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[42,480,42,34]}
+{"kind":"textbox","id":"sh/1oj61kn6","slide":12,"text":"由 accountable human 完成相稱 Gate decision","textPreview":"由 accountable human 完成相稱 Gate decision","textChars":38,"textLines":1,"bbox":[96,482,470,34]}
+{"kind":"shape","id":"sh/q147e90f","slide":12,"bbox":[96,521,470,0]}
+{"kind":"textbox","id":"sh/gj25cry9","slide":12,"text":"ROLE EXPECTATION","textPreview":"ROLE EXPECTATION","textChars":16,"textLines":1,"bbox":[661,158,300,28]}
+{"kind":"shape","id":"sh/fit436ho","slide":12,"bbox":[661,208,537,78]}
+{"kind":"textbox","id":"sh/uh0na1g3","slide":12,"text":"Engineer","textPreview":"Engineer","textChars":8,"textLines":1,"bbox":[682,226,185,28]}
+{"kind":"textbox","id":"sh/tgrm1wzy","slide":12,"text":"evidence-backed execution；不以 AI summary 代替完成","textPreview":"evidence-backed execution；不以 AI summary 代替完成","textChars":44,"textLines":1,"bbox":[875,222,297,40]}
+{"kind":"shape","id":"sh/sfi58ryd","slide":12,"bbox":[661,306,537,78]}
+{"kind":"textbox","id":"sh/7u94zmhs","slide":12,"text":"Tech Lead / Architect","textPreview":"Tech Lead / Architect","textChars":21,"textLines":1,"bbox":[682,324,185,28]}
+{"kind":"textbox","id":"sh/6t0n6hg7","slide":12,"text":"boundary、trade-off、System Design 與 risk review","textPreview":"boundary、trade-off、System Design 與 risk review","textChars":46,"textLines":1,"bbox":[875,320,297,40]}
+{"kind":"shape","id":"sh/dcv6dgz2","slide":12,"bbox":[661,404,537,78]}
+{"kind":"textbox","id":"sh/cbm5kbyh","slide":12,"text":"Manager","textPreview":"Manager","textChars":7,"textLines":1,"bbox":[682,422,185,28]}
+{"kind":"textbox","id":"sh/alwbitsn","slide":12,"text":"整合 workflow、移除 blocker、看 outcome / quality / reliability","textPreview":"整合 workflow、移除 blocker、看 outcome / quality / reliability","textChars":56,"textLines":1,"bbox":[875,418,297,40]}
+{"kind":"shape","id":"sh/bm5sryt8","slide":12,"bbox":[661,522,537,102]}
+{"kind":"textbox","id":"sh/wnetkjat","slide":12,"text":"TEAM ADAPTER","textPreview":"TEAM ADAPTER","textChars":12,"textLines":1,"bbox":[683,541,160,24]}
+{"kind":"textbox","id":"sh/xonutobe","slide":12,"text":"Map local activity → Golden Stage / Gate / artifact\nTeam owns template · Department owns minimum contract","textPreview":"Map local activity → Golden Stage / Gate / artifact | Team owns template · Department owns minimum contract","textChars":105,"textLines":2,"bbox":[683,552,480,60]}
+{"kind":"textbox","id":"sh/mhcbe9sr","slide":12,"text":"更快理解正確的問題，做出更好的 engineering decision，並用足夠 evidence 安全交付。","textPreview":"更快理解正確的問題，做出更好的 engineering decision，並用足夠 evidence 安全交付。","textChars":56,"textLines":1,"bbox":[42,641,1120,28]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":""}
