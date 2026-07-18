@@ -1507,7 +1507,7 @@ Framework change 應符合：
 
 | Version | Change |
 |---|---|
-| v1.7 | Adoption navigation correction：新增 Root README 角色路徑與 Golden Skill Registry；Engineer 先使用 Overview + Golden Playbook，routing ambiguity 才查 Decision Tree。`04–05` 移至 `guides/`、`06` 移至 `training/`；Decision Tree 開頭同時擔任 quick reference，不再規劃獨立 `07` content SSOT。 |
+| v1.7 | Adoption navigation correction：新增 Root README 角色路徑與 Golden Skill Registry；Engineer 以 Golden Playbook 對應章節為必要 execution SSOT，Overview 為 optional visual summary，routing ambiguity 才查 Decision Tree。`04–05` 移至 `guides/`、`06` 移至 `training/`；Decision Tree 開頭同時擔任 quick reference，不再規劃獨立 `07` content SSOT。 |
 | v1.6 | Engineer mental-model correction：Golden Flow + Six Golden Questions 成為唯一 Engineer-facing model；`Understand → Challenge → Execute → Evidence` 改定位為每個 Golden Stage 的 AI 基本功。七段內容改為 non-prescriptive responsibility coverage，不再作為 formal lifecycle；每個 Stage 提供 Golden default skills，新手直接採用，成熟 Team 才以等價 capability mapping 替換。 |
 | v1.5 | SDLC integration correction：明確定義 Framework 是 existing SDLC 的 enhancement layer；Golden Stages 是可攜式 engineering decision states、不是固定 SDLC phases。加入 Gate placement、artifact placement、Agile/Sprint、E3/Change Management、Team-owned templates 與既有十個以上 pilot evidence consolidation。三個 Gates 與 risk-based System Design trigger 不變。 |
 | v1.4 | Semantic correction：P0 改為 PBI/User Story vertical slice；Task 移至 Execution Layer；OpenSpec Change 改為 scope-dependent artifact container；加入 P1 → P0 `to-tickets` 與 P0 → tasks JIT `writing-plans` 分工及 tracker reference mapping。Golden Flow、三個 Human Gates 與 System Design trigger 不變。 |

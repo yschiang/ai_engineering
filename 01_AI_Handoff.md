@@ -218,7 +218,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - `00_Project_Charter.md` v1.6 已將 Golden Flow + Six Golden Questions 定義為唯一 Engineer mental model，並簡化為 `00–06` numbered artifacts。
 - `02_Framework.md` v1.7 Baseline 已將七段內容降為 non-prescriptive responsibility coverage；`Understand → Challenge → Execute → Evidence` 改為每個 Golden Stage 的 AI 基本功。
 - `03_Golden_Engineering_Playbook.md` v1.5 Baseline 已保留 Six Questions 完整定位能力，並加入 `required discipline + Golden default + approved equivalent` skill adoption policy。
-- `README.md` 已建立 Start Here、artifact guide 與 role-based reading paths；Engineer 先讀 `04` 與 `03`，routing ambiguity 才查 `05`。
+- `README.md` 已建立 Start Here、artifact guide 與 role-based reading paths；Engineer 以 `03` 為必要 execution SSOT，第一次接觸可選讀 `04`，routing ambiguity 才查 `05`。
 - `reference/Golden_Skill_Registry.md` 已記錄已確認 source、candidate/unresolved mapping、installation、invocation、output/stop condition 與 fallback。
 - `guides/04_Framework_Overview.md` v1.5 Candidate 與 `guides/05_Decision_Tree.md` v1.6 Candidate 只呈現 Golden mental model、Six Questions 與 Golden default routing；`05` 開頭同時擔任 compact quick reference。
 - `training/06_Training_Presentation.pptx` v1.10 Baseline Candidate 共 9 頁；P2 只保留兩個工程問題與兩張使用者提供的圖：不同大小的工作需要不同 workflow depth，以及低 coding cost 會放大前段錯誤、bad code 與技術債；已移除該頁 Small／P1／P2-P3 taxonomy。P3 說明本次建立的是可持久、可跨 P3–P0 使用並結合 10+ pilots Golden defaults 的 AI Development Workflow。P8 將 8 週 → 6 週 target allocation 定為 Research 0.75、Design 1.5、Plan 0.25、Implement 1.5、Validate 2.0 週。
@@ -578,7 +578,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 ### Root README + Golden Skill Registry
 
 - README 能依角色說明每份 artifact 的用途、使用時機、閱讀順序與 SSOT。
-- Engineer 路徑以 `04 → 03` 為主，`05` 只在 routing ambiguity 時按需查閱。
+- Engineer 路徑以 `03` 的對應工作章節為主；`04` 是 optional visual summary，`05` 只在 routing ambiguity 時按需查閱。
 - Skill Registry 能追溯 source、environment、installation、invocation、expected output、stop condition 與 fallback。
 - `05` 開頭同時擔任 quick reference，不另行建立重複的 `07` content SSOT。
 
@@ -663,7 +663,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - [ ] 已有十個以上 pilots 是 evidence base；下一步是 consolidation/canonical cases，不是重新要求 pilot。
 - [ ] 03 v1.5 已是 Baseline；04 v1.5 與 05 v1.6 Candidate 已同步 single-model／Golden-default correction。
 - [ ] 06 v1.10 Baseline Candidate 已是實際 9 頁 PowerPoint；P2 以兩張圖只講兩個具體 vibe-coding 工程問題且不先放 work-level taxonomy，P3 定義 durable AI Development Workflow，後續以 Golden Flow + Six Questions 啟動並用單一 P1 Feature Golden Path 強化 Golden defaults；target outcome 為 Design／Implement 各 1.5 週、總時間 8 週 → 6 週的 illustration，並完成 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker 與 empty-placeholder QA。
-- [ ] README 已提供角色路徑；Engineer 先讀 04 與 03，routing ambiguity 才查 05。
+- [ ] README 已提供角色路徑；Engineer 必要閱讀 03 的對應章節，第一次接觸可選讀 04，routing ambiguity 才查 05。
 - [ ] 05 開頭同時擔任 compact quick reference；不另外維護 `07` content SSOT。
 - [ ] 下一步是 pilot consolidation、Team adapter、Skill Registry mapping/version closure 與 Sponsor/Engineering confirmation。
 
