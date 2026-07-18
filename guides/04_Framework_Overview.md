@@ -1,22 +1,22 @@
 # AI-Native Software Engineering Framework — One-Page Overview
 
-> Version: v1.5 Candidate
+> Version: v1.6 Candidate
 > Status: Ready for Sponsor Review  
-> Derived from: `02_Framework.md` v1.7 Baseline + `03_Golden_Engineering_Playbook.md` v1.5 Baseline
+> Derived from: `02_Framework.md` v1.8 Baseline + `03_Golden_Engineering_Playbook.md` v1.6 Baseline
 > Purpose: Engineer and management visual entry point; supplement only
 
 ---
 
 ## The Operating Model
 
-**在 Team 既有 workflow 裡，用 Six Golden Questions 定位，再沿著唯一的 Golden Flow 處理下一個工程問題。**
+**新工作先完成 Six Golden Questions；進入執行後，只更新 Current Stage 與 Next Move。**
 
 Golden Stages 是 portable engineering decision states，不是所有 Team 必須採用的固定 SDLC phases。Team 擁有 local activities、artifact placement 與 templates；Department 擁有 minimum contract 與 quality bar。
 
 ```mermaid
 flowchart TB
   W["Team-owned Existing Workflow / System of Record\nTicket · Design · PR · Test · Release · Incident"]
-  C["Six Golden Questions\nLocation · Level · Archetype · Stage · Control · Next Move"]
+  C["Two routing cadences\nInitial: all Six Golden Questions\nContinue: refresh Stage · Next Move"]
   subgraph F["Golden Flow"]
     direction LR
     R["1 Research\nUnderstand · Explore · Define"] --> D["2 Design\nSystem Design* · Feature Design · Challenge"] --> P["3 Plan\nP1→P0 slices · P0→tasks JIT"] --> I["4 Implement\nTDD · bounded change"] --> V["5 Validate\nReview · fresh evidence"]
@@ -33,16 +33,17 @@ flowchart TB
 
 ---
 
-## 1. Classify Before Acting
+## 1. Complete the Initial Route, Then Refresh What Changes
 
-| Decision | Choose | Determines |
+進入新 work item 時，先確認工作記在哪裡、Work Level、Archetype、Current Stage、Control Profile 與 Next Move。進入執行後沿用已確認的 context，只更新 Current Stage 與 Next Move；scope、architecture、risk 或 AI authority 改變時再完整重判。
+
+| Trigger | Add This Context | Determines |
 |---|---|---|
-| **Work Level** | P3 Product/Program → P2 Epic → P1 Feature → P0 PBI/User Story | Delivery decomposition、artifact depth、review owner |
-| **Execution Layer** | Task → Plan Step → Commit（位於 P0 下方） | Implementation execution；不是 Work Level |
-| **Archetype** | Greenfield · Legacy Modernization/Migration · Standard Delivery | Research/Design focus |
-| **Control Profile** | System Criticality × L0–L3 Change Risk × E0–E3 AI Execution Mode | Rigor、authorization、evidence strength |
+| 需要 delivery decomposition 或 artifact/review depth | **Work Level**：P3 Product/Program → P2 Epic → P1 Feature → P0 PBI/User Story | Outcome ownership、decomposition、review depth |
+| Greenfield 或 migration/modernization 的 starting evidence 不同 | **Archetype** | Research／Design focus；一般 bounded work 不必重複標記 Standard |
+| 高 criticality、L2–L3 change 或 shared/external action | **Control Profile**：Criticality × Risk × E0–E3 | Rigor、authorization、evidence strength |
 
-AI Execution Mode：**E0 Observe → E1 Propose → E2 Change → E3 Act**。
+Execution Layer 的 Task → Plan Step → Commit 位於 P0 下方，不是另一個 Work Level。AI Execution Mode 是 **E0 Observe → E1 Propose → E2 Change → E3 Act**。
 
 P0 types：**User Story · Engineering Story/Enabler · Bug · Spike**。每張 P0 都有 acceptance 與 `Blocked by`；無 blocker 的 P0 構成 execution frontier。Spike 以 evidence/decision outcome 驗證。
 
@@ -54,7 +55,7 @@ P0 types：**User Story · Engineering Story/Enabler · Bug · Spike**。每張 
 
 | Stage | Required Capability / Golden Defaults | Minimum Artifact | Human Gate |
 |---|---|---|---|
-| **Research** | Evidence-backed understanding；defaults：`understand-anything` · `codebase-research` · `grill-me` · `/opsx:explore` | Research / Understanding Brief | **Understanding Gate**：current state、problem、scope、unknowns 清楚 |
+| **Research** | Evidence-backed understanding；defaults：manual `system-research` · manual `codebase-research`；按未知加 `grill-me` · `/opsx:explore` | Research / Understanding Brief | **Understanding Gate**：current state、problem、scope、unknowns 清楚 |
 | **Design** | Perform/select/challenge design；System Design when triggered；AI skills optional · `/opsx:propose` for durable agreement | System Design Pack when triggered + Feature Design / OpenSpec proposal/specs/design | **Change Gate**：design、risk、decomposition 可接受 |
 | **Plan** | Delivery/JIT decomposition；defaults：`to-tickets` P1 → P0；triggered `writing-plans` P0 → tasks | P0 backlog + blockers；JIT executable plan when needed | **Change Gate**：slices 獨立可驗證、plan bounded |
 | **Implement** | Test-first bounded execution；defaults：`/opsx:apply` + worktree + TDD + execution skill | Code/config/migration + tests + task ledger | Plan compliance + targeted verification |
@@ -90,14 +91,11 @@ SSOT rule：P3/P2 architecture 存在 Product/Architecture artifacts；OpenSpec 
 
 ## Engineer Start in 60 Seconds
 
-1. **Current Work Location**：工作目前在哪個 existing activity／system of record？
-2. **Work Level**：P3、P2、P1 或 P0？
-3. **Archetype**：Greenfield、Modernization/Migration 或 Standard Delivery？
-4. **Current Golden Stage**：最大的未知或風險屬於 Research、Design、Plan、Implement、Validate 哪一類？
-5. **Control Profile**：需要多嚴謹、AI 能做到哪裡？
-6. **Next Move**：採用哪個 Golden default skill、留下什麼 evidence、由誰完成 gate decision？
+1. **Initial route**：新工作完整回答 Six Golden Questions。
+2. **Next Move**：執行一個 required capability，留下 minimum evidence，由 accountable owner 完成 gate decision。
+3. **Continue route**：執行中更新 Current Stage／Next Move；context 改變時完整重判。
 
-新手與尚未建立 local practice 的 Team 直接採用 Golden defaults；成熟 Team 只有在完成 equivalent capability、input/output、stop condition、gate 與 evidence mapping 後才替換。
+Research 的 manual defaults 不需安裝，candidate implementation 核准後才可取代。其他 Golden defaults／Team equivalents 仍需完成 capability、input/output、stop condition、gate 與 evidence mapping。
 
 Tool/tracker routing details：see `05_Decision_Tree`。
 

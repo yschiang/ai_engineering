@@ -1,6 +1,6 @@
 # Project Charter — AI-Native Software Engineering Framework
 
-> Version: v1.6 Baseline
+> Version: v1.7 Baseline
 > Status: Active  
 > Project Sponsor: Department Head  
 > Primary Audience: Division Head, CIO, Engineering Management, Architects, Engineering Teams  
@@ -95,7 +95,7 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 
 ### O1. 建立單一 Engineer Mental Model 與共同語言
 
-以 `Research → Design → Plan → Implement → Validate` 作為唯一 Engineer-facing Golden Flow，並用 Six Golden Questions 定位 current work location、work level、archetype、current stage、control profile 與 next move。Risk tier、quality gates、roles 與 Definition of Done 提供相稱控制，不形成第二套 workflow。
+以 `Research → Design → Plan → Implement → Validate` 作為唯一 Engineer-facing Golden Flow。每次進入新的 work item，Engineer 先用 Six Golden Questions 完成一次 initial routing：確認工作記在哪裡、Work Level、Archetype、current stage、Control Profile 與 next move。進入執行後，通常只需更新 current stage 與 next move；scope、architecture、risk 或 AI authority 改變時，再重新完成六題判斷。Six Golden Questions 是 routing contract，不形成第二套 workflow。
 
 ### O2. 建立可執行方法
 
@@ -107,7 +107,7 @@ Golden Stages 是跨 Team 穩定的 engineering decision states，不是 Departm
 
 `Understand → Challenge → Execute → Evidence`
 
-每個 Delivery Level 與 Work Archetype 都明確定義 required capability、Golden default skill、minimum artifact 與 human gate。新手與尚未建立方法的 Team 直接採用 Golden default；成熟 Team 可 mapping 到 equivalent skill，但不得降低 capability、required input/output、stop condition、gate 或 evidence contract。
+每個 Delivery Level 與 Work Archetype 都明確定義 required capability、active default execution、minimum artifact 與 human gate。新手與尚未建立方法的 Team 直接採用 active default；成熟 Team 可 mapping 到 approved equivalent，但不得降低 capability、required input/output、stop condition、gate 或 evidence contract。
 
 ### O3. 建立風險與執行分級治理
 
@@ -252,7 +252,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 
 - Framework 具備 executive clarity 與 engineering depth。
 - 七份 numbered artifacts 使用同一 capability model、Delivery Level、Tier、terminology 與 governance logic。
-- Golden Playbook 能讓 Engineer 用 Six Golden Questions 在 60 秒內找到 current stage、required capability、minimum artifact 與 gate。
+- Golden Playbook 能讓 Engineer 在 60 秒內完成新工作的 Six Questions initial routing，找到 current stage、required capability、minimum artifact 與 gate；持續執行時只更新有變化的 routing fields。
 - Decision Tree 的 compact router 與 detailed routing 能在日常工作中直接使用。
 - Training Presentation 能在約 10–12 頁內完成管理與工程溝通。
 - Root README 能依角色將讀者導向正確 SSOT；Skill Registry 能追溯 Golden default source、environment、invocation 與 fallback。
@@ -297,7 +297,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 | 內容退化成工具教學 | 堅持 tool-agnostic、capability-based positioning |
 | AI 加速 output 但 quality 下降 | Evidence Gate、human accountability、balanced metrics |
 | 不同 artifacts 內容漂移 | `02_Framework.md` 作為內容 SSOT；版本化同步更新 |
-| 只由少數 power users 掌握，其他人停留在 vibe coding | Root README 角色路徑、Golden default skill path、Training、Decision Tree compact router、Skill Registry 與 reusable assets；未完成 equivalent mapping 前直接採 defaults |
+| 只由少數 power users 掌握，其他人停留在 vibe coding | Root README 角色路徑、active capability defaults、Training、Decision Tree compact router、Skill Registry 與 reusable assets；candidate skill 不阻塞 Research |
 | Management 只看使用率 | 以 delivery、quality、reliability 與 knowledge flow 衡量 |
 | Framework 被誤用為平行 SDLC | 將 capabilities、artifacts 與 gates 明確 mapping 到既有 intake、backlog、design、PR、test、release、change 與 operation activities |
 | 中央模板過多，Team 難以採用 | Department 只定義 minimum contract；Team 自主管理 tracker fields、templates、repository instructions 與 local DoD |
@@ -327,7 +327,7 @@ Case Library 是由既有 pilot 持續演進的 reference collection，不是新
 | M2 | Golden Engineering Playbook | Golden Flow + Six Questions，以及 P3–P0／archetype 的 capability → artifact → gate routing 可直接使用 |
 | M3 | Overview + Decision Tree | 能一頁理解、能快速做 work/risk/workflow decision |
 | M4 | Training Presentation | 可供部門 training 使用的 PowerPoint |
-| M5 | Adoption Navigation + Skill Registry | Root README 可依角色導覽；Decision Tree 開頭可快速 routing；skills source、environment、invocation 與 fallback 可追溯 |
+| M5 | Adoption Navigation + Skill Registry | Root README 可依角色導覽；Decision Tree 開頭可快速 routing；capability readiness、implementation source、environment、invocation 與 fallback 可追溯 |
 | M6 | Existing Pilot Consolidation and Revision | 盤點十個以上既有 cases，選出 3–5 個 canonical cases，其餘進入持續演進的 Case Library |
 
 ---

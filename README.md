@@ -16,7 +16,7 @@ Research → Design → Plan → Implement → Validate
 2. 第一次接觸 Framework 時，可先用 [Framework Overview](guides/04_Framework_Overview.md) 建立五分鐘視覺概覽；它是 optional summary，不是正式規則的前置文件。
 3. Engineer 打開 [Golden Engineering Playbook](03_Golden_Engineering_Playbook.md) 的 §1，再直接閱讀與目前工作相符的章節：Feature 看 §8；P0／Bug／Refactor／Spike 看 §9；常見入口看 §13。
 4. 只有在 Work Level、risk、stage、OpenSpec 或 gate 判斷不清楚時，才查 [Decision Tree](guides/05_Decision_Tree.md)。
-5. 啟動 Golden default skill 前，先在 [Golden Skill Registry](reference/Golden_Skill_Registry.md) 確認 source、安裝狀態、invocation 與 fallback。
+5. 使用 Golden default capability 前，先在 [Golden Skill Registry](reference/Golden_Skill_Registry.md) 確認它是可直接使用的 manual default、approved installable implementation，或尚未核准的 candidate。
 
 第一次可以從一個 bounded P0 Bug 開始：
 
@@ -101,7 +101,7 @@ Artifact Guide 是文件選擇器，不是另一條閱讀順序。
 | [`guides/04_Framework_Overview.md`](guides/04_Framework_Overview.md) | Optional visual summary | 五分鐘理解 Golden Flow、向主管或新進成員說明整體模型 | 所有人 | Optional；不是 SSOT |
 | [`guides/05_Decision_Tree.md`](guides/05_Decision_Tree.md) | Detailed routing reference | Work Level、Stage、risk、OpenSpec、skill 或 gate 判斷不清楚 | Engineer、Reviewer、Tech Lead | 按需查詢；不是主要操作手冊 |
 | [`training/06_Training_Presentation.pptx`](training/06_Training_Presentation.pptx) | Facilitated training material | Department meeting、onboarding workshop、Team training | Trainer、Manager、Engineer | Training 時使用；不是 SSOT |
-| [`reference/Golden_Skill_Registry.md`](reference/Golden_Skill_Registry.md) | Skill implementation provenance SSOT | 確認 skill source、支援環境、安裝、invocation、version 與 fallback | Engineer、Team Maintainer、Framework Maintainer | 使用或維護 skills 時 Required |
+| [`reference/Golden_Skill_Registry.md`](reference/Golden_Skill_Registry.md) | Capability readiness／implementation provenance SSOT | 確認 manual default、skill source、支援環境、安裝、invocation、version 與 fallback | Engineer、Team Maintainer、Framework Maintainer | 使用或維護 capabilities 時 Required |
 
 最重要的定位區分：
 

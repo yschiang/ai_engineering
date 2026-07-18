@@ -1,17 +1,17 @@
-{"kind":"deck","id":"pr/86p8f1","name":"Deck"}
+{"kind":"deck","id":"pr/gcia78","name":"Deck"}
 {"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
 {"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
 {"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"DEPARTMENT TRAINING","textShapes":5}
-{"kind":"textbox","id":"sh/i1w3yp8f","slide":1,"text":"DEPARTMENT TRAINING","textPreview":"DEPARTMENT TRAINING","textChars":19,"textLines":1,"bbox":[42,38,560,30]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"text":"DEPARTMENT TRAINING","textPreview":"DEPARTMENT TRAINING","textChars":19,"textLines":1,"bbox":[42,38,560,30]}
 {"kind":"textbox","id":"sh/547294r6","slide":1,"text":"AI-Native\nSoftware Engineering","textPreview":"AI-Native | Software Engineering","textChars":30,"textLines":2,"bbox":[42,188,970,190]}
 {"kind":"shape","id":"sh/k3yl0zql","slide":1,"bbox":[42,412,590,10]}
 {"kind":"textbox","id":"sh/7qp4be9c","slide":1,"text":"Golden Playbook for faster, safer, evidence-based delivery","textPreview":"Golden Playbook for faster, safer, evidence-based delivery","textChars":58,"textLines":1,"bbox":[42,452,970,52]}
 {"kind":"textbox","id":"sh/65g3298r","slide":1,"text":"Research → Design → Plan → Implement → Validate","textPreview":"Research → Design → Plan → Implement → Validate","textChars":47,"textLines":1,"bbox":[42,604,930,32]}
-{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"text":"v1.10 Baseline Candidate","textPreview":"v1.10 Baseline Candidate","textChars":24,"textLines":1,"bbox":[980,652,256,24]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"text":"v1.11 Baseline Candidate","textPreview":"v1.11 Baseline Candidate","textChars":24,"textLines":1,"bbox":[980,652,256,24]}
 {"kind":"notes","id":"nt/y90nupkv","slide":1,"text":""}
 {"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textShapes":6}
-{"kind":"textbox","id":"sh/mxgjm5s7","slide":2,"text":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textPreview":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textChars":29,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/qlsry1sf","slide":2,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/vuh8zm9s","slide":2,"text":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textPreview":"只有 Vibe Coding 不夠：我們要解的兩個工程問題","textChars":29,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/zmtwbel8","slide":2,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/ozy1ofad","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1185,674,52,20]}
 {"kind":"shape","id":"sh/b29kza94","slide":2,"bbox":[42,145,570,470]}
 {"kind":"shape","id":"sh/a10jqpsj","slide":2,"bbox":[42,145,570,30]}
@@ -33,21 +33,21 @@
 {"kind":"shape","id":"sh/65kfmpor","slide":2,"bbox":[0,0,1,1]}
 {"kind":"shape","id":"sh/hcvy14ne","slide":2,"bbox":[0,0,1,1]}
 {"kind":"shape","id":"sh/p0vy54na","slide":2,"bbox":[0,0,1,1]}
-{"kind":"image","id":"im/ypgjypkf","slide":2,"name":"","bbox":[0,0,1,1]}
-{"kind":"image","id":"im/lsr29k36","slide":2,"name":"","alt":"The hardest engineering problem AI can solve increases with deeper research, planning, context engineering, and bounded implementation sessions.","bbox":[62,250,530,340]}
-{"kind":"image","id":"im/kri10f2l","slide":2,"name":"","alt":"Bad research and bad plans propagate into much larger volumes of bad code when coding becomes cheap and fast.","bbox":[674,250,530,340]}
+{"kind":"image","id":"im/rqxwn29s","slide":2,"name":"","bbox":[0,0,1,1]}
+{"kind":"image","id":"im/cr6dw7qd","slide":2,"name":"","bbox":[62,290.28,530,259.45]}
+{"kind":"image","id":"im/dsfepcri","slide":2,"name":"","bbox":[674,286.16,530,267.69]}
 {"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
 {"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textShapes":22}
-{"kind":"textbox","id":"sh/by1svqlc","slide":3,"text":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textPreview":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textChars":41,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/507y1gbi","slide":3,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/kbi5w3ah","slide":3,"text":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textPreview":"這次建立的是：工程師每天能照著走的 AI Development Workflow","textChars":41,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/5crmpor2","slide":3,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/d0jax03i","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
 {"kind":"shape","id":"sh/298ryl4v","slide":3,"bbox":[42,155,1196,72]}
 {"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"text":"持久核心","textPreview":"持久核心","textChars":4,"textLines":1,"bbox":[66,174,155,30]}
 {"kind":"textbox","id":"sh/obq90bml","slide":3,"text":"AI models 會一直變強 · Engineering workflow / ownership / evidence 必須持久","textPreview":"AI models 會一直變強 · Engineering workflow / ownership / evidence 必須持久","textChars":66,"textLines":1,"bbox":[235,174,950,30]}
-{"kind":"shape","id":"sh/e5gzelsz","slide":3,"bbox":[230,350,42,0]}
-{"kind":"shape","id":"sh/f6pg7qtk","slide":3,"bbox":[470,350,42,0]}
-{"kind":"shape","id":"sh/zy5c32x0","slide":3,"bbox":[710,350,42,0]}
-{"kind":"shape","id":"sh/yxwbuxwf","slide":3,"bbox":[950,350,42,0]}
+{"kind":"shape","id":"sh/w3y1kvql","slide":3,"bbox":[230,350,42,0]}
+{"kind":"shape","id":"sh/x47id0r6","slide":3,"bbox":[470,350,42,0]}
+{"kind":"shape","id":"sh/a1gjil8f","slide":3,"bbox":[710,350,42,0]}
+{"kind":"shape","id":"sh/b2p0bq90","slide":3,"bbox":[950,350,42,0]}
 {"kind":"shape","id":"sh/m1c3mlsn","slide":3,"bbox":[42,277,198,154]}
 {"kind":"textbox","id":"sh/943mhgre","slide":3,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[60,294,40,30]}
 {"kind":"textbox","id":"sh/83ulovat","slide":3,"text":"Research","textPreview":"Research","textChars":8,"textLines":1,"bbox":[60,333,162,32]}
@@ -68,23 +68,23 @@
 {"kind":"textbox","id":"sh/a9kfadwn","slide":3,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1020,294,40,30]}
 {"kind":"textbox","id":"sh/batgjixs","slide":3,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[1020,333,162,32]}
 {"kind":"textbox","id":"sh/l4fi9cza","slide":3,"text":"Acceptance · risk · evidence","textPreview":"Acceptance · risk · evidence","textChars":28,"textLines":1,"bbox":[1020,378,162,40]}
-{"kind":"shape","id":"sh/b6x0zu1k","slide":3,"bbox":[1101,448,0,58]}
+{"kind":"shape","id":"sh/yx0nq9wr","slide":3,"bbox":[1101,448,0,58]}
 {"kind":"shape","id":"sh/z2d07mh4","slide":3,"bbox":[762,508,438,74]}
 {"kind":"textbox","id":"sh/y14jehgj","slide":3,"text":"不同大小","textPreview":"不同大小","textChars":4,"textLines":1,"bbox":[786,525,188,28]}
 {"kind":"textbox","id":"sh/x0vi5czy","slide":3,"text":"同一流程 · 深度不同","textPreview":"同一流程 · 深度不同","textChars":11,"textLines":1,"bbox":[982,527,194,26]}
 {"kind":"textbox","id":"sh/czmhc7id","slide":3,"text":"同一 Golden Flow 適用 P3→P0；Golden defaults 經 10+ actual pilots 淬煉，可直接使用或採 approved equivalent。","textPreview":"同一 Golden Flow 適用 P3→P0；Golden defaults 經 10+ actual pilots 淬煉，可直接使用或採 approved equivalent。","textChars":91,"textLines":1,"bbox":[42,610,850,25]}
 {"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":""}
-{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"先回答 Six Questions，再從 Current Stage 開始","textShapes":22}
-{"kind":"textbox","id":"sh/e9sj2tsv","slide":4,"text":"先回答 Six Questions，再從 Current Stage 開始","textPreview":"先回答 Six Questions，再從 Current Stage 開始","textChars":37,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/ozydc3u9","slide":4,"bbox":[42,130,1196,0]}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"新工作先回答六題；執行中只更新 Stage 與 Next Move","textShapes":22}
+{"kind":"textbox","id":"sh/103qdgvy","slide":4,"text":"新工作先回答六題；執行中只更新 Stage 與 Next Move","textPreview":"新工作先回答六題；執行中只更新 Stage 與 Next Move","textChars":33,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/0zupkbed","slide":4,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/0ba143al","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
 {"kind":"shape","id":"sh/rm1k7yt4","slide":4,"bbox":[42,155,1196,72]}
-{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"text":"SIX QUESTIONS","textPreview":"SIX QUESTIONS","textChars":13,"textLines":1,"bbox":[66,174,155,30]}
-{"kind":"textbox","id":"sh/doj29oba","slide":4,"text":"Location · Work Level · Archetype · Current Stage · Control Profile · Next Move","textPreview":"Location · Work Level · Archetype · Current Stage · Control Profile · Next Move","textChars":79,"textLines":1,"bbox":[235,174,950,30]}
-{"kind":"shape","id":"sh/r65wbedg","slide":4,"bbox":[230,350,42,0]}
-{"kind":"shape","id":"sh/65wv2tcv","slide":4,"bbox":[470,350,42,0]}
-{"kind":"shape","id":"sh/mdgz6h8v","slide":4,"bbox":[710,350,42,0]}
-{"kind":"shape","id":"sh/7ep0fm90","slide":4,"bbox":[950,350,42,0]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"text":"WHEN TO CHECK","textPreview":"WHEN TO CHECK","textChars":13,"textLines":1,"bbox":[66,174,155,30]}
+{"kind":"textbox","id":"sh/doj29oba","slide":4,"text":"開始新工作：六題全答　|　執行中：更新 Stage · Next Move　|　Context 改變：六題重答","textPreview":"開始新工作：六題全答　|　執行中：更新 Stage · Next Move　|　Context 改變：六題重答","textChars":55,"textLines":1,"bbox":[235,174,950,30]}
+{"kind":"shape","id":"sh/xcb6t83e","slide":4,"bbox":[230,350,42,0]}
+{"kind":"shape","id":"sh/cb2pk329","slide":4,"bbox":[470,350,42,0]}
+{"kind":"shape","id":"sh/batorylo","slide":4,"bbox":[710,350,42,0]}
+{"kind":"shape","id":"sh/a9k7itk3","slide":4,"bbox":[950,350,42,0]}
 {"kind":"shape","id":"sh/5cva1cfq","slide":4,"bbox":[42,277,198,154]}
 {"kind":"textbox","id":"sh/i94r6xgz","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[60,294,40,30]}
 {"kind":"textbox","id":"sh/jadsz2xk","slide":4,"text":"Research","textPreview":"Research","textChars":8,"textLines":1,"bbox":[60,333,162,32]}
@@ -105,19 +105,19 @@
 {"kind":"textbox","id":"sh/tsrqlc7u","slide":4,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1020,294,40,30]}
 {"kind":"textbox","id":"sh/sri9s7q9","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[1020,333,162,32]}
 {"kind":"textbox","id":"sh/ilwf69kv","slide":4,"text":"Review · fresh evidence","textPreview":"Review · fresh evidence","textChars":23,"textLines":1,"bbox":[1020,378,162,40]}
-{"kind":"shape","id":"sh/61ob65oz","slide":4,"bbox":[1101,448,0,58]}
+{"kind":"shape","id":"sh/by10bmhs","slide":4,"bbox":[1101,448,0,58]}
 {"kind":"shape","id":"sh/knex8j21","slide":4,"bbox":[762,508,438,74]}
 {"kind":"textbox","id":"sh/5ony1oj6","slide":4,"text":"Release & Operate","textPreview":"Release & Operate","textChars":17,"textLines":1,"bbox":[786,525,188,28]}
 {"kind":"textbox","id":"sh/axcf29kj","slide":4,"text":"Observe · Recover · Learn","textPreview":"Observe · Recover · Learn","textChars":25,"textLines":1,"bbox":[982,527,194,26]}
 {"kind":"textbox","id":"sh/vy5gbe14","slide":4,"text":"* System Design：P3/P2 required · P1 risk-triggered · P0 normally skip","textPreview":"* System Design：P3/P2 required · P1 risk-triggered · P0 normally skip","textChars":69,"textLines":1,"bbox":[42,610,850,25]}
 {"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
 {"kind":"slide","id":"sl/i107q5of","slide":5,"title":"P3–P0 只決定深度；以下用 P1 Feature 示範","textShapes":25}
-{"kind":"textbox","id":"sh/qd0bahob","slide":5,"text":"P3–P0 只決定深度；以下用 P1 Feature 示範","textPreview":"P3–P0 只決定深度；以下用 P1 Feature 示範","textChars":29,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/lcz2pcvm","slide":5,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/5sz6l0ry","slide":5,"text":"P3–P0 只決定深度；以下用 P1 Feature 示範","textPreview":"P3–P0 只決定深度；以下用 P1 Feature 示範","textChars":29,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/2ls72p8r","slide":5,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/cf2tcr61","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
-{"kind":"shape","id":"sh/j614z6dk","slide":5,"bbox":[173,247,0,45]}
-{"kind":"shape","id":"sh/i5s361cz","slide":5,"bbox":[173,349,0,45]}
-{"kind":"shape","id":"sh/qt87u5sj","slide":5,"bbox":[173,451,0,45]}
+{"kind":"shape","id":"sh/xgna1obe","slide":5,"bbox":[173,247,0,45]}
+{"kind":"shape","id":"sh/cfe9sjat","slide":5,"bbox":[173,349,0,45]}
+{"kind":"shape","id":"sh/be5szet8","slide":5,"bbox":[173,451,0,45]}
 {"kind":"shape","id":"sh/032tgr6d","slide":5,"bbox":[42,163,482,76]}
 {"kind":"textbox","id":"sh/n6dcr65o","slide":5,"text":"P3","textPreview":"P3","textChars":2,"textLines":1,"bbox":[62,180,58,32]}
 {"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"text":"Product / Program","textPreview":"Product / Program","textChars":17,"textLines":1,"bbox":[132,178,180,28]}
@@ -152,13 +152,13 @@
 {"kind":"textbox","id":"sh/e1sjatgz","slide":5,"text":"接下來全部用 P1 Feature 示範一條具體 Golden Path。","textPreview":"接下來全部用 P1 Feature 示範一條具體 Golden Path。","textChars":37,"textLines":1,"bbox":[657,574,540,42]}
 {"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
 {"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"P1 Feature 的 Plan：先切 P0，再做 JIT implementation plan","textShapes":13}
-{"kind":"textbox","id":"sh/lkrqp4ra","slide":6,"text":"P1 Feature 的 Plan：先切 P0，再做 JIT implementation plan","textPreview":"P1 Feature 的 Plan：先切 P0，再做 JIT implementation plan","textChars":50,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/hkj2xsra","slide":6,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/xkfi1o76","slide":6,"text":"P1 Feature 的 Plan：先切 P0，再做 JIT implementation plan","textPreview":"P1 Feature 的 Plan：先切 P0，再做 JIT implementation plan","textChars":50,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/mt4z29oj","slide":6,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/zi98nu94","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1185,674,52,20]}
-{"kind":"shape","id":"sh/vi1kv294","slide":6,"bbox":[262,269,24,0]}
-{"kind":"shape","id":"sh/uhs32x8z","slide":6,"bbox":[490,269,24,0]}
-{"kind":"shape","id":"sh/tgj2tsre","slide":6,"bbox":[790,269,24,0]}
-{"kind":"shape","id":"sh/8fal0nqt","slide":6,"bbox":[1018,269,24,0]}
+{"kind":"shape","id":"sh/ovmh4j69","slide":6,"bbox":[262,269,24,0]}
+{"kind":"shape","id":"sh/9wfixo7u","slide":6,"bbox":[490,269,24,0]}
+{"kind":"shape","id":"sh/6p8jeton","slide":6,"bbox":[790,269,24,0]}
+{"kind":"shape","id":"sh/7qh07yp8","slide":6,"bbox":[1018,269,24,0]}
 {"kind":"shape","id":"sh/oryp8fah","slide":6,"bbox":[42,210,212,118]}
 {"kind":"textbox","id":"sh/pc76hkr2","slide":6,"text":"Approved P1\nFeature Design","textPreview":"Approved P1 | Feature Design","textChars":26,"textLines":2,"bbox":[56,245,184,52]}
 {"kind":"shape","id":"sh/h4bupgn6","slide":6,"bbox":[294,210,188,118]}
@@ -180,15 +180,15 @@
 {"kind":"textbox","id":"sh/ydgnit07","slide":6,"text":"藍色 = Golden default skill · writing-plans only when triggered · existing OpenSpec plan stays SSOT","textPreview":"藍色 = Golden default skill · writing-plans only when triggered · existing OpenSpec plan stays SSOT","textChars":97,"textLines":1,"bbox":[42,644,950,20]}
 {"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":""}
 {"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"工程師只要記住：一張 Feature，沿 Golden Flow 走到底","textShapes":18}
-{"kind":"textbox","id":"sh/batcbq94","slide":7,"text":"工程師只要記住：一張 Feature，沿 Golden Flow 走到底","textPreview":"工程師只要記住：一張 Feature，沿 Golden Flow 走到底","textChars":36,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/7690vyd8","slide":7,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/ql8zyx0z","slide":7,"text":"工程師只要記住：一張 Feature，沿 Golden Flow 走到底","textPreview":"工程師只要記住：一張 Feature，沿 Golden Flow 走到底","textChars":36,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/2x47q5kr","slide":7,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/dcbud0ra","slide":7,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1185,674,52,20]}
 {"kind":"shape","id":"sh/ydkbm5sv","slide":7,"bbox":[42,170,365,410]}
 {"kind":"shape","id":"sh/zedcfa9g","slide":7,"bbox":[42,170,365,30]}
 {"kind":"textbox","id":"sh/kzmdova1","slide":7,"text":"1 · 把問題弄對","textPreview":"1 · 把問題弄對","textChars":9,"textLines":1,"bbox":[52,176,345,18]}
 {"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"text":"Research → Design","textPreview":"Research → Design","textChars":17,"textLines":1,"bbox":[66,226,315,32]}
-{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"text":"問：change boundary / FR / NFR？\n用：codebase-research\n→ brainstorming / grill-me\n留：approved Feature Design","textPreview":"問：change boundary / FR / NFR？ | 用：codebase-research | → brainstorming / grill-me | 留：approved Feature Design","textChars":102,"textLines":4,"bbox":[66,285,315,190]}
-{"kind":"shape","id":"sh/gb2hs3up","slide":7,"bbox":[66,500,317,0]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"text":"問：change boundary / FR / NFR？\n用：read-only codebase research\n→ brainstorming / grill-me\n留：approved Feature Design","textPreview":"問：change boundary / FR / NFR？ | 用：read-only codebase research | → brainstorming / grill-me | 留：approved Feature Design","textChars":112,"textLines":4,"bbox":[66,285,315,190]}
+{"kind":"shape","id":"sh/1wv6hk36","slide":7,"bbox":[66,500,317,0]}
 {"kind":"textbox","id":"sh/baxkjqlk","slide":7,"text":"DONE WHEN","textPreview":"DONE WHEN","textChars":9,"textLines":1,"bbox":[66,521,100,22]}
 {"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"text":"Understanding + Change Gate","textPreview":"Understanding + Change Gate","textChars":27,"textLines":1,"bbox":[66,548,315,46]}
 {"kind":"shape","id":"sh/xcz2l03q","slide":7,"bbox":[449,170,365,410]}
@@ -196,7 +196,7 @@
 {"kind":"textbox","id":"sh/n6x0fqlo","slide":7,"text":"2 · 把交付切小","textPreview":"2 · 把交付切小","textChars":9,"textLines":1,"bbox":[459,176,345,18]}
 {"kind":"textbox","id":"sh/25ojml43","slide":7,"text":"Plan → Implement","textPreview":"Plan → Implement","textChars":16,"textLines":1,"bbox":[473,226,315,32]}
 {"kind":"textbox","id":"sh/p8fih03e","slide":7,"text":"to-tickets → P0 vertical slices\nBlocked by → execution frontier\nwriting-plans → JIT tasks\nTDD → small reviewable change","textPreview":"to-tickets → P0 vertical slices | Blocked by → execution frontier | writing-plans → JIT tasks | TDD → small reviewable change","textChars":119,"textLines":4,"bbox":[473,285,315,190]}
-{"kind":"shape","id":"sh/vi5cjq50","slide":7,"bbox":[473,500,317,0]}
+{"kind":"shape","id":"sh/kvq9kjm5","slide":7,"bbox":[473,500,317,0]}
 {"kind":"textbox","id":"sh/f2d0b6lc","slide":7,"text":"DONE WHEN","textPreview":"DONE WHEN","textChars":9,"textLines":1,"bbox":[473,521,100,22]}
 {"kind":"textbox","id":"sh/eh4jil4r","slide":7,"text":"P0 acceptance + tests","textPreview":"P0 acceptance + tests","textChars":21,"textLines":1,"bbox":[473,548,315,46]}
 {"kind":"shape","id":"sh/id4ju1oz","slide":7,"bbox":[856,170,365,410]}
@@ -204,62 +204,62 @@
 {"kind":"textbox","id":"sh/4fm1wb6p","slide":7,"text":"3 · 用證據完成","textPreview":"3 · 用證據完成","textChars":9,"textLines":1,"bbox":[866,176,345,18]}
 {"kind":"textbox","id":"sh/50v2pgna","slide":7,"text":"Validate → Release","textPreview":"Validate → Release","textChars":18,"textLines":1,"bbox":[880,226,315,32]}
 {"kind":"textbox","id":"sh/q143ylov","slide":7,"text":"Review actual diff\nVerify acceptance + affected risk\nPrepare rollback / observe\nHand off to existing release / E3","textPreview":"Review actual diff | Verify acceptance + affected risk | Prepare rollback / observe | Hand off to existing release / E3","textChars":113,"textLines":4,"bbox":[880,285,315,190]}
-{"kind":"shape","id":"sh/6dgvip8n","slide":7,"bbox":[880,500,317,0]}
+{"kind":"shape","id":"sh/knu9gzex","slide":7,"bbox":[880,500,317,0]}
 {"kind":"textbox","id":"sh/s3ml0v61","slide":7,"text":"DONE WHEN","textPreview":"DONE WHEN","textChars":9,"textLines":1,"bbox":[880,521,100,22]}
 {"kind":"textbox","id":"sh/d4f2t0nm","slide":7,"text":"Evidence Gate + release readiness","textPreview":"Evidence Gate + release readiness","textChars":33,"textLines":1,"bbox":[880,548,315,46]}
-{"kind":"textbox","id":"sh/e5o32lor","slide":7,"text":"TAKEAWAY · Golden Flow 決定下一步；Golden Default skill 決定怎麼做；risk 只改變 rigor，不改變路徑。","textPreview":"TAKEAWAY · Golden Flow 決定下一步；Golden Default skill 決定怎麼做；risk 只改變 rigor，不改變路徑。","textChars":77,"textLines":1,"bbox":[42,596,1196,60]}
+{"kind":"textbox","id":"sh/e5o32lor","slide":7,"text":"TAKEAWAY · Golden Flow 決定下一步；default capability 決定怎麼做；risk 只改變 rigor，不改變路徑。","textPreview":"TAKEAWAY · Golden Flow 決定下一步；default capability 決定怎麼做；risk 只改變 rigor，不改變路徑。","textChars":75,"textLines":1,"bbox":[42,596,1196,60]}
 {"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":""}
 {"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"AI Engineering：Design / Implement 各 1.5 週，總時間 8 → 6 週","textShapes":16}
-{"kind":"textbox","id":"sh/elkf2pg7","slide":8,"text":"AI Engineering：Design / Implement 各 1.5 週，總時間 8 → 6 週","textPreview":"AI Engineering：Design / Implement 各 1.5 週，總時間 8 → 6 週","textChars":53,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/29sfep8j","slide":8,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/fmhgjup8","slide":8,"text":"AI Engineering：Design / Implement 各 1.5 週，總時間 8 → 6 週","textPreview":"AI Engineering：Design / Implement 各 1.5 週，總時間 8 → 6 週","textChars":53,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/gnaxczqd","slide":8,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/g72x4zyd","slide":8,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1185,674,52,20]}
 {"kind":"shape","id":"sh/ri9g7uhw","slide":8,"bbox":[42,478,365,136]}
 {"kind":"shape","id":"sh/6h0fypgb","slide":8,"bbox":[42,478,365,30]}
-{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"text":"DESIGN QUALITY","textPreview":"DESIGN QUALITY","textChars":14,"textLines":1,"bbox":[52,484,345,18]}
-{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"text":"0.5 → 1.5 wk","textPreview":"0.5 → 1.5 wk","textChars":12,"textLines":1,"bbox":[66,521,317,30]}
-{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"text":"design time ×3\nFR / NFR / failure modes","textPreview":"design time ×3 | FR / NFR / failure modes","textChars":39,"textLines":2,"bbox":[66,556,317,52]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"text":"COLLABORATION","textPreview":"COLLABORATION","textChars":13,"textLines":1,"bbox":[52,484,345,18]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"text":"↑ Shared context","textPreview":"↑ Shared context","textChars":16,"textLines":1,"bbox":[66,521,317,30]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"text":"documented decisions\nshared evidence · handoff","textPreview":"documented decisions | shared evidence · handoff","textChars":46,"textLines":2,"bbox":[66,556,317,52]}
 {"kind":"textbox","id":"sh/o7ydoret","slide":8,"text":"AS-IS · 8 WEEKS","textPreview":"AS-IS · 8 WEEKS","textChars":15,"textLines":1,"bbox":[42,190,235,22]}
 {"kind":"textbox","id":"sh/98rehwve","slide":8,"text":"4 × 2-week sprints\nsingle-repo research\nunclear FR/NFR · thin tests","textPreview":"4 × 2-week sprints | single-repo research | unclear FR/NFR · thin tests","textChars":67,"textLines":3,"bbox":[42,216,245,72]}
 {"kind":"shape","id":"sh/m5gvmhwn","slide":8,"bbox":[449,478,365,136]}
 {"kind":"shape","id":"sh/n6pwfmd8","slide":8,"bbox":[449,478,365,30]}
-{"kind":"textbox","id":"sh/0jydkreh","slide":8,"text":"IMPLEMENTATION TIME","textPreview":"IMPLEMENTATION TIME","textChars":19,"textLines":1,"bbox":[459,484,345,18]}
-{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"text":"5.5 → 1.5 wk","textPreview":"5.5 → 1.5 wk","textChars":12,"textLines":1,"bbox":[473,521,317,30]}
-{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"text":"implementation time ↓73%\nless patch-driven delivery","textPreview":"implementation time ↓73% | less patch-driven delivery","textChars":51,"textLines":2,"bbox":[473,556,317,52]}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"text":"LEAD TIME","textPreview":"LEAD TIME","textChars":9,"textLines":1,"bbox":[459,484,345,18]}
+{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"text":"8 → 6 wk target","textPreview":"8 → 6 wk target","textChars":15,"textLines":1,"bbox":[473,521,317,30]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"text":"faster implementation\nfewer rework loops","textPreview":"faster implementation | fewer rework loops","textChars":40,"textLines":2,"bbox":[473,556,317,52]}
 {"kind":"textbox","id":"sh/kfixwbe1","slide":8,"text":"AI · 6 WEEKS · -25%","textPreview":"AI · 6 WEEKS · -25%","textChars":19,"textLines":1,"bbox":[42,319,245,22]}
 {"kind":"textbox","id":"sh/lgbepgvm","slide":8,"text":"≈ 3 × 2-week sprints\nsystem-wide research\nexplicit design · TDD evidence","textPreview":"≈ 3 × 2-week sprints | system-wide research | explicit design · TDD evidence","textChars":72,"textLines":3,"bbox":[42,345,245,72]}
 {"kind":"shape","id":"sh/tw7e9gnq","slide":8,"bbox":[856,478,365,136]}
 {"kind":"shape","id":"sh/svydgb65","slide":8,"bbox":[856,478,365,30]}
-{"kind":"textbox","id":"sh/7u5w765k","slide":8,"text":"PATCHES / REWORK","textPreview":"PATCHES / REWORK","textChars":16,"textLines":1,"bbox":[866,484,345,18]}
-{"kind":"textbox","id":"sh/6twve1oz","slide":8,"text":"↓ Fewer loops","textPreview":"↓ Fewer loops","textChars":13,"textLines":1,"bbox":[880,521,317,30]}
-{"kind":"textbox","id":"sh/5sne5wne","slide":8,"text":"validation 1.0 → 2.0 wk\nTDD · staging · readiness","textPreview":"validation 1.0 → 2.0 wk | TDD · staging · readiness","textChars":49,"textLines":2,"bbox":[880,556,317,52]}
+{"kind":"textbox","id":"sh/7u5w765k","slide":8,"text":"CHANGE FAILURE RATE","textPreview":"CHANGE FAILURE RATE","textChars":19,"textLines":1,"bbox":[866,484,345,18]}
+{"kind":"textbox","id":"sh/6twve1oz","slide":8,"text":"↓ Lower rate","textPreview":"↓ Lower rate","textChars":12,"textLines":1,"bbox":[880,521,317,30]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"text":"design · code · test quality\nrelease readiness","textPreview":"design · code · test quality | release readiness","textChars":46,"textLines":2,"bbox":[880,556,317,52]}
 {"kind":"textbox","id":"sh/x4ne1wni","slide":8,"text":"Illustrative target allocation：stages may overlap；需以既有 10+ pilots actual baseline 持續校準。","textPreview":"Illustrative target allocation：stages may overlap；需以既有 10+ pilots actual baseline 持續校準。","textChars":87,"textLines":1,"bbox":[42,625,1110,28]}
-{"kind":"image","id":"im/mlwbq14f","slide":8,"name":"","alt":"Illustrative stacked bars: as-is totals eight weeks; AI engineering totals six weeks with design and implementation at 1.5 weeks each.","bbox":[300.11,155,917.78,295]}
+{"kind":"image","id":"im/wretwbmh","slide":8,"name":"","bbox":[300.11,155,917.78,295]}
 {"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":""}
 {"kind":"slide","id":"sl/udsvah03","slide":9,"title":"START WITH A FEATURE","textShapes":26}
-{"kind":"textbox","id":"sh/eponml43","slide":9,"text":"START WITH A FEATURE","textPreview":"START WITH A FEATURE","textChars":20,"textLines":1,"bbox":[42,26,520,24]}
-{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"text":"明天從一張 P1 Feature 開始：回答六個問題","textPreview":"明天從一張 P1 Feature 開始：回答六個問題","textChars":26,"textLines":1,"bbox":[42,58,1160,64]}
-{"kind":"shape","id":"sh/eloza50n","slide":9,"bbox":[42,130,1196,0]}
+{"kind":"textbox","id":"sh/obedwbyp","slide":9,"text":"START WITH A FEATURE","textPreview":"START WITH A FEATURE","textChars":20,"textLines":1,"bbox":[42,26,520,24]}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"text":"明天從一張 P1 Feature 開始：六個問題全部回答","textPreview":"明天從一張 P1 Feature 開始：六個問題全部回答","textChars":28,"textLines":1,"bbox":[42,58,1160,64]}
+{"kind":"shape","id":"sh/65gv6lg3","slide":9,"bbox":[42,130,1196,0]}
 {"kind":"textbox","id":"sh/nex4jq5k","slide":9,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1185,674,52,20]}
 {"kind":"textbox","id":"sh/mdonql4z","slide":9,"text":"P1 FEATURE · 60-SECOND START","textPreview":"P1 FEATURE · 60-SECOND START","textChars":28,"textLines":1,"bbox":[42,158,440,28]}
 {"kind":"textbox","id":"sh/9gzml0nq","slide":9,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[42,212,42,34]}
-{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"text":"工作在哪裡？ existing activity / system of record","textPreview":"工作在哪裡？ existing activity / system of record","textChars":43,"textLines":1,"bbox":[96,214,470,34]}
-{"kind":"shape","id":"sh/udcjed0z","slide":9,"bbox":[96,253,470,0]}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"text":"工作位置？ existing activity / system of record","textPreview":"工作位置？ existing activity / system of record","textChars":42,"textLines":1,"bbox":[96,214,470,34]}
+{"kind":"shape","id":"sh/ni9on6hc","slide":9,"bbox":[96,253,470,0]}
 {"kind":"textbox","id":"sh/ah8nu54b","slide":9,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[42,279,42,34]}
 {"kind":"textbox","id":"sh/oza1gfyh","slide":9,"text":"Work Level？ P3 / P2 / P1 / P0","textPreview":"Work Level？ P3 / P2 / P1 / P0","textChars":29,"textLines":1,"bbox":[96,281,470,34]}
-{"kind":"shape","id":"sh/hgn2p8ja","slide":9,"bbox":[96,320,470,0]}
+{"kind":"shape","id":"sh/o3ipgbyx","slide":9,"bbox":[96,320,470,0]}
 {"kind":"textbox","id":"sh/2xsjepgb","slide":9,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[42,346,42,34]}
 {"kind":"textbox","id":"sh/3y107axw","slide":9,"text":"Archetype？ Greenfield / Modernization / Standard","textPreview":"Archetype？ Greenfield / Modernization / Standard","textChars":48,"textLines":1,"bbox":[96,348,470,34]}
-{"kind":"shape","id":"sh/p4rmpw3q","slide":9,"bbox":[96,387,470,0]}
+{"kind":"shape","id":"sh/47ud43ah","slide":9,"bbox":[96,387,470,0]}
 {"kind":"textbox","id":"sh/do3id4fy","slide":9,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[42,413,42,34]}
 {"kind":"textbox","id":"sh/qlcjipgn","slide":9,"text":"Current Stage？ 第一個還不能可靠回答的問題","textPreview":"Current Stage？ 第一個還不能可靠回答的問題","textChars":28,"textLines":1,"bbox":[96,415,470,34]}
-{"kind":"shape","id":"sh/210ne1kf","slide":9,"bbox":[96,454,470,0]}
+{"kind":"shape","id":"sh/36lcvytw","slide":9,"bbox":[96,454,470,0]}
 {"kind":"textbox","id":"sh/0ru1ozyp","slide":9,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[42,480,42,34]}
-{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"text":"Control Profile？ rigor / risk / AI authority","textPreview":"Control Profile？ rigor / risk / AI authority","textChars":44,"textLines":1,"bbox":[96,482,470,34]}
-{"kind":"shape","id":"sh/fe94jmlo","slide":9,"bbox":[96,521,470,0]}
+{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"text":"Control Profile？ criticality / risk / AI authority","textPreview":"Control Profile？ criticality / risk / AI authority","textChars":50,"textLines":1,"bbox":[96,482,470,34]}
+{"kind":"shape","id":"sh/q9cv6dsn","slide":9,"bbox":[96,521,470,0]}
 {"kind":"textbox","id":"sh/87a18zqt","slide":9,"text":"WHAT CHANGES TOMORROW","textPreview":"WHAT CHANGES TOMORROW","textChars":21,"textLines":1,"bbox":[661,158,300,28]}
 {"kind":"shape","id":"sh/76h0zup8","slide":9,"bbox":[661,208,537,78]}
 {"kind":"textbox","id":"sh/ml8j6p8n","slide":9,"text":"Engineer","textPreview":"Engineer","textChars":8,"textLines":1,"bbox":[682,226,185,28]}
-{"kind":"textbox","id":"sh/hcji5o7a","slide":9,"text":"Follow Golden defaults；不再 open-ended vibe coding","textPreview":"Follow Golden defaults；不再 open-ended vibe coding","textChars":48,"textLines":1,"bbox":[875,222,297,40]}
+{"kind":"textbox","id":"sh/hcji5o7a","slide":9,"text":"Use active defaults；candidate skill 不阻塞 Research","textPreview":"Use active defaults；candidate skill 不阻塞 Research","textChars":48,"textLines":1,"bbox":[875,222,297,40]}
 {"kind":"shape","id":"sh/wba1cjqp","slide":9,"bbox":[661,306,537,78]}
 {"kind":"textbox","id":"sh/va103ep4","slide":9,"text":"Tech Lead / Architect","textPreview":"Tech Lead / Architect","textChars":21,"textLines":1,"bbox":[682,324,185,28]}
 {"kind":"textbox","id":"sh/u9sja98z","slide":9,"text":"Approve design、equivalent skills 與 gate decisions","textPreview":"Approve design、equivalent skills 與 gate decisions","textChars":49,"textLines":1,"bbox":[875,320,297,40]}
@@ -269,7 +269,7 @@
 {"kind":"shape","id":"sh/nmdg3q54","slide":9,"bbox":[661,522,537,102]}
 {"kind":"textbox","id":"sh/onmxcv69","slide":9,"text":"TEAM ADAPTER","textPreview":"TEAM ADAPTER","textChars":12,"textLines":1,"bbox":[683,541,160,24]}
 {"kind":"textbox","id":"sh/pofy50nu","slide":9,"text":"Map local activity → Golden Stage / Gate / artifact\nDepartment：minimum contract + defaults · Team：approved equivalents","textPreview":"Map local activity → Golden Stage / Gate / artifact | Department：minimum contract + defaults · Team：approved equivalents","textChars":118,"textLines":2,"bbox":[683,552,480,60]}
-{"kind":"textbox","id":"sh/apofe5of","slide":9,"text":"從 Golden defaults 開始，用 evidence 完成；不要讓 code generation 取代 engineering。","textPreview":"從 Golden defaults 開始，用 evidence 完成；不要讓 code generation 取代 engineering。","textChars":70,"textLines":1,"bbox":[42,641,1120,28]}
+{"kind":"textbox","id":"sh/apofe5of","slide":9,"text":"開始新工作六題全答；執行中更新 Stage／Next Move；context 改變時六題重答。","textPreview":"開始新工作六題全答；執行中更新 Stage／Next Move；context 改變時六題重答。","textChars":48,"textLines":1,"bbox":[42,641,1120,28]}
 {"kind":"textbox","id":"sh/bid8769w","slide":9,"name":"six-question-6-number","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[42,546,42,34]}
-{"kind":"textbox","id":"sh/cjmp0bqh","slide":9,"name":"six-question-6-text","text":"Next Move？ Golden default → evidence → Gate","textPreview":"Next Move？ Golden default → evidence → Gate","textChars":43,"textLines":1,"bbox":[96,548,470,34]}
+{"kind":"textbox","id":"sh/cjmp0bqh","slide":9,"name":"six-question-6-text","text":"Next Move？ capability → evidence → Gate","textPreview":"Next Move？ capability → evidence → Gate","textChars":39,"textLines":1,"bbox":[96,548,470,34]}
 {"kind":"notes","id":"nt/udsvah03","slide":9,"text":""}
