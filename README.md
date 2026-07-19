@@ -15,7 +15,7 @@ Research → Design → Plan → Implement → Validate
 1. 先在下方選擇與角色相符的閱讀路徑；`00–06` 是 artifact identifiers，不是閱讀順序。
 2. 第一次接觸 Framework 時，可先用 [Framework Overview](guides/04_Framework_Overview.md) 建立五分鐘視覺概覽；它是 optional summary，不是正式規則的前置文件。
 3. Engineer 打開 [Golden Engineering Playbook](03_Golden_Engineering_Playbook.md) 的 §1，再直接閱讀與目前工作相符的章節：Feature 看 §8；P0／Bug／Refactor／Spike 看 §9；常見入口看 §13。
-4. 只有在 Work Level、risk、stage、OpenSpec 或 gate 判斷不清楚時，才查 [Decision Tree](guides/05_Decision_Tree.md)。
+4. 不知道下一個 skill、是否使用 OpenSpec／Superpowers，直接查 [Decision Tree §6 — Choose the Next Capability](guides/05_Decision_Tree.md#6-choose-the-next-capability)；Work Level、risk 或 gate 不清楚時再查其他章節。
 5. 使用 Golden default capability 前，先在 [Golden Skill Registry](reference/Golden_Skill_Registry.md) 確認它是可直接使用的 manual default、approved installable implementation，或尚未核准的 candidate。
 
 第一次可以從一個 bounded P0 Bug 開始：
@@ -28,6 +28,16 @@ Reproduce
 → Review
 → Fresh Verification
 ```
+
+Skill 選擇先看兩件事：
+
+| 要做什麼已清楚？ | 需要跨 session／AI／Engineer 保存工程上下文？ | Default |
+|---|---|---|
+| 否 | 尚未判斷 | Research／`grill-me`／`/opsx:explore`，先把未知弄清楚 |
+| 是 | 否 | Superpowers／Team equivalent，直接完成 design、plan、TDD、request/receive code review、verification |
+| 是 | 是 | OpenSpec 保存 why／what／how／tasks；Superpowers/Team equivalent 負責 TDD、request/receive code review、verification；design/plan 只留一份 SSOT |
+
+Team 可依既有 workflow、工具可用性、熟悉度與交接頻率選 Fast Delivery、Durable Change 或 Discovery First default profile。這是全隊 convention，不是個人臨時偏好；客觀 architecture/risk/evidence 要求仍優先。
 
 ## Choose Your Reading Path
 
