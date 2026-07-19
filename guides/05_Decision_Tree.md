@@ -1,8 +1,8 @@
 # AI-Native Software Engineering Decision Tree
 
-> Version: v1.8 Candidate
+> Version: v1.10 Candidate
 > Status: Ready for Sponsor / Engineering Review  
-> Derived from: `02_Framework.md` v1.9 Baseline + `03_Golden_Engineering_Playbook.md` v1.7 Baseline + `04_Framework_Overview.md` v1.8 Candidate
+> Derived from: `02_Framework.md` v1.11 Baseline + `03_Golden_Engineering_Playbook.md` v1.9 Baseline + `04_Framework_Overview.md` v1.10 Candidate
 > Purpose: Detailed Engineer routing reference; opening router also serves as the daily quick reference
 
 ---
@@ -201,23 +201,37 @@ System Design stays inside **Design**。System Design Review 是 Change Gate 的
 
 Stage 只定位問題類型，不能單獨決定 skill。先找出第一個還沒搞清楚的問題，只選一個最適合的 capability；做到預期結果後再判斷下一步。不要按品牌選工具或一次啟動所有 skills。
 
-### 6.1 Quick Choice
+### 6.1 Assign Responsibility First
+
+| Responsibility | Default | Decision |
+|---|---|---|
+| Direction／roles | Existing Team workflow and Human owners | 誰擁有 outcome、trade-off、risk 與 release decision？ |
+| Spec-Driven Development | OpenSpec；Fast Delivery 可用 Superpowers／Team SSOT | 是否需要 durable proposal／specs／design／tasks 與 change traceability？ |
+| Engineering discipline | Superpowers／Team equivalent | 這次要採哪些 design/planning、TDD、debugging、review 與 verification disciplines？ |
+| Execution orchestration | `/opsx:apply`、Superpowers execution 或 approved runner | 哪一個 execution entry 讀取哪一個 task ledger？ |
+| Evidence／approval | CI、PR、tests、review、OpenSpec verify + Human Gate | 哪些 evidence 支持哪位 Human Owner 的 decision？ |
+
+Canonical default：**OpenSpec owns Spec-Driven Development and change traceability；Superpowers enforces TDD-centered engineering disciplines.** 這不限制 Stage coverage；它只避免 mixed mode 的 ownership 漂移。
+
+### 6.2 Quick Choice
 
 | 要做什麼已清楚？ | 後續需要跨 session／AI／Engineer 接手？ | 建議路徑 |
 |---|---|---|
 | **否** | 尚未判斷 | 先處理未知：系統不清楚用 research、人的決定不清楚用 `grill-me`、change/options/scope 不清楚用 `/opsx:explore` |
 | **是** | **否** | **Superpowers／Team equivalent**：short design → inline plan 或 `writing-plans` → TDD → request/receive code review → verification |
-| **是** | **是** | **OpenSpec + Superpowers execution skills**：OpenSpec 保存 why／what／how／tasks；TDD、request/receive code review、verification 確保執行品質；design/plan 只留一份 SSOT |
+| **是** | **是** | **OpenSpec + selected Superpowers disciplines**：OpenSpec 擁有 why／what／how／tasks 與 `/opsx:apply` entry；TDD、debugging、request/receive code review、verification 確保執行品質；design/plan 只留一份 SSOT |
 
 Team 應依既有 workflow、工具可用性、熟悉度與交接頻率選定 default profile，避免每張 ticket 重選工具：
 
 | Team 現況 | Default Profile | 預設路徑 |
 |---|---|---|
-| 多數是清楚的 bounded P0/P1，ticket + PR 已足以交接 | **Fast Delivery** | Superpowers／Team equivalent |
-| 常跨 session／AI／Engineer，或 behavior/design reason 必須長期保存 | **Durable Change** | OpenSpec + TDD/review/verification；先定 artifact integration |
-| Brownfield、需求、root cause 或方案常不清楚 | **Discovery First** | 先按未知選 research／`grill-me`／`/opsx:explore`，清楚後轉前兩者 |
+| 多數是清楚的 bounded P0/P1，ticket + PR 已足以交接 | **Fast Delivery** | Superpowers／Team equivalent end-to-end |
+| 常跨 session／AI／Engineer，或 behavior/design reason 必須長期保存 | **Complex / Durable Change** | OpenSpec 管 spec/tasks；`/opsx:apply` 中逐 task 使用 Superpowers TDD/review |
+| Brownfield、需求、root cause 或方案常不清楚 | **Discovery pre-route** | 先按未知選 research／`grill-me`／`/opsx:explore`；清楚後再選前兩條，不形成第三條 delivery flow |
 
 Profile 是全隊共同 convention，不是個人臨時偏好。architecture/risk trigger、required design/test/review、Human Gate 與 evidence 不可因習慣而降低。
+
+Durable Change 開工前，在既有 ticket／OpenSpec／PR context 確認四件事即可，不建立新表格：spec/design owner、plan/task ledger、execution entry、completion evidence/Human record。沒有 approved bridge 時，不啟動會另建 `docs/superpowers/...` design/plan 的 Superpowers skills。
 
 如果「要做什麼」還不清楚，再依問題來源選 capability：
 
@@ -228,7 +242,7 @@ Profile 是全隊共同 convention，不是個人臨時偏好。architecture/ris
 | Fast Delivery：已決定改變 behavior，但 target design/approach 尚未 approved | `superpowers:brainstorming` | Design 經 Human approval；使用 upstream skill 時保存到 `docs/superpowers/...` |
 | Durable Change：direction 已清楚，而且後續要接著同一份 why／what／how／tasks 工作 | OpenSpec `/opsx:propose` or `new/continue` | 建立 scoped P1/P0 Change；套用相同 design quality contract，但不建立第二份 design |
 
-### 6.2 Full Stage Router
+### 6.3 Full Stage Router
 
 | Current Stage | First unanswered question | Next activity / supporting skill | Minimum artifact | Human checkpoint |
 |---|---|---|---|---|
@@ -299,9 +313,9 @@ Planning rules：
 | Scope 是 why／what／how／tasks 需要交接或長期維護的 P0？ | P0 proposal/spec/design；`tasks.md` 可承載 Execution Layer steps | Reclassify scope before creating Change |
 | OpenSpec plan 與 `writing-plans` output 重複？ | Keep one SSOT；補強或引用 | Proceed with the single existing plan SSOT |
 
-P3/P2 architecture 存在 Product/Architecture SSOT；OpenSpec 只引用或記錄 bounded P1/P0 delta。
+P3/P2 architecture 存在 Product/Architecture SSOT；OpenSpec 只引用或記錄 bounded P1/P0 delta。OpenSpec 被選為 durable owner 時，標準 execution sequence 是 `proposal/specs/design/tasks → Change Gate → /opsx:apply → /opsx:verify → Evidence Gate → /opsx:sync → /opsx:archive`。
 
-OpenSpec 不取代 TDD、code review 與 verification。若同時採用 upstream Superpowers，先核准 artifact integration：使用 reviewed OpenSpec custom schema／bridge；或由 OpenSpec 擁有 proposal/specs/design/tasks，Superpowers 只使用不重複產生 design/plan 的 execution skills。未核准整合前，不同時維護 OpenSpec 與 `docs/superpowers/...` 兩份 design/plan。
+`/opsx:apply` 是 implementation skill，`/opsx:verify` 是 artifact/implementation alignment check；但 OpenSpec 不取代 TDD、code review、runtime/NFR tests 或 release evidence。若同時採用 upstream Superpowers，先核准 artifact integration：使用 reviewed OpenSpec custom schema／bridge；或由 OpenSpec 擁有 proposal/specs/design/tasks，Superpowers 只使用不重複產生 design/plan 的 TDD/debugging/review/verification disciplines。未核准整合前，不同時維護 OpenSpec 與 `docs/superpowers/...` 兩份 design/plan。
 
 `/opsx:verify` 檢查 implementation 是否符合 OpenSpec artifacts；CLI `openspec validate` 檢查 artifacts 是否有效。兩者都不能取代 TDD、code review、runtime/NFR tests 或 release evidence。
 
@@ -343,7 +357,7 @@ Minimum record：decision、accountable Human Owner、time、reviewed scope/arti
 9. **Existing workflow first**：先選 Team 現有 system of record；只有必要時才建立新 artifact。
 10. **Golden Stage is not SDLC**：Team owns local activity mapping、templates 與 placement；Department owns minimum contract/quality bar。
 11. **Objective need before Team fit**：clarity、architecture/risk、handoff 與 evidence 先決定 required capability；Team 習慣再決定 default/equivalent 與記錄位置。
-12. **OpenSpec is context, not quality proof**：它保存 why／what／how／tasks；TDD、review、tests 與 release evidence 仍不可省略。
+12. **OpenSpec owns durable agreement, not all quality proof**：它維護 why／what／how／tasks、apply/verify alignment 與 change traceability；TDD、review、runtime/NFR tests 與 release evidence 仍不可省略。
 
 > **Outcome：Engineer 能從目前狀態直接找到下一個 engineering activity／supporting skill、artifact 與 human gate。**
 

@@ -1,6 +1,6 @@
 # AI Handoff — AI-Native Software Engineering Framework
 
-> Version: v1.21
+> Version: v1.28
 > Status: Active Working Handoff  
 > Purpose: Single source of working instructions for future AI sessions  
 > Governing document: `00_Project_Charter.md`  
@@ -172,9 +172,9 @@ P1 Feature / Approved Design
 
 - P0/P1 要做什麼不清楚：依第一個未知選 research、`grill-me` 或 `/opsx:explore`。
 - P0/P1 要做什麼已清楚、不需要跨 session／AI／Engineer 保存 context：直接使用 Superpowers／Team equivalent 完成 design、plan、TDD、review、verification。
-- P0/P1 要做什麼已清楚、需要後續接手同一份 why／what／how／tasks：scoped OpenSpec + Superpowers execution skills；design/plan 只留一份 SSOT。
+- P0/P1 要做什麼已清楚、需要 durable why／what／how／tasks 與 change traceability：OpenSpec 擁有 proposal/specs/design/tasks 與 `/opsx:apply` entry；按需搭配不重複 artifact 的 Superpowers TDD/debugging/review/verification disciplines。
 
-Team 應選定 Fast Delivery、Durable Change 或 Discovery First default profile。這是全隊 convention，不是個人偏好；Team 習慣可以改變 implementation 與 artifact placement，不能降低 architecture/risk trigger、required design/test/review、Human Gate 或 evidence。OpenSpec 與 upstream Superpowers 一起使用時，必須先核准 artifact integration；否則由 OpenSpec 擁有 design/tasks，只搭配不重複建文件的 TDD/review/verification skills。
+Team 應選定 Fast Delivery 或 Complex/Durable Change default route；尚未清楚時只先走 Discovery pre-route，再回來二選一。這是全隊 convention，不是個人偏好；Team 習慣可以改變 implementation 與 artifact placement，不能降低 architecture/risk trigger、required design/test/review、Human Gate 或 evidence。OpenSpec 與 upstream Superpowers 一起使用時，必須先核准 artifact integration；否則由 OpenSpec 擁有 proposal/specs/design/tasks，並保持單一 execution entry/task ledger，只搭配不重複建文件的 TDD/debugging/review/verification skills。
 
 ### 4.9 System Design Capability
 
@@ -208,14 +208,14 @@ AI-Native Engineering 是既有 SDLC／delivery operating model 的 enhancement 
 | ID | Artifact | Format | Status / Purpose |
 |---|---|---|---|
 | 00 | `00_Project_Charter.md` | Markdown | v1.7 Baseline；單一 Engineer workflow 與 two-cadence routing |
-| 01 | `01_AI_Handoff.md` | Markdown | v1.21；future sessions 的工作控制文件 |
-| 02 | `02_Framework.md` | Markdown，25–30 頁等級 | v1.9 Baseline；Golden model、capability routing、integration 與治理 SSOT |
-| 03 | `03_Golden_Engineering_Playbook.md` | Markdown | v1.7 Baseline；first-unknown selector + Team profiles + stage execution mapping |
-| 04 | `guides/04_Framework_Overview.md` | Diagram / Markdown | v1.8 Candidate；Golden Flow + quick skill choice，待 Sponsor review |
-| 05 | `guides/05_Decision_Tree.md` | Diagram / Markdown | v1.8 Candidate；compact router + detailed capability/OpenSpec routing |
-| 06 | `training/06_Training_Presentation.pptx` | PowerPoint，9 頁 | v1.11 Baseline Candidate；新工作完成 Six Questions、執行中更新 Stage／Next Move；P8 顯示 collaboration、lead time、change failure rate target outcomes |
+| 01 | `01_AI_Handoff.md` | Markdown | v1.28；future sessions 的工作控制文件 |
+| 02 | `02_Framework.md` | Markdown，25–30 頁等級 | v1.12 Baseline；Golden model、Responsibility Ownership、Durable single-ledger rule、E1 enforcement、integration 與治理 SSOT |
+| 03 | `03_Golden_Engineering_Playbook.md` | Markdown | v1.10 Baseline；two delivery routes + Spec-to-TDD handoff + single-ledger/JIT breakdown rules |
+| 04 | `guides/04_Framework_Overview.md` | Diagram / Markdown | v1.10 Candidate；Golden Flow + Responsibility Map + two-route quick choice，待 Sponsor review |
+| 05 | `guides/05_Decision_Tree.md` | Diagram / Markdown | v1.10 Candidate；compact router + responsibility/capability/OpenSpec routing |
+| 06 | `training/06_Training_Presentation.pptx` | PowerPoint，9 頁 | v1.14 Baseline Candidate；P3 專講 responsibility ownership、P4 專講 Golden Flow；P6/P7 教 Fast vs Durable 與 Spec-to-TDD handoff |
 
-Supporting assets：`README.md` 管角色路徑與 Start Here；`reference/Golden_Skill_Registry.md` 管 active manual defaults、candidate/approved implementation、environment、invocation 與 fallback。Decision Tree 開頭同時擔任 quick reference，不另行維護 `07` content SSOT。
+Supporting assets：`README.md` 管角色路徑與 Start Here；`reference/Golden_Skill_Registry.md` 管 skill readiness；`reference/Enforcement_E1_PR_Decision_Record.md` 提供單一 Team 可直接複製的 E1 workflow 與 example PR。Decision Tree 開頭同時擔任 quick reference，不另行維護 `07` content SSOT。
 
 Case Library 是既有十個以上 pilots 的持續演進 evidence collection；Team-specific templates 由 Team 管理。其他 bonus items 必須有真實 adoption need，避免文件/checklist 無限制增加。
 
@@ -228,12 +228,14 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - Project Charter 已重建為正式 artifact。
 - AI Handoff 已重建為正式 artifact。
 - `00_Project_Charter.md` v1.7 已將 Golden Flow 保留為唯一 Engineer workflow，並區分 Six Questions initial routing 與執行中的 Stage／Next Move refresh。
-- `02_Framework.md` v1.9 Baseline 已加入 objective need first、Team fit second 的 capability-routing rule；Sections 6–12 維持 responsibility reference appendix。
-- `03_Golden_Engineering_Playbook.md` v1.7 Baseline 已加入第一個未知 selector、P0/P1 快速選擇與 Fast Delivery／Durable Change／Discovery First Team profiles。
+- `02_Framework.md` v1.12 Baseline 已加入 Durable Change canonical ledger rule：`tasks.md` 是唯一 ledger；粗 task 原檔展開，design change 走 `/opsx:update`。
+- `03_Golden_Engineering_Playbook.md` v1.10 Baseline 已將 Engineer 入口收斂為兩條，並在 Implement stage 寫明 `tasks.md` single ledger、JIT nested breakdown、checkpoint、before/after 範例與 `/opsx:update` 邊界。
 - `README.md` 已建立 Start Here、artifact guide 與 role-based reading paths；Engineer 以 `03` 為必要 execution SSOT，第一次接觸可選讀 `04`，routing ambiguity 才查 `05`。
 - `reference/Golden_Skill_Registry.md` 已把 manual `system-research`／`codebase-research` 定為 active capability defaults；`understand-anything` 保持 candidate equivalent，不阻塞 rollout。
-- `guides/04_Framework_Overview.md` v1.8 Candidate 與 `guides/05_Decision_Tree.md` v1.8 Candidate 明確呈現：clear P0/P1 直接用 Superpowers；需要保存 why／what／how／tasks 時再加 OpenSpec；`05` 開頭同時擔任 compact quick reference。
-- `training/06_Training_Presentation.pptx` v1.11 Baseline Candidate 共 9 頁；P4/P9 呈現 initial vs continue routing，P7 使用 read-only codebase research capability。P8 保留 8 週 → 6 週 illustrative allocation，底部改為 Collaboration ↑（documented decisions + shared evidence/handoff）、Lead Time ↓（faster implementation + fewer rework loops）、Change Failure Rate ↓（design/code/test quality + release readiness）。
+- `reference/Enforcement_E1_PR_Decision_Record.md` 已定義只先 rollout Human Decision Record on PR；提供 copyable workflow／example PR，其他 detection 維持未啟用。
+- `guides/04_Framework_Overview.md` v1.10 Candidate 與 `guides/05_Decision_Tree.md` v1.10 Candidate 已同步 Responsibility Map、two delivery routes + Discovery pre-route，以及 OpenSpec apply/verify 與 Superpowers TDD 的實際接點；`05` 開頭同時擔任 compact quick reference。
+- `reference/Golden_Skill_Registry.md` 已新增 OpenSpec capability mapping 與 Durable Change reference sequence；community `superpowers-bridge` 保持 candidate，不作 Department default。
+- `training/06_Training_Presentation.pptx` v1.14 Baseline Candidate 共 9 頁；P3 已由重複的五階段流程改為 Human Judgment／Durable Workflow／AI Execution 三欄責任分工，P4 單獨擁有 Golden Flow 與 re-check 規則。P6/P7 的 Fast／Durable、single-ledger 與 Spec-to-TDD handoff 不變；P8 的 8 週 → 6 週仍是需由 pilots 校準的 illustration。
 
 ### Framework 已涵蓋
 
@@ -259,7 +261,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 
 1. Consolidate 既有十個以上 pilot cases，依 Work Level、Archetype、Golden Stage、AI 基本功的實際運用、Golden default/equivalent skill、Risk Tier、Execution Mode、artifacts/evidence、outcome、failure learning mapping；選 3–5 canonical cases，其餘進 Case Library。
 2. 請每個 Team 建立輕量 local workflow adapter：existing activities／systems of record → Golden questions／Gates → artifact placement／decision owner；Team 自主管理 templates，不由 Department 集中設計。
-3. Sponsor/Engineering 確認 `04` v1.6、`05` v1.7 與 `06` v1.11 的 two-image problem opening、initial/continue routing、P1 Feature Golden Path、active defaults、三個 target outcomes、8 週 → 6 週 assumptions 與 usability。
+3. Sponsor/Engineering 確認 `04` v1.10、`05` v1.10 與 `06` v1.14 的 Responsibility Map、two delivery routes、Spec-to-TDD handoff、initial/continue routing、P1 Feature Golden Path、active defaults、human judgment × AI execution notes、三個 target outcomes、8 週 → 6 週 assumptions 與 usability。
 4. 若要將第三方 Research skill 升為 approved installable implementation，再完成 source/license review、vendor/pin 與逐 environment verification；manual defaults 在此之前持續可用。
 
 ---
@@ -541,6 +543,43 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 80. Training deck P4/P9 同步 initial vs continue routing；P7 使用 read-only codebase research。P8 底部改為三個 target outcomes：Collaboration ↑（documented decisions + shared evidence/handoff）、Lead Time ↓（faster implementation + fewer rework loops）、Change Failure Rate ↓（design/code/test quality + release readiness）。
 81. Training deck v1.11 維持 9 頁與既有 template／chart；完成 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker、slide count、compressed-data 與 empty-placeholder QA。
 
+`01` v1.23、`02` v1.11、`03` v1.8、`04` v1.9 與 `05` v1.9 完成 Responsibility Ownership correction：
+
+82. Golden Flow 不變；新增 Direction／roles、Spec-Driven Development、Engineering discipline、Execution orchestration、Evidence／approval 五項責任分工，避免再以 framework 品牌推導 lifecycle。
+83. Canonical default 定為 OpenSpec 擁有 Spec-Driven Development/change traceability；Superpowers 提供 TDD-centered engineering disciplines。兩者都可跨 Design／Plan／Implement／Validate，不以假分工隱藏 overlap。
+84. Fast Delivery 可直接使用完整 Superpowers／Team equivalent；Durable Change 由 OpenSpec 擁有 proposal/specs/design/tasks 與 `/opsx:apply` entry，再選用不重複 artifact 的 TDD/debugging/review/verification disciplines；Discovery First 只處理第一個未知。
+85. Mixed mode 固定單一 spec/design owner、plan/task ledger 與 execution entry；community bridge 只列 candidate，未核准前不建立兩份 design/plan SSOT。
+86. `reference/Flow_Responsibility_Update_Proposal.md` 保留為本輪 review basis；`reference/Golden_Skill_Registry.md` 已補 OpenSpec commands 與 Durable Change reference sequence。
+
+`01` v1.24、`03` v1.9、`04` v1.10 與 `05` v1.10 完成 Engineer-path simplification：
+
+87. Engineer start path 只保留兩條 delivery route：Fast Delivery 使用 Superpowers end-to-end；Complex/Durable Change 由 OpenSpec 管 spec/tasks，再於 `/opsx:apply` 中逐 task 使用 Superpowers TDD/review。
+88. Discovery First 降為 pre-route：只處理第一個未知，清楚後回來選兩條 delivery route，不再讓 Engineer 誤認為第三套流程。
+89. 新增可複製的 apply-session execution contract 與 Spec-to-TDD handoff table；明定 `/opsx:apply` 選擇/追蹤 task，`test-driven-development` 執行 RED → GREEN → REFACTOR，spec/scope 改變則停下更新 OpenSpec 並重新取得 Human decision。
+
+`01` v1.25、`02` v1.12 與 `03` v1.10 完成 Durable single-ledger correction：
+
+90. Durable Change 的 OpenSpec `tasks.md` 是唯一 task ledger；`/opsx:apply` 依它取 task、執行、打勾與交接，禁止使用 `writing-plans` 或另建 ledger。
+91. 粗 task 在 `/opsx:apply` 當下直接於 `tasks.md` 展開成帶 exact paths、failing test 與 green criterion 的巢狀子項；Engineer checkpoint 不是新 Gate。
+92. 邊界判準固定為「只長出子項是 JIT；改變做法是 design change」；後者使用 `/opsx:update`，並依 scope/risk 判斷 Change Gate。
+
+`01` v1.26 與 `06` v1.12 完成 Training single-ledger correction：
+
+93. Training P6 將 P0 Implement 收斂為兩條路：Fast Delivery 使用 Superpowers；Durable Change 由 OpenSpec `tasks.md` 作唯一 ledger，`/opsx:apply` 接 Superpowers per-task TDD。
+94. Training P6 用單一例子呈現粗 task 原檔 JIT 展開，並保留「只長子項是 JIT；改變做法走 `/opsx:update`」邊界；不新增 lifecycle、Gate 或第二份 plan。
+95. Training P7 同步 Fast／Durable handoff；deck 維持 9 頁與既有 template，完成 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker、slide count 與 empty-placeholder QA。
+
+`01` v1.27 與 `06` v1.13 完成 Training human-leverage clarification：
+
+96. Training P2 說明 coding 可能先被 AI 自動化，而 software engineering 的價值移向問題定義、設計判斷與責任；不把此趨勢寫成固定時間表。
+97. Training P3/P9 明確表達：AI 執行比例愈高，人的少數關鍵判斷愈被放大；Engineer 仍負責六題、design trade-off、evidence 與 approval。
+98. Training P8 以 Human judgment × AI execution 解釋 productivity leverage；8 週 → 6 週仍標示為 illustrative target、以 pilots 校準。Deck 維持 9 頁與既有 template，完成 CJK render、逐頁 full-size inspection、overflow 與 template fidelity QA。
+
+`01` v1.28 與 `06` v1.14 完成 Training P3/P4 de-duplication：
+
+99. P3 不再重複 Golden Flow，改以 Human Judgment／Durable Workflow／AI Execution 三欄說明責任分工：人決定方向，workflow 保存共識與 evidence，AI 加速執行。
+100. P4 保持唯一的 Golden Flow／Stage／Next Move 操作頁；P3 回答「誰負責什麼」，P4 回答「工作怎麼走」。Deck 維持 9 頁，完成全頁 CJK render、overflow 與 template fidelity QA。
+
 後續若變更核心模型，仍應使用相同 review format：Executive Verdict、Score、Must-Fix、Should-Fix、Remove/Merge、Missing Decisions、Minimal Patch Plan。
 
 ---
@@ -570,7 +609,7 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - 每個 stage 明確對應 skill、artifact 與 human gate。
 - Research manual capability defaults 可直接執行；其他 approved defaults／Team equivalents 有明確 mapping contract，candidate skill 不阻塞 rollout。
 - 每個 stage 明確說明 typical existing activity、artifact location、decision owner 與是否需 additional process；local mapping 由 Team 擁有。
-- OpenSpec 與 Superpowers responsibility split 清楚；混用前先核准 artifact integration，否則由 OpenSpec 擁有 design/tasks，只搭配不重複建文件的 execution skills。
+- Responsibility Ownership 清楚：OpenSpec 擁有 durable Spec-Driven Development/change traceability；Superpowers 提供 TDD-centered engineering disciplines。混用時只有一個 spec/design/tasks owner、execution entry 與 task ledger。
 - System Design 在 P3/P2 與 triggered P1 可被直接選到；P0 不被強制套用。
 - System Design Review 是 Change Gate implementation，沒有新增 universal gate。
 
@@ -644,15 +683,32 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 3. P0 lightweight/JIT planning boundary，以及 P1/P0 OpenSpec Change scope rule 是否足夠直覺。
 4. 各 Team 的 local activity／system-of-record mapping 與 Team-owned templates 是否能滿足 Department minimum contract，而不增加 duplicate artifacts。
 5. 既有十個以上 pilot case inventory 的 evidence source、owner 與可公開於 Training 的 3–5 canonical cases。
-6. Sponsor/Engineering 確認 04 v1.8、05 v1.8 與 06 v1.11 的 problem clarity、initial/continue routing、skill quick choice、P1 Feature Golden Path、active default adoption path、三個 target outcomes，以及 Design／Implement 各 1.5 週的 8 週 → 6 週 illustration 與 usability 後轉 Baseline。
+6. Sponsor/Engineering 確認 04 v1.10、05 v1.10 與 06 v1.14 的 Responsibility Map、two delivery routes、Spec-to-TDD handoff、problem clarity、initial/continue routing、P1 Feature Golden Path、active default adoption path、human judgment × AI execution notes、三個 target outcomes，以及 Design／Implement 各 1.5 週的 8 週 → 6 週 illustration 與 usability 後轉 Baseline。
 
 ---
 
 ## 15. Exact Next Action
 
-下一個 working session 應執行：
+下一個 working session 應依序完成以下 checklist；已完成的項目不要重做，只有受本次工作影響的 artifacts 才需要更新。
 
-> **Read `README.md`, `00_Project_Charter.md` v1.7, `01_AI_Handoff.md` v1.21, `02_Framework.md` v1.9 Baseline, `03_Golden_Engineering_Playbook.md` v1.7 Baseline, `guides/04_Framework_Overview.md` v1.8 Candidate, `guides/05_Decision_Tree.md` v1.8 Candidate, `training/06_Training_Presentation.pptx` v1.11 Baseline Candidate, and `reference/Golden_Skill_Registry.md`. Validate that Engineers can choose the next capability from the first unclear question；clear P0/P1 defaults to Superpowers/Team equivalent，and adds OpenSpec only when why／what／how／tasks must survive handoff. Validate Team Fast Delivery／Durable Change／Discovery First profiles without lowering architecture/risk triggers、Human Gates or evidence. Validate that OpenSpec/Superpowers combined use has an approved artifact integration or uses only non-duplicating execution skills. Validate manual Research defaults and the P1 Feature Golden Path. Validate Slide 8 outcomes and the 8→6 week illustration against pilot actuals. Consolidate existing pilots and select canonical cases. Keep canonical tables/diagrams in one home；do not create duplicate design/plan、a duplicate `07` content SSOT、a parallel SDLC、another formal lifecycle or generic checklist.**
+### Read Current Sources
+
+- [ ] Read this section and `reference/Enforcement_E1_PR_Decision_Record.md`，including its copyable workflow／example PR。
+- [ ] Consult `02_Framework.md` v1.12 changelog only if the enforcement、responsibility 或 Durable ledger boundary is unclear；do not reread unrelated framework artifacts。
+
+### Start E1 Adoption
+
+- [ ] Select one pilot Team／repository and one Tech Lead owner；do not roll out Department-wide。
+- [ ] Confirm existing PR approval protection；copy `reference/enforcement/e1/human-decision-record.yml` and run `example-pr.md` on 2–3 PRs。
+- [ ] Map an existing P0 label if available；otherwise keep approval-only mode，不為 automation 新增 P0 metadata。
+- [ ] Enable one required check for the pilot and run it for 30 days。
+- [ ] Record Team-level friction／false positives in Actions logs、PR history and one existing rollout issue；do not create a dashboard or score individuals。
+- [ ] At day 30 decide keep／adjust／stop；do not enable Team-profile or dual-SSOT detection before that decision。
+
+### Preserve Guardrails
+
+- [ ] Use existing PR／CI／tracker records；do not add a system、form、meeting or dashboard。
+- [ ] Do not modify `03_Golden_Engineering_Playbook.md`、`guides/04_Framework_Overview.md` or `guides/05_Decision_Tree.md` for E1 unless the pilot exposes an actual contradiction。
 
 ---
 
@@ -673,22 +729,26 @@ Case Library 是既有十個以上 pilots 的持續演進 evidence collection；
 - [ ] Research 以不需安裝的 manual capability contract 作 active default；candidate skill 不阻塞工作，替換仍需先證明等價。
 - [ ] Golden Stages 是 portable engineering decision states，不是 Department 統一 SDLC phases；Team 擁有 local workflow mapping。
 - [ ] Hierarchy 是 P3 Product/Program → P2 Epic → P1 Feature → P0 PBI/User Story → Execution Layer；Task 不是 P0。
-- [ ] `to-tickets` 負責 P1 → P0；`writing-plans` 只在單一 P0 即將執行且風險/複雜度觸發時使用。
+- [ ] `to-tickets` 負責 P1 → P0；`writing-plans` 只供 Fast Delivery 的單一 P0 即將執行且風險/複雜度觸發時使用。
 - [ ] System Design 位於 Design stage；P3/P2 required、P1 triggered、P0 normally skip。
 - [ ] System Design Review 是 Change Gate implementation，不是第四個 universal gate。
 - [ ] 要做什麼尚未清楚時，依第一個未知選 research、`grill-me` 或 `/opsx:explore`；不要全部固定串接。
-- [ ] Clear P0/P1 預設直接使用 Superpowers／Team equivalent；需要跨 session／AI／Engineer 保存 why／what／how／tasks 時才加 scoped OpenSpec。
-- [ ] OpenSpec 保存工程上下文；Superpowers 規範工程執行。一起使用時先核准 artifact integration；否則由 OpenSpec 擁有 design/tasks，只搭配 TDD／review／verification，避免雙份 SSOT。
-- [ ] Team 可選 Fast Delivery、Durable Change 或 Discovery First profile，但 architecture/risk trigger、Human Gate 與 evidence 不可降低。
+- [ ] Clear、bounded P0/P1 可直接使用完整 Superpowers／Team equivalent；需要 durable agreement/change traceability 時才由 OpenSpec 擁有 proposal/specs/design/tasks。
+- [ ] OpenSpec 管 Spec-Driven Development；Superpowers 管 TDD-centered engineering disciplines。Durable Change 只有一份 `tasks.md`，粗 task 原檔展開；改變做法走 `/opsx:update`，不得使用 `writing-plans` 或另建 ledger。
+- [ ] Engineer 只選 Fast Delivery 或 Complex/Durable Change；Discovery 只是第一個未知尚未關閉時的 pre-route。architecture/risk trigger、Human Gate 與 evidence 不可降低。
+- [ ] Enforcement 使用既有 PR／CI／tracker／GitOps chokepoints；不建立新 system、form、meeting 或 dashboard。
+- [ ] 目前只啟用 E1 Human Decision Record on PR：P0 approval 本身是 record；non-P0 使用 gate label；Conditional Pass 必須 link issue。
+- [ ] Team-profile gate preservation 是 Sampling、dual-SSOT detection 是 Detective；兩者已定義但未啟用。
+- [ ] E1 先在一個 Team 跑 30 天，只看 Team-level friction／false positives，不對個人計分。
 - [ ] Artifact contract 定義 information/evidence，不是 mandatory file；優先 reuse existing system of record，reference rather than copy。
 - [ ] Department 定 minimum contract/quality bar；Team 定 templates、tracker、repository、technology/product/domain practices。
 - [ ] E3 沿用既有 authorized owner、Change Management 與 production control；AI 不得成為 production approver。
 - [ ] 已有十個以上 pilots 是 evidence base；下一步是 consolidation/canonical cases，不是重新要求 pilot。
-- [ ] 03 v1.7 已是 Baseline；04 v1.8 與 05 v1.8 Candidate 已同步 capability quick choice、Team profiles 與 OpenSpec/Superpowers boundary。
-- [ ] 06 v1.11 Baseline Candidate 已是實際 9 頁 PowerPoint；P4/P9 呈現 initial vs continue routing，P7 使用 read-only codebase research，P8 將 Collaboration、Lead Time、Change Failure Rate 作為 target outcomes；8 週 → 6 週仍是需由 pilots 校準的 illustration，並完成 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker 與 empty-placeholder QA。
+- [ ] 03 v1.10 已是 Baseline；04 v1.10 與 05 v1.10 Candidate 維持 two-route summary，single-ledger/JIT breakdown 細節只由 03 Implement stage 管理。
+- [ ] 06 v1.14 Baseline Candidate 已是實際 9 頁 PowerPoint；P3 是 responsibility ownership，P4 是 Golden Flow／Stage／Next Move，兩頁不再重複；P6/P7 呈現 Fast vs Durable、OpenSpec `tasks.md` single ledger、`/opsx:apply` → Superpowers TDD 與 JIT／`/opsx:update` 邊界；P8 的 8 週 → 6 週仍是需由 pilots 校準的 illustration。已完成 CJK render、逐頁 full-size inspection、overflow、template fidelity、page marker 與 empty-placeholder QA。
 - [ ] README 已提供角色路徑；Engineer 必要閱讀 03 的對應章節，第一次接觸可選讀 04，routing ambiguity 才查 05。
 - [ ] 05 開頭同時擔任 compact quick reference；不另外維護 `07` content SSOT。
-- [ ] 下一步是 pilot consolidation、Team adapter、optional candidate implementation review 與 Sponsor/Engineering confirmation。
+- [ ] 下一步先完成 E1 30-day adoption；其後才依 evidence 決定其他 enforcement、pilot consolidation、Team adapter、optional candidate implementation review 與 Sponsor/Engineering confirmation。
 
 ---
 

@@ -1,0 +1,82 @@
+name: Human Decision Record
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review, labeled, unlabeled, edited]
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: read
+
+concurrency:
+  group: human-decision-record-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  human-decision-record:
+    name: human-decision-record
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check E1 decision record
+        uses: actions/github-script@v9
+        env:
+          # Map Team EXISTING P0 labels, comma-separated. Leave blank for
+          # approval-only mode; do not add a P0 field only for this workflow.
+          P0_LABELS: ""
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const labels = pr.labels.map((label) => label.name);
+            const configuredP0Labels = process.env.P0_LABELS
+              .split(',')
+              .map((label) => label.trim())
+              .filter(Boolean);
+
+            if (configuredP0Labels.length === 0) {
+              core.notice(
+                'E1 approval-only mode: existing branch protection owns the Human approval record.'
+              );
+              return;
+            }
+
+            const isP0 = configuredP0Labels.some((label) => labels.includes(label));
+            if (isP0) {
+              core.notice('P0: PR approval is the complete Human Decision Record; no gate label required.');
+              return;
+            }
+
+            const allowedGateLabels = [
+              'gate:pass',
+              'gate:conditional',
+              'gate:rework'
+            ];
+            const selectedGateLabels = allowedGateLabels.filter((label) => labels.includes(label));
+
+            if (selectedGateLabels.length !== 1) {
+              core.setFailed(
+                'Non-P0 PR must have exactly one gate label: gate:pass, gate:conditional, or gate:rework.'
+              );
+              return;
+            }
+
+            const decision = selectedGateLabels[0];
+            if (decision === 'gate:rework') {
+              core.setFailed('Human decision is Rework. Resolve findings before merge.');
+              return;
+            }
+
+            if (decision === 'gate:conditional') {
+              const body = pr.body || '';
+              const conditionIssue = /(?:^|\n)\s*Condition tracking:\s*(?:#\d+|https:\/\/github\.com\/[^/\s]+\/[^/\s]+\/issues\/\d+)/im;
+
+              if (!conditionIssue.test(body)) {
+                core.setFailed(
+                  'Conditional Pass requires `Condition tracking: #123` or a GitHub issue URL in the PR body.'
+                );
+                return;
+              }
+            }
+
+            core.notice(`E1 decision record accepted: ${decision}.`);

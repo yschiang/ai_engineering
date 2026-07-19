@@ -1,8 +1,8 @@
 # AI-Native Software Engineering Framework — One-Page Overview
 
-> Version: v1.8 Candidate
+> Version: v1.10 Candidate
 > Status: Ready for Sponsor Review  
-> Derived from: `02_Framework.md` v1.9 Baseline + `03_Golden_Engineering_Playbook.md` v1.7 Baseline
+> Derived from: `02_Framework.md` v1.11 Baseline + `03_Golden_Engineering_Playbook.md` v1.9 Baseline
 > Purpose: Engineer and management visual entry point; supplement only
 
 ---
@@ -65,6 +65,18 @@ P0 types：**User Story · Engineering Story/Enabler · Bug · Spike**。每張 
 
 ## 3. Capability Map by Golden Stage
 
+先看責任分工，再看 skill 出現在哪個 Stage。兩張表回答的是不同問題：Responsibility Map 決定誰擁有結果；Stage Map 幫 Engineer 找到下一個可用能力。
+
+| Responsibility | Department Default | 實際角色 |
+|---|---|---|
+| **Direction／roles** | Existing Team workflow and owners | 決定 outcome、scope、trade-off、risk acceptance 與 production authority |
+| **Spec-Driven Development** | **OpenSpec** | 維護 durable proposal／specs／design／tasks、implementation alignment 與 change traceability |
+| **Engineering discipline** | **Superpowers／Team equivalent** | 落實 design/planning discipline、worktree、TDD、debugging、review 與 fresh verification |
+| **Execution orchestration** | `/opsx:apply`、Superpowers execution skill 或 approved runner | 每個 change 一個 execution entry、一個 task ledger |
+| **Evidence／approval** | CI、PR、tests、review、OpenSpec verify + Human Gate | Automation 提供 evidence；Human Owner 決定 pass／rework／risk acceptance |
+
+> **OpenSpec owns Spec-Driven Development and change traceability. Superpowers enforces TDD-centered engineering disciplines.**
+
 | Capability Family | Research | Design | Plan | Implement | Validate |
 |---|---|---|---|---|---|
 | **Department Engineering** | `system-research` · `codebase-research` | System Design when triggered | Work Level decomposition policy | Engineering quality bar | Human Gate · evidence acceptance |
@@ -80,13 +92,20 @@ P0 types：**User Story · Engineering Story/Enabler · Bug · Spike**。每張 
 |---|---|---|
 | **否** | 尚未判斷 | 先處理未知：系統不清楚用 research、人的決定不清楚用 `grill-me`、change/options/scope 不清楚用 `/opsx:explore` |
 | **是** | **否** | **Superpowers／Team equivalent**：short design／`brainstorming` → inline plan 或 `writing-plans` → TDD → request/receive code review → verification |
-| **是** | **是** | **OpenSpec + Superpowers execution skills**：OpenSpec 保存 why／what／how／tasks；TDD、request/receive code review、verification 確保執行品質；design/plan 只留一份 SSOT |
+| **是** | **是** | **OpenSpec + selected Superpowers disciplines**：OpenSpec 擁有 why／what／how／tasks 與 `/opsx:apply` entry；TDD、debugging、request/receive code review、verification 確保執行品質；design/plan 只留一份 SSOT |
 
-OpenSpec 解決「下一個 session、人或 AI 能不能沿用同一份工程上下文」；Superpowers 解決「這次設計、實作與驗證要怎麼做對」。對已清楚的 bounded P0／P1，直接用 Superpowers 通常最快；只有需要交接、長期維護 behavior contract 或追查設計理由時，才加 OpenSpec。
+OpenSpec 管 spec-driven agreement；Superpowers 管 engineering disciplines。兩者都有跨 Stage 能力：OpenSpec 可以 apply／verify，Superpowers 可以 design／plan。責任分工不是說哪個工具只能出現在哪個 Stage，而是說 mixed mode 時誰擁有 artifact、誰約束 execution quality。
 
-Team 可依既有 workflow、工具可用性、熟悉度與交接頻率選 **Fast Delivery、Durable Change 或 Discovery First** default profile，也可使用 approved equivalent。這是全隊共同 convention，不是個人臨時偏好；architecture/risk trigger、required design/test/review、Human Gate 與 evidence 不可降低。
+Team 可依既有 workflow、工具可用性、熟悉度與交接頻率選 **Fast Delivery 或 Complex/Durable Change** default route，也可使用 approved equivalent。這是全隊共同 convention，不是個人臨時偏好；architecture/risk trigger、required design/test/review、Human Gate 與 evidence 不可降低。
 
-若 OpenSpec 與 upstream Superpowers 一起使用，Team 必須先核准 artifact integration：使用 reviewed custom schema／bridge，或由 OpenSpec 擁有 design/tasks、Superpowers 只負責不重複建文件的 TDD/review/verification。不要同時維護兩份 design/plan。
+| Route | 何時用 | 主路徑 |
+|---|---|---|
+| **Fast Delivery** | 要做什麼清楚、bounded P0/P1、ticket + PR 已足以延續 | Superpowers／Team equivalent：short design → plan as needed → TDD → review → verification |
+| **Complex / Durable Change** | why／what／how／tasks 必須跨 session／人／AI 延續，或 behavior contract 要長期維護 | OpenSpec proposal/specs/design/tasks → Change Gate → `/opsx:apply`；每個 task 用 Superpowers TDD/debugging/review/verification → `/opsx:verify` → Evidence Gate → sync/archive |
+
+若 problem、current behavior、root cause 或 options 尚未清楚，先以 research／`grill-me`／`/opsx:explore`／debugging 處理第一個未知，再回來選上面兩條。Discovery 是 pre-route，不是第三條 delivery flow。
+
+若 OpenSpec 與 upstream Superpowers 一起使用，Team 必須先核准 artifact integration：使用 reviewed custom schema／bridge，或由 OpenSpec 擁有 proposal/specs/design/tasks、Superpowers 只負責不重複建文件的 TDD/debugging/review/verification。每個 change 只保留一個 spec/design owner、一個 plan/task ledger 與一個 execution entry。
 
 SSOT rule：P3/P2 architecture 存在 Product/Architecture artifacts；OpenSpec Change 是 P1/P0 scope-dependent container，引用或記錄 bounded delta。`/opsx:explore` 維持 E0/no-stakes。
 

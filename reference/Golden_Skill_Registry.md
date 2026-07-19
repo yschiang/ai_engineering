@@ -44,19 +44,55 @@ Framework 仍然 tool-agnostic：required capability、input、output、stop con
 
 Registry 只回答「這個 capability 是否可用、如何啟動」，不取代 [Golden Playbook §1](../03_Golden_Engineering_Playbook.md#1-how-to-use-this-playbook-in-60-seconds) 與 [Decision Tree §6](../guides/05_Decision_Tree.md#6-choose-the-next-capability) 的 routing。
 
+先用 Responsibility Ownership Map 避免按品牌拼 workflow：
+
+| Responsibility | Default Implementation | Adoption Rule |
+|---|---|---|
+| Direction／roles | Existing Team workflow and owners | 不導入新的 virtual organization 作 Department prerequisite |
+| Spec-Driven Development | OpenSpec；Fast Delivery 可用 Superpowers／Team SSOT | OpenSpec 擁有 durable proposal/specs/design/tasks 與 change traceability |
+| Engineering discipline | Superpowers／Team equivalent | 以 TDD-centered design、planning、debugging、review、verification disciplines 約束執行 |
+| Execution orchestration | `/opsx:apply`、Superpowers execution 或 approved runner | 每個 change 一個 execution entry、一個 task ledger |
+| Evidence／approval | CI、PR、tests、review、OpenSpec verify + Human Gate | Automation 產 evidence；Human Owner 作 decision |
+
+> **OpenSpec owns Spec-Driven Development and change traceability. Superpowers enforces TDD-centered engineering disciplines.**
+
 | Situation | Department Default |
 |---|---|
 | P0/P1 要做什麼尚未清楚 | 依第一個未知選 research、`grill-me` 或 `/opsx:explore` |
 | P0/P1 已清楚，不需要跨 session／AI／Engineer 保存工程上下文 | Superpowers／approved Team equivalent：design → plan → TDD → review → verification |
-| P0/P1 已清楚，需要保存 why／what／how／tasks 供後續接手 | Scoped OpenSpec Change + Superpowers execution skills；design/plan 只留一份 SSOT |
+| P0/P1 已清楚，需要保存 why／what／how／tasks 供後續接手 | Scoped OpenSpec Change + selected Superpowers TDD/debugging/review/verification disciplines；design/plan 只留一份 SSOT |
 
-Team 可依既有 workflow、tool availability、熟悉度與交接頻率選 Fast Delivery、Durable Change 或 Discovery First profile；這是 Team convention，不是個人偏好。architecture/risk trigger、required capability、Human Gate 與 evidence quality 不可降低。
+Team 可依既有 workflow、tool availability、熟悉度與交接頻率選 Fast Delivery 或 Complex/Durable Change route；尚未清楚時只先走 Discovery pre-route，再回來二選一。這是 Team convention，不是個人偏好。architecture/risk trigger、required capability、Human Gate 與 evidence quality 不可降低。
 
 Department OpenSpec profile 採官方 `docs/explore.md` 的簡單邊界：`/opsx:explore` 是 E0/no-stakes，不建立 Change、不寫 artifacts、不修改 code；若 installed skill 提供 optional artifact capture，仍應交由 `/opsx:propose`、`/opsx:new`／`continue` 或既有 Change update flow 保存。OpenSpec Stores 仍為 beta，不列入 Golden default。
 
 `/opsx:verify` 檢查 implementation/artifact alignment，CLI `openspec validate` 檢查 artifact validity；兩者都不取代 TDD、code review、runtime/NFR tests 或 release evidence。
 
 官方 [OpenSpec team workflow](https://github.com/Fission-AI/OpenSpec/blob/main/docs/team-workflow.md) 建議把 Change 納入既有 branch/PR、固定 archive convention，並維持 one Change/one owner；[customization](https://github.com/Fission-AI/OpenSpec/blob/main/docs/customization.md) 支援 Team config/custom schemas，並列出 community `superpowers-bridge`。Bridge 不是 OpenSpec core 或 Department default；採用前必須 review/pin/verify。沒有 approved integration 時，由 OpenSpec 擁有 design/tasks，Superpowers 只使用不重複產生 design/plan 的 TDD/review/verification skills；不得同時維護 OpenSpec 與 `docs/superpowers/...` 兩份 SSOT。
+
+## OpenSpec Capability Mapping
+
+| Golden responsibility / stage | OpenSpec action | Minimum contract |
+|---|---|---|
+| Discovery / Research | `/opsx:explore` | E0、no-stakes exploration；不建立 Change、不寫 artifact/code；清楚後 stop 或交 propose/new |
+| Durable agreement / Design | `/opsx:propose`，或 `/opsx:new` + `/opsx:continue`／`/opsx:ff` | Proposal 說 why、specs 說 what、design 說 how、tasks 說 delivery/execution；通過 Change Gate |
+| Bounded execution / Implement | `/opsx:apply` | 讀取 approved tasks、實作 change、按需要執行 tests、更新 task state；不自行改寫 approved scope |
+| Alignment / Validate | `/opsx:verify` | 檢查 completeness、correctness、coherence 與 artifact/implementation alignment；不取代 TDD、code review 或 runtime/NFR evidence |
+| Durable truth / Closure | `/opsx:sync` → `/opsx:archive` | 將 verified delta 同步回 specs/source of truth，關閉 Change 並保留 traceability |
+| Artifact validity | CLI `openspec validate` | 檢查 artifact structure/consistency；不是 implementation verification |
+
+Durable Change 的 reference sequence：
+
+```text
+proposal/specs/design/tasks
+→ Change Gate
+→ /opsx:apply + selected engineering disciplines
+→ /opsx:verify + PR evidence
+→ Evidence Gate
+→ /opsx:sync → /opsx:archive
+```
+
+這條 sequence 不要求把 Superpowers 全套再跑一次。沒有 approved bridge 時，只選 `test-driven-development`、`systematic-debugging`、`requesting-code-review`、`receiving-code-review`、`verification-before-completion` 等不建立第二份 design/plan 的 disciplines。
 
 ## Superpowers Capability Mapping
 

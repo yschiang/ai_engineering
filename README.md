@@ -34,10 +34,10 @@ Skill 選擇先看兩件事：
 | 要做什麼已清楚？ | 需要跨 session／AI／Engineer 保存工程上下文？ | Default |
 |---|---|---|
 | 否 | 尚未判斷 | Research／`grill-me`／`/opsx:explore`，先把未知弄清楚 |
-| 是 | 否 | Superpowers／Team equivalent，直接完成 design、plan、TDD、request/receive code review、verification |
-| 是 | 是 | OpenSpec 保存 why／what／how／tasks；Superpowers/Team equivalent 負責 TDD、request/receive code review、verification；design/plan 只留一份 SSOT |
+| 是 | 否 | **Fast Delivery**：Superpowers／Team equivalent end-to-end，直接完成 design、plan、TDD、request/receive code review、verification |
+| 是 | 是 | **Complex / Durable Change**：OpenSpec 管 spec/tasks；以 `/opsx:apply` 選擇 task，逐 task 使用 Superpowers TDD/review；只留一份 SSOT |
 
-Team 可依既有 workflow、工具可用性、熟悉度與交接頻率選 Fast Delivery、Durable Change 或 Discovery First default profile。這是全隊 convention，不是個人臨時偏好；客觀 architecture/risk/evidence 要求仍優先。
+Team 可依既有 workflow、工具可用性、熟悉度與交接頻率選 Fast Delivery 或 Complex/Durable Change。尚未清楚時先處理第一個未知，再回來二選一；Discovery 是 pre-route，不是第三條 delivery flow。客觀 architecture/risk/evidence 要求仍優先。
 
 ## Choose Your Reading Path
 
