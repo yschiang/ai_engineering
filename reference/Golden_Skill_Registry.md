@@ -36,33 +36,36 @@ Framework 仍然 tool-agnostic：required capability、input、output、stop con
 | `improve-codebase-architecture` | Installable skill / **Verified source**；Optional Design aid | [mattpocock/skills — improve-codebase-architecture](https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md) | Same Matt Pocock installer；Team 必須一併 review/map `codebase-design`、`grilling`、`domain-modeling`、`CONTEXT.md` 與 ADR conventions | Manual invocation only：`/improve-codebase-architecture`；upstream sets `disable-model-invocation: true` | Temp HTML candidate report：architecture friction、before/after、recommendation strength、top recommendation；Human 選定 candidate 後停止並 hand off to formal design | 以 approved as-is evidence 手動進行 architecture assessment，產生 candidates／trade-offs／recommendation；Human 選定前不進 detailed design 或 implementation |
 | `grill-me` | Installable skill / **Verified source** | [mattpocock/skills — grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) → [`grilling`](https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md) | `npx skills@latest add mattpocock/skills`；select `grill-me` and `setup-matt-pocock-skills` for supported Agent Skills harnesses | `/grill-me` | Structured questions、decisions、assumptions、examples、open questions；stop when material tacit knowledge is explicit。Skill 不保證 durable artifact；需要交接時寫回既有 SSOT | Ask the agent to interview the owner 1–3 questions at a time until material decisions and examples are confirmed；capture material decisions in the work item/design when needed |
 | `grill-with-docs` | Installable skill / **Verified source** | [mattpocock/skills — grill-with-docs](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) | Same Matt Pocock installer; run `/setup-matt-pocock-skills` once per repo | `/grill-with-docs` | Evidence-based findings、missing cases、decision closure and updated durable docs when approved | Review the named artifacts against goals、constraints、examples、failure modes and contradictions; produce findings with evidence and decision owner |
-| `to-tickets` | Installable skill / **Verified source** | [mattpocock/skills — to-tickets](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-tickets/SKILL.md) | Same Matt Pocock installer; configure tracker through `/setup-matt-pocock-skills` | `/to-tickets` | P0 tracer-bullet tickets、acceptance、`Blocked by`、execution frontier；stop when each slice is narrow、complete and independently verifiable | Decompose the approved P1 into vertical P0 slices using the same ticket and blocker contract |
+| `to-tickets` | Installable skill / **Verified source** | [mattpocock/skills — to-tickets](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-tickets/SKILL.md) | Same Matt Pocock installer; configure tracker through `/setup-matt-pocock-skills` | `/to-tickets` | **Only when one P1 contains multiple independent outcomes**：產生 P0 tracer-bullet tickets、acceptance、`Blocked by`、execution frontier；stop when each slice is narrow、complete and independently verifiable | 若 P1 本身就是一個 bounded slice，直接視為一個 P0；手動依同一 contract 建立或確認 tracker item |
 | OpenSpec `/opsx:*` | CLI + agent commands / **Verified source** | [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | Requires Node.js 20.19.0+; upstream quick start: `npm install -g @fission-ai/openspec@latest`, then `openspec init` in each project | Framework uses `/opsx:explore`, `/opsx:propose`, `/opsx:new`, `/opsx:continue`, `/opsx:ff`, `/opsx:apply`, `/opsx:verify`, `/opsx:sync` and `/opsx:archive`; availability depends on selected profile | Scoped proposal/spec/design/tasks、implementation alignment、sync/archive; stop or hand off according to the selected action | Use existing ticket／RFC／ADR／PR chain as the durable agreement SSOT; preserve the same why/what/how/tasks/evidence contract |
 | Superpowers family | Plugin / **Verified source** | [obra/superpowers](https://github.com/obra/superpowers) | Codex App/CLI: install `Superpowers` from the official plugin marketplace; Claude Code: `/plugin install superpowers@claude-plugins-official`; follow upstream instructions for other harnesses | Skills normally trigger by task fit; explicit names depend on harness | See capability mapping below; each skill owns a specific stop condition | Apply the same engineering discipline manually and record evidence; do not claim the missing plugin was run |
 
 ## Department Routing Policy
 
-Registry 只回答「這個 capability 是否可用、如何啟動」，不取代 [Golden Playbook §1](../03_Golden_Engineering_Playbook.md#1-how-to-use-this-playbook-in-60-seconds) 與 [Decision Tree §6](../guides/05_Decision_Tree.md#6-choose-the-next-capability) 的 routing。
+Registry 只回答「這個 capability 是否可用、如何啟動」，不取代 [Golden Playbook §1](../03_Golden_Engineering_Playbook.md#1-engineer-start-here--six-golden-questions) 與 [Decision Tree §6](../guides/05_Decision_Tree.md#6-choose-the-next-capability) 的 routing。Engineer 先完成 Six Golden Questions、定位 Current Stage；只有進入該 Stage 後才查本 Registry 選 implementation。
 
 先用 Responsibility Ownership Map 避免按品牌拼 workflow：
 
 | Responsibility | Default Implementation | Adoption Rule |
 |---|---|---|
 | Direction／roles | Existing Team workflow and owners | 不導入新的 virtual organization 作 Department prerequisite |
-| Spec-Driven Development | OpenSpec；Fast Delivery 可用 Superpowers／Team SSOT | OpenSpec 擁有 durable proposal/specs/design/tasks 與 change traceability |
+| Spec-Driven Development | OpenSpec；non-durable work 可用 existing ticket／design SSOT | OpenSpec 擁有 durable proposal/specs/design/tasks 與 change traceability |
 | Engineering discipline | Superpowers／Team equivalent | 以 TDD-centered design、planning、debugging、review、verification disciplines 約束執行 |
 | Execution orchestration | `/opsx:apply`、Superpowers execution 或 approved runner | 每個 change 一個 execution entry、一個 task ledger |
 | Evidence／approval | CI、PR、tests、review、OpenSpec verify + Human Gate | Automation 產 evidence；Human Owner 作 decision |
 
 > **OpenSpec owns Spec-Driven Development and change traceability. Superpowers enforces TDD-centered engineering disciplines.**
 
-| Situation | Department Default |
+| Current Stage / Situation | Department Default |
 |---|---|
-| P0/P1 要做什麼尚未清楚 | 依第一個未知選 research、`grill-me` 或 `/opsx:explore` |
-| P0/P1 已清楚，不需要跨 session／AI／Engineer 保存工程上下文 | Superpowers／approved Team equivalent：design → plan → TDD → review → verification |
-| P0/P1 已清楚，需要保存 why／what／how／tasks 供後續接手 | Scoped OpenSpec Change + selected Superpowers TDD/debugging/review/verification disciplines；design/plan 只留一份 SSOT |
+| Research：P0/P1 要做什麼尚未清楚 | 依第一個未知選 research、`grill-me`、`/opsx:explore` 或 debugging；一次只選一個 |
+| Design：需要跨 session／AI／Engineer 保存 why／what／how | Scoped OpenSpec proposal/specs/design；否則沿用 existing design SSOT + Superpowers／Team equivalent |
+| Plan：P1 包含多個 independently deliverable outcomes | `to-tickets`／Team equivalent 建立 P0；若只有一個 bounded outcome，直接視為 P0 |
+| Plan：已採用 OpenSpec，需要 implementation breakdown | 使用同一份 `tasks.md`；粗 task 在原檔展開，不使用 `writing-plans` |
+| Plan：未採用 OpenSpec 的單一 P0 | simple work 用 inline plan；multi-step/high-risk/complex 才用 `writing-plans` |
+| Implement／Validate | 依唯一 ledger 執行 TDD、debugging、review、fresh verification；OpenSpec change 由 `/opsx:apply` 進場 |
 
-Team 可依既有 workflow、tool availability、熟悉度與交接頻率選 Fast Delivery 或 Complex/Durable Change route；尚未清楚時只先走 Discovery pre-route，再回來二選一。這是 Team convention，不是個人偏好。architecture/risk trigger、required capability、Human Gate 與 evidence quality 不可降低。
+是否採用 OpenSpec，只作 Stage 內的 artifact／execution selection。它不是 initial routing，也不取代 Golden Flow。Team convention 可以指定 defaults，但 architecture/risk trigger、required capability、Human Gate 與 evidence quality 不可降低。
 
 Department OpenSpec profile 採官方 `docs/explore.md` 的簡單邊界：`/opsx:explore` 是 E0/no-stakes，不建立 Change、不寫 artifacts、不修改 code；若 installed skill 提供 optional artifact capture，仍應交由 `/opsx:propose`、`/opsx:new`／`continue` 或既有 Change update flow 保存。OpenSpec Stores 仍為 beta，不列入 Golden default。
 
@@ -75,13 +78,14 @@ Department OpenSpec profile 採官方 `docs/explore.md` 的簡單邊界：`/opsx
 | Golden responsibility / stage | OpenSpec action | Minimum contract |
 |---|---|---|
 | Discovery / Research | `/opsx:explore` | E0、no-stakes exploration；不建立 Change、不寫 artifact/code；清楚後 stop 或交 propose/new |
-| Durable agreement / Design | `/opsx:propose`，或 `/opsx:new` + `/opsx:continue`／`/opsx:ff` | Proposal 說 why、specs 說 what、design 說 how、tasks 說 delivery/execution；通過 Change Gate |
+| Durable agreement / Design | `/opsx:propose`，或 `/opsx:new` + `/opsx:continue`／`/opsx:ff` | Proposal 說 why、specs 說 what、design 說 how；通過 Change Gate |
+| Implementation breakdown / Plan | OpenSpec `tasks.md` | 將 approved Change 拆成 executable tasks；粗 task 在原檔 JIT 展開。若 P1 Change 涵蓋多個 P0，只 reference tracker P0 IDs，不複製 acceptance／tasks |
 | Bounded execution / Implement | `/opsx:apply` | 讀取 approved tasks、實作 change、按需要執行 tests、更新 task state；不自行改寫 approved scope |
 | Alignment / Validate | `/opsx:verify` | 檢查 completeness、correctness、coherence 與 artifact/implementation alignment；不取代 TDD、code review 或 runtime/NFR evidence |
 | Durable truth / Closure | `/opsx:sync` → `/opsx:archive` | 將 verified delta 同步回 specs/source of truth，關閉 Change 並保留 traceability |
 | Artifact validity | CLI `openspec validate` | 檢查 artifact structure/consistency；不是 implementation verification |
 
-Durable Change 的 reference sequence：
+OpenSpec Change 的 reference sequence：
 
 ```text
 proposal/specs/design/tasks

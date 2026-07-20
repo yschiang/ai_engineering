@@ -29,15 +29,16 @@ Reproduce
 → Fresh Verification
 ```
 
-Skill 選擇先看兩件事：
+開始工作時先回答 Six Golden Questions：工作記在哪裡、Work Level、Archetype、Current Stage、Control Profile、Next Move。接著才在 Current Stage 內選 capability／skill：
 
-| 要做什麼已清楚？ | 需要跨 session／AI／Engineer 保存工程上下文？ | Default |
-|---|---|---|
-| 否 | 尚未判斷 | Research／`grill-me`／`/opsx:explore`，先把未知弄清楚 |
-| 是 | 否 | **Fast Delivery**：Superpowers／Team equivalent end-to-end，直接完成 design、plan、TDD、request/receive code review、verification |
-| 是 | 是 | **Complex / Durable Change**：OpenSpec 管 spec/tasks；以 `/opsx:apply` 選擇 task，逐 task 使用 Superpowers TDD/review；只留一份 SSOT |
+| Current Stage | Stage 內才做的選擇 |
+|---|---|
+| Research | 依第一個未知選 research、`grill-me`、`/opsx:explore` 或 debugging；一次只選一個 |
+| Design | 需要 durable agreement／handoff 才用 OpenSpec；否則沿用 existing design SSOT + Superpowers／Team equivalent |
+| Plan | 多個 delivery outcomes 才 `to-tickets`；implementation breakdown 已採用 OpenSpec 就用 `tasks.md`，未採用才 inline／triggered `writing-plans` |
+| Implement／Validate | 依唯一 task ledger 執行 TDD、review、fresh verification；OpenSpec Change 由 `/opsx:apply` 進場 |
 
-Team 可依既有 workflow、工具可用性、熟悉度與交接頻率選 Fast Delivery 或 Complex/Durable Change。尚未清楚時先處理第一個未知，再回來二選一；Discovery 是 pre-route，不是第三條 delivery flow。客觀 architecture/risk/evidence 要求仍優先。
+是否採用 OpenSpec，只是 Current Stage 內的 artifact／execution 選擇，不是第二套 Engineer workflow。客觀 architecture/risk/evidence 要求仍優先。
 
 ## Choose Your Reading Path
 
